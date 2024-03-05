@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                     authToken: MeetingConfig.authToken,
                   ),
                 );
-                final uiKit = DyteUIKitBuilder.build(uiKitInfo: uiKitInfo);
+                final uiKit = DyteUiKit(uiKitInfo);
                 return DyteMeetingPage(uiKit);
               }),
             );
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
 
 class DyteMeetingPage extends StatefulWidget {
   const DyteMeetingPage(this.uikit, {super.key});
-  final DyteUIKitBuilder uikit;
+  final DyteUiKit uikit;
 
   @override
   State<DyteMeetingPage> createState() => _DyteMeetingPageState();
@@ -62,6 +62,6 @@ class DyteMeetingPage extends StatefulWidget {
 class _DyteMeetingPageState extends State<DyteMeetingPage> {
   @override
   Widget build(BuildContext context) {
-    return widget.uikit.loadUI();
+    return widget.uikit;
   }
 }
