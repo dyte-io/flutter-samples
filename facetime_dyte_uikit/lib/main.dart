@@ -2,7 +2,8 @@ import 'package:dyte_uikit/dyte_uikit.dart';
 import 'package:flutter/material.dart';
 
 // TODO: Add your auth token here.
-const participantAuthToken = 'paste-auth-token-here';
+const participantAuthToken =
+    'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcmdJZCI6ImYxMGZkYzZlLTVmM2UtNDNiMS1iM2FkLTM4NzVkOTE5ZDY5YiIsIm1lZXRpbmdJZCI6ImJiYjcyOGZhLTBiYTMtNDI4ZC04ZGUwLTY4N2VhMjhmNWExOSIsInBhcnRpY2lwYW50SWQiOiJhYWFkYmNlNS1iNzNlLTQ3YTgtYmUxYi01NjliMTBlMmMzZWUiLCJwcmVzZXRJZCI6IjJlNGI3OTgzLWY0ODEtNDE4YS05NTUzLTFjNjE3Y2NiMDhlYSIsImlhdCI6MTcwOTE5Nzc2MiwiZXhwIjoxNzE3ODM3NzYyfQ.GgwacvOWr72Nvqd5roEZs7ptewIKs_EPIhgj1l92uZ9Oo5Ri6_9UeD137vTlvtxG0RwUEtJxZzVyLUg8lFNXThCmsYgvggBpkcv_EjjdFEYLrUL50USPP_-_PbRwibgYvZDRca1KX49Ym_En_72D7w1tkAaN2MttkNwdo1DWZ1iTwZymPnEixKFqOZfkwQoEJbNFgy9w9g7eKMZymKIqE1_ONUi3IYTFn-QpMQBllawjEuu1jY4Sa_7t1EaULdgwX9fx-ydChIolyXekxmcLZkALG_5PNmPAWp93Ei7t2blzQ3n9POga_CvWArubZdQO-4p9YsEWIlXru1j5UIK08Q';
 final meetingInfo = DyteMeetingInfoV2(authToken: participantAuthToken);
 
 void main() {
@@ -102,6 +103,8 @@ class _JoinMeetingRoomState extends State<JoinMeetingRoom>
       child: DyteJoinButton(
         // TODO: dyteMobileClient is a global variable. uikit object should have it as a property IMO
         dyteMobileClient: dyteMobileClient,
+        height: 50,
+        width: 200,
       ),
     );
   }
