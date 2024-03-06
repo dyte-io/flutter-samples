@@ -1,0 +1,62 @@
+PODS:
+  - AmazonIVSPlayer (1.19.0)
+  - dyte_core_ios (0.0.1):
+    - AmazonIVSPlayer (~> 1.19.0)
+    - DyteiOSCore (= 1.31.1)
+    - Flutter
+  - DyteiOSCore (1.31.1):
+    - DyteWebRTC (= 0.0.4)
+  - DyteWebRTC (0.0.4)
+  - Flutter (1.0.0)
+  - image_gallery_saver (2.0.2):
+    - Flutter
+  - image_picker_ios (0.0.1):
+    - Flutter
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - permission_handler_apple (9.3.0):
+    - Flutter
+
+DEPENDENCIES:
+  - dyte_core_ios (from `.symlinks/plugins/dyte_core_ios/ios`)
+  - Flutter (from `Flutter`)
+  - image_gallery_saver (from `.symlinks/plugins/image_gallery_saver/ios`)
+  - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AmazonIVSPlayer
+    - DyteiOSCore
+    - DyteWebRTC
+
+EXTERNAL SOURCES:
+  dyte_core_ios:
+    :path: ".symlinks/plugins/dyte_core_ios/ios"
+  Flutter:
+    :path: Flutter
+  image_gallery_saver:
+    :path: ".symlinks/plugins/image_gallery_saver/ios"
+  image_picker_ios:
+    :path: ".symlinks/plugins/image_picker_ios/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+
+SPEC CHECKSUMS:
+  AmazonIVSPlayer: b9498771b74cd05e93c67dd3844bb4e2c453f2aa
+  dyte_core_ios: 6a6e6089ba6baa0862253f4070e53d8b4171717b
+  DyteiOSCore: db59b197dac93508165275007686a126663da91c
+  DyteWebRTC: a6abe1b2cc3ecf66a2a0adc07ada8d851647cfa6
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  image_gallery_saver: cb43cc43141711190510e92c460eb1655cd343cb
+  image_picker_ios: 99dfe1854b4fa34d0364e74a78448a0151025425
+  path_provider_foundation: 3784922295ac71e43754bd15e0653ccfd36a147c
+  permission_handler_apple: 036b856153a2b1f61f21030ff725f3e6fece2b78
+
+PODFILE CHECKSUM: a57f30d18f102dd3ce366b1d62a55ecbef2158e5
+
+COCOAPODS: 1.13.0
