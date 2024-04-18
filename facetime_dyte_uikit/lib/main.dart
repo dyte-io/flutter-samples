@@ -2,9 +2,10 @@ import 'package:dyte_uikit/dyte_uikit.dart';
 import 'package:flutter/material.dart';
 
 // TODO: Add your auth token here.
-const participantAuthToken =
-    'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcmdJZCI6ImYxMGZkYzZlLTVmM2UtNDNiMS1iM2FkLTM4NzVkOTE5ZDY5YiIsIm1lZXRpbmdJZCI6ImJiYjcyOGZhLTBiYTMtNDI4ZC04ZGUwLTY4N2VhMjhmNWExOSIsInBhcnRpY2lwYW50SWQiOiJhYWFkYmNlNS1iNzNlLTQ3YTgtYmUxYi01NjliMTBlMmMzZWUiLCJwcmVzZXRJZCI6IjJlNGI3OTgzLWY0ODEtNDE4YS05NTUzLTFjNjE3Y2NiMDhlYSIsImlhdCI6MTcwOTE5Nzc2MiwiZXhwIjoxNzE3ODM3NzYyfQ.GgwacvOWr72Nvqd5roEZs7ptewIKs_EPIhgj1l92uZ9Oo5Ri6_9UeD137vTlvtxG0RwUEtJxZzVyLUg8lFNXThCmsYgvggBpkcv_EjjdFEYLrUL50USPP_-_PbRwibgYvZDRca1KX49Ym_En_72D7w1tkAaN2MttkNwdo1DWZ1iTwZymPnEixKFqOZfkwQoEJbNFgy9w9g7eKMZymKIqE1_ONUi3IYTFn-QpMQBllawjEuu1jY4Sa_7t1EaULdgwX9fx-ydChIolyXekxmcLZkALG_5PNmPAWp93Ei7t2blzQ3n9POga_CvWArubZdQO-4p9YsEWIlXru1j5UIK08Q';
+const participantAuthToken = "";
 final meetingInfo = DyteMeetingInfoV2(authToken: participantAuthToken);
+
+final DyteMobileClient _client = DyteMobileClient();
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,10 +25,12 @@ class _FacetimeUIAppState extends State<FacetimeUIApp>
     with DyteMeetingRoomEventsListener {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData.dark(),
-      home: Scaffold(
-        body: InitMeetingRoom(widget.meetingInfo),
+    return DyteProvider(
+      client: _client,
+      uiKitInfo: DyteUIKitInfo(meetingInfo),
+      child: MaterialApp(
+        theme: ThemeData.dark(),
+        home: InitMeetingRoom(widget.meetingInfo),
       ),
     );
   }
@@ -44,8 +47,6 @@ class InitMeetingRoom extends StatefulWidget {
 
 class _InitMeetingRoomState extends State<InitMeetingRoom>
     with DyteMeetingRoomEventsListener {
-  late final DyteUiKit uikit;
-
   @override
   void onMeetingInitCompleted() {
     Navigator.push(context,
@@ -58,12 +59,8 @@ class _InitMeetingRoomState extends State<InitMeetingRoom>
       child: MaterialButton(
         child: const Text("Start the facetime app"),
         onPressed: () {
-          uikit = DyteUIKitBuilder.build(
-            uiKitInfo: DyteUIKitInfo(widget.meetingInfo),
-            context: context,
-          );
-          dyteMobileClient.init(widget.meetingInfo);
-          dyteMobileClient.addMeetingRoomEventsListener(this);
+          _client.init(widget.meetingInfo);
+          _client.addMeetingRoomEventsListener(this);
         },
       ),
     );
@@ -71,7 +68,7 @@ class _InitMeetingRoomState extends State<InitMeetingRoom>
 
   @override
   void dispose() {
-    dyteMobileClient.removeMeetingRoomEventsListener(this);
+    _client.removeMeetingRoomEventsListener(this);
     super.dispose();
   }
 }
@@ -93,7 +90,7 @@ class _JoinMeetingRoomState extends State<JoinMeetingRoom>
 
   @override
   void initState() {
-    dyteMobileClient.addMeetingRoomEventsListener(this);
+    _client.addMeetingRoomEventsListener(this);
     super.initState();
   }
 
@@ -101,8 +98,7 @@ class _JoinMeetingRoomState extends State<JoinMeetingRoom>
   Widget build(BuildContext context) {
     return Center(
       child: DyteJoinButton(
-        // TODO: dyteMobileClient is a global variable. uikit object should have it as a property IMO
-        dyteMobileClient: dyteMobileClient,
+        dyteMobileClient: _client,
         height: 50,
         width: 200,
       ),
@@ -111,7 +107,7 @@ class _JoinMeetingRoomState extends State<JoinMeetingRoom>
 
   @override
   void dispose() {
-    dyteMobileClient.removeMeetingRoomEventsListener(this);
+    _client.removeMeetingRoomEventsListener(this);
     super.dispose();
   }
 }
@@ -133,14 +129,14 @@ class _FacetimeMeetingRoomState extends State<FacetimeMeetingRoom>
 
   @override
   void initState() {
-    dyteMobileClient.addMeetingRoomEventsListener(this);
+    _client.addMeetingRoomEventsListener(this);
     super.initState();
   }
 
   DyteMeetingParticipant? _getFirstRemoteUser(
       List<DyteMeetingParticipant> actives) {
     for (final participant in actives) {
-      if (participant.id != dyteMobileClient.localUser.id) {
+      if (participant.id != _client.localUser.id) {
         return participant;
       }
     }
@@ -158,7 +154,7 @@ class _FacetimeMeetingRoomState extends State<FacetimeMeetingRoom>
             height: size.height,
             width: size.width,
             child: StreamBuilder(
-              stream: dyteMobileClient.activeStream,
+              stream: _client.activeStream,
               builder: (context, snapshot) {
                 final participants = snapshot.data;
                 if (participants != null && participants.isNotEmpty) {
@@ -190,13 +186,17 @@ class _FacetimeMeetingRoomState extends State<FacetimeMeetingRoom>
                 ),
               ),
               height: 72,
-              width: 196,
+              width: 240,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  DyteSelfAudioToggleButton(dyteMobileClient: dyteMobileClient),
-                  DyteSelfVideoToggleButton(dyteMobileClient: dyteMobileClient),
-                  DyteLeaveButton(dyteMobileClient: dyteMobileClient),
+                  DyteSelfAudioToggleButton(dyteMobileClient: _client),
+                  DyteSelfVideoToggleButton(dyteMobileClient: _client),
+                  const DyteChatIconWidget(),
+                  const DyteParticipantsIconWidget(),
+                  // const DytePluginIconWidget(),
+                  // const DytePollsIconWidget(),
+                  DyteLeaveButton(dyteMobileClient: _client),
                 ],
               ),
             ),
@@ -208,7 +208,7 @@ class _FacetimeMeetingRoomState extends State<FacetimeMeetingRoom>
               height: 200,
               width: 150,
               child: DyteParticipantTile(
-                dyteMobileClient.localUser,
+                _client.localUser,
                 height: 200,
                 width: 150,
               ),
@@ -221,7 +221,7 @@ class _FacetimeMeetingRoomState extends State<FacetimeMeetingRoom>
 
   @override
   void dispose() {
-    dyteMobileClient.removeMeetingRoomEventsListener(this);
+    _client.removeMeetingRoomEventsListener(this);
     super.dispose();
   }
 }
