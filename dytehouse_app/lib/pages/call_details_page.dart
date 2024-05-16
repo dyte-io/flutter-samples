@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:dyte_uikit/dyte_uikit.dart';
 import 'package:dytehouse/main.dart';
 import 'package:dytehouse/pages/widgets/size/app_size.dart';
@@ -34,7 +32,6 @@ class CallDetailsPage extends ConsumerWidget {
       dyteRoomNotifier,
       (before, current) {
         if (current is DyteHouseRoomLeaveCompleted) {
-          log('Room left');
           Navigator.of(context).pop();
         }
       },
