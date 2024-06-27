@@ -3,7 +3,7 @@ import 'package:dytehouse/riverpod/states/room_states.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class DyteRoomNotifier extends Notifier<DyteHouseStates>
-    with DyteMeetingRoomEventsListener {
+    implements DyteMeetingRoomEventsListener {
   DyteRoomNotifier();
 
   @override
@@ -45,4 +45,37 @@ class DyteRoomNotifier extends Notifier<DyteHouseStates>
   void onMeetingRoomLeaveCompleted() {
     state = DyteHouseRoomLeaveCompleted();
   }
+
+  @override
+  void onActiveTabUpdate(DyteActiveTab? activeTab) {}
+
+  @override
+  void onConnectedToMeetingRoom() {}
+
+  @override
+  void onConnectingToMeetingRoom() {}
+
+  @override
+  void onDisconnectedFromMeetingRoom(String reason) {}
+
+  @override
+  void onMeetingEnded() {}
+
+  @override
+  void onMeetingRoomConnectionFailed() {}
+
+  @override
+  void onMeetingRoomDisconnected() {}
+
+  @override
+  void onMeetingRoomLeaveStarted() {}
+
+  @override
+  void onMeetingRoomReconnectionFailed() {}
+
+  @override
+  void onReconnectedToMeetingRoom() {}
+
+  @override
+  void onReconnectingToMeetingRoom() {}
 }
