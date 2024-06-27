@@ -3,7 +3,7 @@ import 'package:flutter_core/models/states/participant_event_states.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ParticipantNotifier extends Notifier<ParticipantEventStates>
-    with DyteParticipantEventsListener {
+    implements DyteParticipantEventsListener {
   @override
   ParticipantEventStates build() {
     return const ParticipantEventStates.initial();
@@ -62,4 +62,16 @@ class ParticipantNotifier extends Notifier<ParticipantEventStates>
   void onUpdate(DyteParticipants participants) {
     state = ParticipantEventStates.onUpdate(participants);
   }
+
+  @override
+  void onParticipantJoin(DyteJoinedMeetingParticipant participant) {}
+
+  @override
+  void onParticipantLeave(DyteJoinedMeetingParticipant participant) {}
+
+  @override
+  void onScreenShareEnded(DyteJoinedMeetingParticipant participant) {}
+
+  @override
+  void onScreenShareStarted(DyteJoinedMeetingParticipant participant) {}
 }

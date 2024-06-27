@@ -3,7 +3,7 @@ import 'package:flutter_core/di/di.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class RecordingNotifer extends Notifier<DyteRecordingState>
-    with DyteRecordingEventsListener {
+    implements DyteRecordingEventsListener {
   @override
   void onMeetingRecordingEnded() {
     state = dyteMobileClient.recording.recordingState;

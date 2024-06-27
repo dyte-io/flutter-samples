@@ -3,7 +3,7 @@ import 'package:flutter_core/notifiers/states/waitlisted_participant_states.dart
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class WaitingRoomNotifer extends Notifier<WaitlistedParticipantStates>
-    with DyteWaitingRoomEventsListener {
+    implements DyteWaitingRoomEventsListener {
   @override
   void onWaitListParticipantAccepted(DyteMeetingParticipant participant) {
     state = WaitlistedParticipantAccepted(participant);

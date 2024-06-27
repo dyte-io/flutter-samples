@@ -4,7 +4,7 @@ import 'package:flutter_core/notifiers/states/local_user_states.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class LocalUserNotifer extends Notifier<LocalUserState>
-    with DyteSelfEventsListener {
+    implements DyteSelfEventsListener {
   LocalUserNotifer(this._settingsRepository) : super();
 
   @override
@@ -71,4 +71,25 @@ class LocalUserNotifer extends Notifier<LocalUserState>
   void onWaitListStatusUpdate(DyteWaitListStatus waitListStatus) {
     state = LocalUserState.onWaitListStatusUpdate(waitListStatus);
   }
+
+  @override
+  void onPermissionsUpdated(DytePermissions permissions) {}
+
+  @override
+  void onRoomMessage(String type, Map<String, dynamic> payload) {}
+
+  @override
+  void onScreenShareStartFailed(String reason) {}
+
+  @override
+  void onScreenShareStarted() {}
+
+  @override
+  void onScreenShareStopped() {}
+
+  @override
+  void onStageStatusUpdated(DyteStageStatus stageStatus) {}
+
+  @override
+  void onVideoDeviceChanged(DyteVideoDevice videoDevice) {}
 }

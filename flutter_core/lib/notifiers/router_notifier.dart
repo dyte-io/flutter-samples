@@ -3,7 +3,7 @@ import 'package:flutter_core/notifiers/states/router_states.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class RouterNotifier extends Notifier<RouterStates>
-    with DyteMeetingRoomEventsListener, DyteSelfEventsListener {
+    implements DyteMeetingRoomEventsListener, DyteSelfEventsListener {
   @override
   RouterStates build() {
     return RouterInitial();
@@ -58,4 +58,76 @@ class RouterNotifier extends Notifier<RouterStates>
   void onWaitListStatusUpdate(DyteWaitListStatus waitListStatus) {
     state = OnRouterSelfWaitingRoomStatusUpdate(waitListStatus);
   }
+
+  @override
+  void onActiveTabUpdate(DyteActiveTab? activeTab) {}
+
+  @override
+  void onAudioDevicesUpdated() {}
+
+  @override
+  void onAudioUpdate(bool audioEnabled) {}
+
+  @override
+  void onConnectedToMeetingRoom() {}
+
+  @override
+  void onConnectingToMeetingRoom() {}
+
+  @override
+  void onDisconnectedFromMeetingRoom(String reason) {}
+
+  @override
+  void onMeetingEnded() {}
+
+  @override
+  void onMeetingRoomConnectionFailed() {}
+
+  @override
+  void onMeetingRoomJoinedWithoutCameraPermission() {}
+
+  @override
+  void onMeetingRoomJoinedWithoutMicPermission() {}
+
+  @override
+  void onMeetingRoomReconnectionFailed() {}
+
+  @override
+  void onPermissionsUpdated(DytePermissions permissions) {}
+
+  @override
+  void onProximityChanged(bool isNear) {}
+
+  @override
+  void onReconnectedToMeetingRoom() {}
+
+  @override
+  void onReconnectingToMeetingRoom() {}
+
+  @override
+  void onRemovedFromMeeting() {}
+
+  @override
+  void onRoomMessage(String type, Map<String, dynamic> payload) {}
+
+  @override
+  void onScreenShareStartFailed(String reason) {}
+
+  @override
+  void onScreenShareStarted() {}
+
+  @override
+  void onScreenShareStopped() {}
+
+  @override
+  void onStageStatusUpdated(DyteStageStatus stageStatus) {}
+
+  @override
+  void onUpdate(DyteSelfUser participant) {}
+
+  @override
+  void onVideoDeviceChanged(DyteVideoDevice videoDevice) {}
+
+  @override
+  void onVideoUpdate(bool videoEnabled) {}
 }

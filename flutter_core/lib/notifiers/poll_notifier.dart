@@ -3,10 +3,10 @@ import 'package:flutter_core/di/di.dart';
 import 'package:flutter_core/notifiers/states/poll_states.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class NewPollNotifer extends Notifier<PollStates> with DytePollEventsListener {
+class NewPollNotifer extends Notifier<PollStates>
+    implements DytePollEventsListener {
   @override
   void onNewPoll(DytePollMessage poll) {
-    super.onNewPoll(poll);
     state = OnNewPoll(poll);
   }
 
@@ -14,10 +14,13 @@ class NewPollNotifer extends Notifier<PollStates> with DytePollEventsListener {
   PollStates build() {
     return InitialPollState();
   }
+
+  @override
+  void onPollUpdates(List<DytePollMessage> polls) {}
 }
 
 class PollListNotifier extends Notifier<List<DytePollMessage>>
-    with DytePollEventsListener {
+    implements DytePollEventsListener {
   @override
   List<DytePollMessage> build() {
     return dyteMobileClient.polls.polls;
@@ -27,4 +30,7 @@ class PollListNotifier extends Notifier<List<DytePollMessage>>
   void onPollUpdates(List<DytePollMessage> polls) {
     state = polls;
   }
+
+  @override
+  void onNewPoll(DytePollMessage poll) {}
 }
