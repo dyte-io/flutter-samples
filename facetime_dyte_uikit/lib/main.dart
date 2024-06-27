@@ -22,7 +22,7 @@ class FacetimeUIApp extends StatefulWidget {
 }
 
 class _FacetimeUIAppState extends State<FacetimeUIApp>
-    with DyteMeetingRoomEventsListener {
+    implements DyteMeetingRoomEventsListener {
   @override
   Widget build(BuildContext context) {
     return DyteProvider(
@@ -34,6 +34,60 @@ class _FacetimeUIAppState extends State<FacetimeUIApp>
       ),
     );
   }
+
+  @override
+  void onActiveTabUpdate(DyteActiveTab? activeTab) {}
+
+  @override
+  void onConnectedToMeetingRoom() {}
+
+  @override
+  void onConnectingToMeetingRoom() {}
+
+  @override
+  void onDisconnectedFromMeetingRoom(String reason) {}
+
+  @override
+  void onMeetingEnded() {}
+
+  @override
+  void onMeetingInitCompleted() {}
+
+  @override
+  void onMeetingInitFailed(Exception exception) {}
+
+  @override
+  void onMeetingInitStarted() {}
+
+  @override
+  void onMeetingRoomConnectionFailed() {}
+
+  @override
+  void onMeetingRoomDisconnected() {}
+
+  @override
+  void onMeetingRoomJoinCompleted() {}
+
+  @override
+  void onMeetingRoomJoinFailed(Exception exception) {}
+
+  @override
+  void onMeetingRoomJoinStarted() {}
+
+  @override
+  void onMeetingRoomLeaveCompleted() {}
+
+  @override
+  void onMeetingRoomLeaveStarted() {}
+
+  @override
+  void onMeetingRoomReconnectionFailed() {}
+
+  @override
+  void onReconnectedToMeetingRoom() {}
+
+  @override
+  void onReconnectingToMeetingRoom() {}
 }
 
 class InitMeetingRoom extends StatefulWidget {
@@ -46,7 +100,7 @@ class InitMeetingRoom extends StatefulWidget {
 }
 
 class _InitMeetingRoomState extends State<InitMeetingRoom>
-    with DyteMeetingRoomEventsListener {
+    implements DyteMeetingRoomEventsListener {
   @override
   void onMeetingInitCompleted() {
     Navigator.push(context,
@@ -71,6 +125,57 @@ class _InitMeetingRoomState extends State<InitMeetingRoom>
     _client.removeMeetingRoomEventsListener(this);
     super.dispose();
   }
+
+  @override
+  void onActiveTabUpdate(DyteActiveTab? activeTab) {}
+
+  @override
+  void onConnectedToMeetingRoom() {}
+
+  @override
+  void onConnectingToMeetingRoom() {}
+
+  @override
+  void onDisconnectedFromMeetingRoom(String reason) {}
+
+  @override
+  void onMeetingEnded() {}
+
+  @override
+  void onMeetingInitFailed(Exception exception) {}
+
+  @override
+  void onMeetingInitStarted() {}
+
+  @override
+  void onMeetingRoomConnectionFailed() {}
+
+  @override
+  void onMeetingRoomDisconnected() {}
+
+  @override
+  void onMeetingRoomJoinCompleted() {}
+
+  @override
+  void onMeetingRoomJoinFailed(Exception exception) {}
+
+  @override
+  void onMeetingRoomJoinStarted() {}
+
+  @override
+  void onMeetingRoomLeaveCompleted() {}
+
+  @override
+  void onMeetingRoomLeaveStarted() {}
+
+  @override
+  void onMeetingRoomReconnectionFailed() {}
+
+  @override
+  void onReconnectedToMeetingRoom() {}
+
+  @override
+  void onReconnectingToMeetingRoom() {}
 }
 
 class JoinMeetingRoom extends StatefulWidget {
@@ -81,7 +186,7 @@ class JoinMeetingRoom extends StatefulWidget {
 }
 
 class _JoinMeetingRoomState extends State<JoinMeetingRoom>
-    with DyteMeetingRoomEventsListener {
+    implements DyteMeetingRoomEventsListener {
   @override
   void onMeetingRoomJoinCompleted() {
     Navigator.push(context,
@@ -110,6 +215,57 @@ class _JoinMeetingRoomState extends State<JoinMeetingRoom>
     _client.removeMeetingRoomEventsListener(this);
     super.dispose();
   }
+
+  @override
+  void onActiveTabUpdate(DyteActiveTab? activeTab) {}
+
+  @override
+  void onConnectedToMeetingRoom() {}
+
+  @override
+  void onConnectingToMeetingRoom() {}
+
+  @override
+  void onDisconnectedFromMeetingRoom(String reason) {}
+
+  @override
+  void onMeetingEnded() {}
+
+  @override
+  void onMeetingInitCompleted() {}
+
+  @override
+  void onMeetingInitFailed(Exception exception) {}
+
+  @override
+  void onMeetingInitStarted() {}
+
+  @override
+  void onMeetingRoomConnectionFailed() {}
+
+  @override
+  void onMeetingRoomDisconnected() {}
+
+  @override
+  void onMeetingRoomJoinFailed(Exception exception) {}
+
+  @override
+  void onMeetingRoomJoinStarted() {}
+
+  @override
+  void onMeetingRoomLeaveCompleted() {}
+
+  @override
+  void onMeetingRoomLeaveStarted() {}
+
+  @override
+  void onMeetingRoomReconnectionFailed() {}
+
+  @override
+  void onReconnectedToMeetingRoom() {}
+
+  @override
+  void onReconnectingToMeetingRoom() {}
 }
 
 class FacetimeMeetingRoom extends StatefulWidget {
@@ -120,7 +276,7 @@ class FacetimeMeetingRoom extends StatefulWidget {
 }
 
 class _FacetimeMeetingRoomState extends State<FacetimeMeetingRoom>
-    with DyteMeetingRoomEventsListener {
+    implements DyteMeetingRoomEventsListener {
   @override
   void onMeetingRoomLeaveCompleted() {
     Navigator.pushReplacement(context,
@@ -224,4 +380,55 @@ class _FacetimeMeetingRoomState extends State<FacetimeMeetingRoom>
     _client.removeMeetingRoomEventsListener(this);
     super.dispose();
   }
+
+  @override
+  void onActiveTabUpdate(DyteActiveTab? activeTab) {}
+
+  @override
+  void onConnectedToMeetingRoom() {}
+
+  @override
+  void onConnectingToMeetingRoom() {}
+
+  @override
+  void onDisconnectedFromMeetingRoom(String reason) {}
+
+  @override
+  void onMeetingEnded() {}
+
+  @override
+  void onMeetingInitCompleted() {}
+
+  @override
+  void onMeetingInitFailed(Exception exception) {}
+
+  @override
+  void onMeetingInitStarted() {}
+
+  @override
+  void onMeetingRoomConnectionFailed() {}
+
+  @override
+  void onMeetingRoomDisconnected() {}
+
+  @override
+  void onMeetingRoomJoinCompleted() {}
+
+  @override
+  void onMeetingRoomJoinFailed(Exception exception) {}
+
+  @override
+  void onMeetingRoomJoinStarted() {}
+
+  @override
+  void onMeetingRoomLeaveStarted() {}
+
+  @override
+  void onMeetingRoomReconnectionFailed() {}
+
+  @override
+  void onReconnectedToMeetingRoom() {}
+
+  @override
+  void onReconnectingToMeetingRoom() {}
 }
