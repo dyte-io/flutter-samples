@@ -12,7 +12,7 @@ part of 'plugin_event_states.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PluginEventStates {
@@ -103,26 +103,28 @@ class _$PluginEventStatesCopyWithImpl<$Res, $Val extends PluginEventStates>
 }
 
 /// @nodoc
-abstract class _$$_PluginEventStatesInitialCopyWith<$Res> {
-  factory _$$_PluginEventStatesInitialCopyWith(
-          _$_PluginEventStatesInitial value,
-          $Res Function(_$_PluginEventStatesInitial) then) =
-      __$$_PluginEventStatesInitialCopyWithImpl<$Res>;
+abstract class _$$PluginEventStatesInitialImplCopyWith<$Res> {
+  factory _$$PluginEventStatesInitialImplCopyWith(
+          _$PluginEventStatesInitialImpl value,
+          $Res Function(_$PluginEventStatesInitialImpl) then) =
+      __$$PluginEventStatesInitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PluginEventStatesInitialCopyWithImpl<$Res>
-    extends _$PluginEventStatesCopyWithImpl<$Res, _$_PluginEventStatesInitial>
-    implements _$$_PluginEventStatesInitialCopyWith<$Res> {
-  __$$_PluginEventStatesInitialCopyWithImpl(_$_PluginEventStatesInitial _value,
-      $Res Function(_$_PluginEventStatesInitial) _then)
+class __$$PluginEventStatesInitialImplCopyWithImpl<$Res>
+    extends _$PluginEventStatesCopyWithImpl<$Res,
+        _$PluginEventStatesInitialImpl>
+    implements _$$PluginEventStatesInitialImplCopyWith<$Res> {
+  __$$PluginEventStatesInitialImplCopyWithImpl(
+      _$PluginEventStatesInitialImpl _value,
+      $Res Function(_$PluginEventStatesInitialImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PluginEventStatesInitial implements _PluginEventStatesInitial {
-  const _$_PluginEventStatesInitial();
+class _$PluginEventStatesInitialImpl implements _PluginEventStatesInitial {
+  const _$PluginEventStatesInitialImpl();
 
   @override
   String toString() {
@@ -130,10 +132,10 @@ class _$_PluginEventStatesInitial implements _PluginEventStatesInitial {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PluginEventStatesInitial);
+            other is _$PluginEventStatesInitialImpl);
   }
 
   @override
@@ -231,27 +233,27 @@ class _$_PluginEventStatesInitial implements _PluginEventStatesInitial {
 }
 
 abstract class _PluginEventStatesInitial implements PluginEventStates {
-  const factory _PluginEventStatesInitial() = _$_PluginEventStatesInitial;
+  const factory _PluginEventStatesInitial() = _$PluginEventStatesInitialImpl;
 }
 
 /// @nodoc
-abstract class _$$_PluginEventStatesOnPluginActivatedCopyWith<$Res> {
-  factory _$$_PluginEventStatesOnPluginActivatedCopyWith(
-          _$_PluginEventStatesOnPluginActivated value,
-          $Res Function(_$_PluginEventStatesOnPluginActivated) then) =
-      __$$_PluginEventStatesOnPluginActivatedCopyWithImpl<$Res>;
+abstract class _$$PluginEventStatesOnPluginActivatedImplCopyWith<$Res> {
+  factory _$$PluginEventStatesOnPluginActivatedImplCopyWith(
+          _$PluginEventStatesOnPluginActivatedImpl value,
+          $Res Function(_$PluginEventStatesOnPluginActivatedImpl) then) =
+      __$$PluginEventStatesOnPluginActivatedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DytePlugin plugin});
 }
 
 /// @nodoc
-class __$$_PluginEventStatesOnPluginActivatedCopyWithImpl<$Res>
+class __$$PluginEventStatesOnPluginActivatedImplCopyWithImpl<$Res>
     extends _$PluginEventStatesCopyWithImpl<$Res,
-        _$_PluginEventStatesOnPluginActivated>
-    implements _$$_PluginEventStatesOnPluginActivatedCopyWith<$Res> {
-  __$$_PluginEventStatesOnPluginActivatedCopyWithImpl(
-      _$_PluginEventStatesOnPluginActivated _value,
-      $Res Function(_$_PluginEventStatesOnPluginActivated) _then)
+        _$PluginEventStatesOnPluginActivatedImpl>
+    implements _$$PluginEventStatesOnPluginActivatedImplCopyWith<$Res> {
+  __$$PluginEventStatesOnPluginActivatedImplCopyWithImpl(
+      _$PluginEventStatesOnPluginActivatedImpl _value,
+      $Res Function(_$PluginEventStatesOnPluginActivatedImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -259,7 +261,7 @@ class __$$_PluginEventStatesOnPluginActivatedCopyWithImpl<$Res>
   $Res call({
     Object? plugin = null,
   }) {
-    return _then(_$_PluginEventStatesOnPluginActivated(
+    return _then(_$PluginEventStatesOnPluginActivatedImpl(
       null == plugin
           ? _value.plugin
           : plugin // ignore: cast_nullable_to_non_nullable
@@ -270,9 +272,9 @@ class __$$_PluginEventStatesOnPluginActivatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PluginEventStatesOnPluginActivated
+class _$PluginEventStatesOnPluginActivatedImpl
     implements _PluginEventStatesOnPluginActivated {
-  const _$_PluginEventStatesOnPluginActivated(this.plugin);
+  const _$PluginEventStatesOnPluginActivatedImpl(this.plugin);
 
   @override
   final DytePlugin plugin;
@@ -283,10 +285,10 @@ class _$_PluginEventStatesOnPluginActivated
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PluginEventStatesOnPluginActivated &&
+            other is _$PluginEventStatesOnPluginActivatedImpl &&
             (identical(other.plugin, plugin) || other.plugin == plugin));
   }
 
@@ -296,10 +298,10 @@ class _$_PluginEventStatesOnPluginActivated
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PluginEventStatesOnPluginActivatedCopyWith<
-          _$_PluginEventStatesOnPluginActivated>
-      get copyWith => __$$_PluginEventStatesOnPluginActivatedCopyWithImpl<
-          _$_PluginEventStatesOnPluginActivated>(this, _$identity);
+  _$$PluginEventStatesOnPluginActivatedImplCopyWith<
+          _$PluginEventStatesOnPluginActivatedImpl>
+      get copyWith => __$$PluginEventStatesOnPluginActivatedImplCopyWithImpl<
+          _$PluginEventStatesOnPluginActivatedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -395,33 +397,33 @@ class _$_PluginEventStatesOnPluginActivated
 abstract class _PluginEventStatesOnPluginActivated
     implements PluginEventStates {
   const factory _PluginEventStatesOnPluginActivated(final DytePlugin plugin) =
-      _$_PluginEventStatesOnPluginActivated;
+      _$PluginEventStatesOnPluginActivatedImpl;
 
   DytePlugin get plugin;
   @JsonKey(ignore: true)
-  _$$_PluginEventStatesOnPluginActivatedCopyWith<
-          _$_PluginEventStatesOnPluginActivated>
+  _$$PluginEventStatesOnPluginActivatedImplCopyWith<
+          _$PluginEventStatesOnPluginActivatedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_PluginEventStatesOnPluginFileRequestCopyWith<$Res> {
-  factory _$$_PluginEventStatesOnPluginFileRequestCopyWith(
-          _$_PluginEventStatesOnPluginFileRequest value,
-          $Res Function(_$_PluginEventStatesOnPluginFileRequest) then) =
-      __$$_PluginEventStatesOnPluginFileRequestCopyWithImpl<$Res>;
+abstract class _$$PluginEventStatesOnPluginFileRequestImplCopyWith<$Res> {
+  factory _$$PluginEventStatesOnPluginFileRequestImplCopyWith(
+          _$PluginEventStatesOnPluginFileRequestImpl value,
+          $Res Function(_$PluginEventStatesOnPluginFileRequestImpl) then) =
+      __$$PluginEventStatesOnPluginFileRequestImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DytePlugin plugin});
 }
 
 /// @nodoc
-class __$$_PluginEventStatesOnPluginFileRequestCopyWithImpl<$Res>
+class __$$PluginEventStatesOnPluginFileRequestImplCopyWithImpl<$Res>
     extends _$PluginEventStatesCopyWithImpl<$Res,
-        _$_PluginEventStatesOnPluginFileRequest>
-    implements _$$_PluginEventStatesOnPluginFileRequestCopyWith<$Res> {
-  __$$_PluginEventStatesOnPluginFileRequestCopyWithImpl(
-      _$_PluginEventStatesOnPluginFileRequest _value,
-      $Res Function(_$_PluginEventStatesOnPluginFileRequest) _then)
+        _$PluginEventStatesOnPluginFileRequestImpl>
+    implements _$$PluginEventStatesOnPluginFileRequestImplCopyWith<$Res> {
+  __$$PluginEventStatesOnPluginFileRequestImplCopyWithImpl(
+      _$PluginEventStatesOnPluginFileRequestImpl _value,
+      $Res Function(_$PluginEventStatesOnPluginFileRequestImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -429,7 +431,7 @@ class __$$_PluginEventStatesOnPluginFileRequestCopyWithImpl<$Res>
   $Res call({
     Object? plugin = null,
   }) {
-    return _then(_$_PluginEventStatesOnPluginFileRequest(
+    return _then(_$PluginEventStatesOnPluginFileRequestImpl(
       null == plugin
           ? _value.plugin
           : plugin // ignore: cast_nullable_to_non_nullable
@@ -440,9 +442,9 @@ class __$$_PluginEventStatesOnPluginFileRequestCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PluginEventStatesOnPluginFileRequest
+class _$PluginEventStatesOnPluginFileRequestImpl
     implements _PluginEventStatesOnPluginFileRequest {
-  const _$_PluginEventStatesOnPluginFileRequest(this.plugin);
+  const _$PluginEventStatesOnPluginFileRequestImpl(this.plugin);
 
   @override
   final DytePlugin plugin;
@@ -453,10 +455,10 @@ class _$_PluginEventStatesOnPluginFileRequest
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PluginEventStatesOnPluginFileRequest &&
+            other is _$PluginEventStatesOnPluginFileRequestImpl &&
             (identical(other.plugin, plugin) || other.plugin == plugin));
   }
 
@@ -466,10 +468,10 @@ class _$_PluginEventStatesOnPluginFileRequest
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PluginEventStatesOnPluginFileRequestCopyWith<
-          _$_PluginEventStatesOnPluginFileRequest>
-      get copyWith => __$$_PluginEventStatesOnPluginFileRequestCopyWithImpl<
-          _$_PluginEventStatesOnPluginFileRequest>(this, _$identity);
+  _$$PluginEventStatesOnPluginFileRequestImplCopyWith<
+          _$PluginEventStatesOnPluginFileRequestImpl>
+      get copyWith => __$$PluginEventStatesOnPluginFileRequestImplCopyWithImpl<
+          _$PluginEventStatesOnPluginFileRequestImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -565,33 +567,33 @@ class _$_PluginEventStatesOnPluginFileRequest
 abstract class _PluginEventStatesOnPluginFileRequest
     implements PluginEventStates {
   const factory _PluginEventStatesOnPluginFileRequest(final DytePlugin plugin) =
-      _$_PluginEventStatesOnPluginFileRequest;
+      _$PluginEventStatesOnPluginFileRequestImpl;
 
   DytePlugin get plugin;
   @JsonKey(ignore: true)
-  _$$_PluginEventStatesOnPluginFileRequestCopyWith<
-          _$_PluginEventStatesOnPluginFileRequest>
+  _$$PluginEventStatesOnPluginFileRequestImplCopyWith<
+          _$PluginEventStatesOnPluginFileRequestImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_PluginEventStatesOnPluginMessageCopyWith<$Res> {
-  factory _$$_PluginEventStatesOnPluginMessageCopyWith(
-          _$_PluginEventStatesOnPluginMessage value,
-          $Res Function(_$_PluginEventStatesOnPluginMessage) then) =
-      __$$_PluginEventStatesOnPluginMessageCopyWithImpl<$Res>;
+abstract class _$$PluginEventStatesOnPluginMessageImplCopyWith<$Res> {
+  factory _$$PluginEventStatesOnPluginMessageImplCopyWith(
+          _$PluginEventStatesOnPluginMessageImpl value,
+          $Res Function(_$PluginEventStatesOnPluginMessageImpl) then) =
+      __$$PluginEventStatesOnPluginMessageImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String message});
 }
 
 /// @nodoc
-class __$$_PluginEventStatesOnPluginMessageCopyWithImpl<$Res>
+class __$$PluginEventStatesOnPluginMessageImplCopyWithImpl<$Res>
     extends _$PluginEventStatesCopyWithImpl<$Res,
-        _$_PluginEventStatesOnPluginMessage>
-    implements _$$_PluginEventStatesOnPluginMessageCopyWith<$Res> {
-  __$$_PluginEventStatesOnPluginMessageCopyWithImpl(
-      _$_PluginEventStatesOnPluginMessage _value,
-      $Res Function(_$_PluginEventStatesOnPluginMessage) _then)
+        _$PluginEventStatesOnPluginMessageImpl>
+    implements _$$PluginEventStatesOnPluginMessageImplCopyWith<$Res> {
+  __$$PluginEventStatesOnPluginMessageImplCopyWithImpl(
+      _$PluginEventStatesOnPluginMessageImpl _value,
+      $Res Function(_$PluginEventStatesOnPluginMessageImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -599,7 +601,7 @@ class __$$_PluginEventStatesOnPluginMessageCopyWithImpl<$Res>
   $Res call({
     Object? message = null,
   }) {
-    return _then(_$_PluginEventStatesOnPluginMessage(
+    return _then(_$PluginEventStatesOnPluginMessageImpl(
       null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -610,9 +612,9 @@ class __$$_PluginEventStatesOnPluginMessageCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PluginEventStatesOnPluginMessage
+class _$PluginEventStatesOnPluginMessageImpl
     implements _PluginEventStatesOnPluginMessage {
-  const _$_PluginEventStatesOnPluginMessage(this.message);
+  const _$PluginEventStatesOnPluginMessageImpl(this.message);
 
   @override
   final String message;
@@ -623,10 +625,10 @@ class _$_PluginEventStatesOnPluginMessage
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PluginEventStatesOnPluginMessage &&
+            other is _$PluginEventStatesOnPluginMessageImpl &&
             (identical(other.message, message) || other.message == message));
   }
 
@@ -636,10 +638,10 @@ class _$_PluginEventStatesOnPluginMessage
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PluginEventStatesOnPluginMessageCopyWith<
-          _$_PluginEventStatesOnPluginMessage>
-      get copyWith => __$$_PluginEventStatesOnPluginMessageCopyWithImpl<
-          _$_PluginEventStatesOnPluginMessage>(this, _$identity);
+  _$$PluginEventStatesOnPluginMessageImplCopyWith<
+          _$PluginEventStatesOnPluginMessageImpl>
+      get copyWith => __$$PluginEventStatesOnPluginMessageImplCopyWithImpl<
+          _$PluginEventStatesOnPluginMessageImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -734,33 +736,33 @@ class _$_PluginEventStatesOnPluginMessage
 
 abstract class _PluginEventStatesOnPluginMessage implements PluginEventStates {
   const factory _PluginEventStatesOnPluginMessage(final String message) =
-      _$_PluginEventStatesOnPluginMessage;
+      _$PluginEventStatesOnPluginMessageImpl;
 
   String get message;
   @JsonKey(ignore: true)
-  _$$_PluginEventStatesOnPluginMessageCopyWith<
-          _$_PluginEventStatesOnPluginMessage>
+  _$$PluginEventStatesOnPluginMessageImplCopyWith<
+          _$PluginEventStatesOnPluginMessageImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_PluginEventStatesOnPluginDeactivatedCopyWith<$Res> {
-  factory _$$_PluginEventStatesOnPluginDeactivatedCopyWith(
-          _$_PluginEventStatesOnPluginDeactivated value,
-          $Res Function(_$_PluginEventStatesOnPluginDeactivated) then) =
-      __$$_PluginEventStatesOnPluginDeactivatedCopyWithImpl<$Res>;
+abstract class _$$PluginEventStatesOnPluginDeactivatedImplCopyWith<$Res> {
+  factory _$$PluginEventStatesOnPluginDeactivatedImplCopyWith(
+          _$PluginEventStatesOnPluginDeactivatedImpl value,
+          $Res Function(_$PluginEventStatesOnPluginDeactivatedImpl) then) =
+      __$$PluginEventStatesOnPluginDeactivatedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DytePlugin plugin});
 }
 
 /// @nodoc
-class __$$_PluginEventStatesOnPluginDeactivatedCopyWithImpl<$Res>
+class __$$PluginEventStatesOnPluginDeactivatedImplCopyWithImpl<$Res>
     extends _$PluginEventStatesCopyWithImpl<$Res,
-        _$_PluginEventStatesOnPluginDeactivated>
-    implements _$$_PluginEventStatesOnPluginDeactivatedCopyWith<$Res> {
-  __$$_PluginEventStatesOnPluginDeactivatedCopyWithImpl(
-      _$_PluginEventStatesOnPluginDeactivated _value,
-      $Res Function(_$_PluginEventStatesOnPluginDeactivated) _then)
+        _$PluginEventStatesOnPluginDeactivatedImpl>
+    implements _$$PluginEventStatesOnPluginDeactivatedImplCopyWith<$Res> {
+  __$$PluginEventStatesOnPluginDeactivatedImplCopyWithImpl(
+      _$PluginEventStatesOnPluginDeactivatedImpl _value,
+      $Res Function(_$PluginEventStatesOnPluginDeactivatedImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -768,7 +770,7 @@ class __$$_PluginEventStatesOnPluginDeactivatedCopyWithImpl<$Res>
   $Res call({
     Object? plugin = null,
   }) {
-    return _then(_$_PluginEventStatesOnPluginDeactivated(
+    return _then(_$PluginEventStatesOnPluginDeactivatedImpl(
       null == plugin
           ? _value.plugin
           : plugin // ignore: cast_nullable_to_non_nullable
@@ -779,9 +781,9 @@ class __$$_PluginEventStatesOnPluginDeactivatedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PluginEventStatesOnPluginDeactivated
+class _$PluginEventStatesOnPluginDeactivatedImpl
     implements _PluginEventStatesOnPluginDeactivated {
-  const _$_PluginEventStatesOnPluginDeactivated(this.plugin);
+  const _$PluginEventStatesOnPluginDeactivatedImpl(this.plugin);
 
   @override
   final DytePlugin plugin;
@@ -792,10 +794,10 @@ class _$_PluginEventStatesOnPluginDeactivated
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PluginEventStatesOnPluginDeactivated &&
+            other is _$PluginEventStatesOnPluginDeactivatedImpl &&
             (identical(other.plugin, plugin) || other.plugin == plugin));
   }
 
@@ -805,10 +807,10 @@ class _$_PluginEventStatesOnPluginDeactivated
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PluginEventStatesOnPluginDeactivatedCopyWith<
-          _$_PluginEventStatesOnPluginDeactivated>
-      get copyWith => __$$_PluginEventStatesOnPluginDeactivatedCopyWithImpl<
-          _$_PluginEventStatesOnPluginDeactivated>(this, _$identity);
+  _$$PluginEventStatesOnPluginDeactivatedImplCopyWith<
+          _$PluginEventStatesOnPluginDeactivatedImpl>
+      get copyWith => __$$PluginEventStatesOnPluginDeactivatedImplCopyWithImpl<
+          _$PluginEventStatesOnPluginDeactivatedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -904,11 +906,11 @@ class _$_PluginEventStatesOnPluginDeactivated
 abstract class _PluginEventStatesOnPluginDeactivated
     implements PluginEventStates {
   const factory _PluginEventStatesOnPluginDeactivated(final DytePlugin plugin) =
-      _$_PluginEventStatesOnPluginDeactivated;
+      _$PluginEventStatesOnPluginDeactivatedImpl;
 
   DytePlugin get plugin;
   @JsonKey(ignore: true)
-  _$$_PluginEventStatesOnPluginDeactivatedCopyWith<
-          _$_PluginEventStatesOnPluginDeactivated>
+  _$$PluginEventStatesOnPluginDeactivatedImplCopyWith<
+          _$PluginEventStatesOnPluginDeactivatedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

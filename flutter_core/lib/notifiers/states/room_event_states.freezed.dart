@@ -12,7 +12,7 @@ part of 'room_event_states.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RoomEventStates {
@@ -147,25 +147,27 @@ class _$RoomEventStatesCopyWithImpl<$Res, $Val extends RoomEventStates>
 }
 
 /// @nodoc
-abstract class _$$_RoomEventStatesInitialCopyWith<$Res> {
-  factory _$$_RoomEventStatesInitialCopyWith(_$_RoomEventStatesInitial value,
-          $Res Function(_$_RoomEventStatesInitial) then) =
-      __$$_RoomEventStatesInitialCopyWithImpl<$Res>;
+abstract class _$$RoomEventStatesInitialImplCopyWith<$Res> {
+  factory _$$RoomEventStatesInitialImplCopyWith(
+          _$RoomEventStatesInitialImpl value,
+          $Res Function(_$RoomEventStatesInitialImpl) then) =
+      __$$RoomEventStatesInitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_RoomEventStatesInitialCopyWithImpl<$Res>
-    extends _$RoomEventStatesCopyWithImpl<$Res, _$_RoomEventStatesInitial>
-    implements _$$_RoomEventStatesInitialCopyWith<$Res> {
-  __$$_RoomEventStatesInitialCopyWithImpl(_$_RoomEventStatesInitial _value,
-      $Res Function(_$_RoomEventStatesInitial) _then)
+class __$$RoomEventStatesInitialImplCopyWithImpl<$Res>
+    extends _$RoomEventStatesCopyWithImpl<$Res, _$RoomEventStatesInitialImpl>
+    implements _$$RoomEventStatesInitialImplCopyWith<$Res> {
+  __$$RoomEventStatesInitialImplCopyWithImpl(
+      _$RoomEventStatesInitialImpl _value,
+      $Res Function(_$RoomEventStatesInitialImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_RoomEventStatesInitial implements _RoomEventStatesInitial {
-  const _$_RoomEventStatesInitial();
+class _$RoomEventStatesInitialImpl implements _RoomEventStatesInitial {
+  const _$RoomEventStatesInitialImpl();
 
   @override
   String toString() {
@@ -173,10 +175,10 @@ class _$_RoomEventStatesInitial implements _RoomEventStatesInitial {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RoomEventStatesInitial);
+            other is _$RoomEventStatesInitialImpl);
   }
 
   @override
@@ -318,31 +320,33 @@ class _$_RoomEventStatesInitial implements _RoomEventStatesInitial {
 }
 
 abstract class _RoomEventStatesInitial implements RoomEventStates {
-  const factory _RoomEventStatesInitial() = _$_RoomEventStatesInitial;
+  const factory _RoomEventStatesInitial() = _$RoomEventStatesInitialImpl;
 }
 
 /// @nodoc
-abstract class _$$_RoomEventStatesOnInitStartedCopyWith<$Res> {
-  factory _$$_RoomEventStatesOnInitStartedCopyWith(
-          _$_RoomEventStatesOnInitStarted value,
-          $Res Function(_$_RoomEventStatesOnInitStarted) then) =
-      __$$_RoomEventStatesOnInitStartedCopyWithImpl<$Res>;
+abstract class _$$RoomEventStatesOnInitStartedImplCopyWith<$Res> {
+  factory _$$RoomEventStatesOnInitStartedImplCopyWith(
+          _$RoomEventStatesOnInitStartedImpl value,
+          $Res Function(_$RoomEventStatesOnInitStartedImpl) then) =
+      __$$RoomEventStatesOnInitStartedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_RoomEventStatesOnInitStartedCopyWithImpl<$Res>
-    extends _$RoomEventStatesCopyWithImpl<$Res, _$_RoomEventStatesOnInitStarted>
-    implements _$$_RoomEventStatesOnInitStartedCopyWith<$Res> {
-  __$$_RoomEventStatesOnInitStartedCopyWithImpl(
-      _$_RoomEventStatesOnInitStarted _value,
-      $Res Function(_$_RoomEventStatesOnInitStarted) _then)
+class __$$RoomEventStatesOnInitStartedImplCopyWithImpl<$Res>
+    extends _$RoomEventStatesCopyWithImpl<$Res,
+        _$RoomEventStatesOnInitStartedImpl>
+    implements _$$RoomEventStatesOnInitStartedImplCopyWith<$Res> {
+  __$$RoomEventStatesOnInitStartedImplCopyWithImpl(
+      _$RoomEventStatesOnInitStartedImpl _value,
+      $Res Function(_$RoomEventStatesOnInitStartedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_RoomEventStatesOnInitStarted implements _RoomEventStatesOnInitStarted {
-  const _$_RoomEventStatesOnInitStarted();
+class _$RoomEventStatesOnInitStartedImpl
+    implements _RoomEventStatesOnInitStarted {
+  const _$RoomEventStatesOnInitStartedImpl();
 
   @override
   String toString() {
@@ -350,10 +354,10 @@ class _$_RoomEventStatesOnInitStarted implements _RoomEventStatesOnInitStarted {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RoomEventStatesOnInitStarted);
+            other is _$RoomEventStatesOnInitStartedImpl);
   }
 
   @override
@@ -496,33 +500,33 @@ class _$_RoomEventStatesOnInitStarted implements _RoomEventStatesOnInitStarted {
 
 abstract class _RoomEventStatesOnInitStarted implements RoomEventStates {
   const factory _RoomEventStatesOnInitStarted() =
-      _$_RoomEventStatesOnInitStarted;
+      _$RoomEventStatesOnInitStartedImpl;
 }
 
 /// @nodoc
-abstract class _$$_RoomEventStatesOnInitCompletedCopyWith<$Res> {
-  factory _$$_RoomEventStatesOnInitCompletedCopyWith(
-          _$_RoomEventStatesOnInitCompleted value,
-          $Res Function(_$_RoomEventStatesOnInitCompleted) then) =
-      __$$_RoomEventStatesOnInitCompletedCopyWithImpl<$Res>;
+abstract class _$$RoomEventStatesOnInitCompletedImplCopyWith<$Res> {
+  factory _$$RoomEventStatesOnInitCompletedImplCopyWith(
+          _$RoomEventStatesOnInitCompletedImpl value,
+          $Res Function(_$RoomEventStatesOnInitCompletedImpl) then) =
+      __$$RoomEventStatesOnInitCompletedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_RoomEventStatesOnInitCompletedCopyWithImpl<$Res>
+class __$$RoomEventStatesOnInitCompletedImplCopyWithImpl<$Res>
     extends _$RoomEventStatesCopyWithImpl<$Res,
-        _$_RoomEventStatesOnInitCompleted>
-    implements _$$_RoomEventStatesOnInitCompletedCopyWith<$Res> {
-  __$$_RoomEventStatesOnInitCompletedCopyWithImpl(
-      _$_RoomEventStatesOnInitCompleted _value,
-      $Res Function(_$_RoomEventStatesOnInitCompleted) _then)
+        _$RoomEventStatesOnInitCompletedImpl>
+    implements _$$RoomEventStatesOnInitCompletedImplCopyWith<$Res> {
+  __$$RoomEventStatesOnInitCompletedImplCopyWithImpl(
+      _$RoomEventStatesOnInitCompletedImpl _value,
+      $Res Function(_$RoomEventStatesOnInitCompletedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_RoomEventStatesOnInitCompleted
+class _$RoomEventStatesOnInitCompletedImpl
     implements _RoomEventStatesOnInitCompleted {
-  const _$_RoomEventStatesOnInitCompleted();
+  const _$RoomEventStatesOnInitCompletedImpl();
 
   @override
   String toString() {
@@ -530,10 +534,10 @@ class _$_RoomEventStatesOnInitCompleted
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RoomEventStatesOnInitCompleted);
+            other is _$RoomEventStatesOnInitCompletedImpl);
   }
 
   @override
@@ -676,26 +680,27 @@ class _$_RoomEventStatesOnInitCompleted
 
 abstract class _RoomEventStatesOnInitCompleted implements RoomEventStates {
   const factory _RoomEventStatesOnInitCompleted() =
-      _$_RoomEventStatesOnInitCompleted;
+      _$RoomEventStatesOnInitCompletedImpl;
 }
 
 /// @nodoc
-abstract class _$$_RoomEventStatesOnInitFailedCopyWith<$Res> {
-  factory _$$_RoomEventStatesOnInitFailedCopyWith(
-          _$_RoomEventStatesOnInitFailed value,
-          $Res Function(_$_RoomEventStatesOnInitFailed) then) =
-      __$$_RoomEventStatesOnInitFailedCopyWithImpl<$Res>;
+abstract class _$$RoomEventStatesOnInitFailedImplCopyWith<$Res> {
+  factory _$$RoomEventStatesOnInitFailedImplCopyWith(
+          _$RoomEventStatesOnInitFailedImpl value,
+          $Res Function(_$RoomEventStatesOnInitFailedImpl) then) =
+      __$$RoomEventStatesOnInitFailedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Exception exception});
 }
 
 /// @nodoc
-class __$$_RoomEventStatesOnInitFailedCopyWithImpl<$Res>
-    extends _$RoomEventStatesCopyWithImpl<$Res, _$_RoomEventStatesOnInitFailed>
-    implements _$$_RoomEventStatesOnInitFailedCopyWith<$Res> {
-  __$$_RoomEventStatesOnInitFailedCopyWithImpl(
-      _$_RoomEventStatesOnInitFailed _value,
-      $Res Function(_$_RoomEventStatesOnInitFailed) _then)
+class __$$RoomEventStatesOnInitFailedImplCopyWithImpl<$Res>
+    extends _$RoomEventStatesCopyWithImpl<$Res,
+        _$RoomEventStatesOnInitFailedImpl>
+    implements _$$RoomEventStatesOnInitFailedImplCopyWith<$Res> {
+  __$$RoomEventStatesOnInitFailedImplCopyWithImpl(
+      _$RoomEventStatesOnInitFailedImpl _value,
+      $Res Function(_$RoomEventStatesOnInitFailedImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -703,7 +708,7 @@ class __$$_RoomEventStatesOnInitFailedCopyWithImpl<$Res>
   $Res call({
     Object? exception = null,
   }) {
-    return _then(_$_RoomEventStatesOnInitFailed(
+    return _then(_$RoomEventStatesOnInitFailedImpl(
       null == exception
           ? _value.exception
           : exception // ignore: cast_nullable_to_non_nullable
@@ -714,8 +719,9 @@ class __$$_RoomEventStatesOnInitFailedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_RoomEventStatesOnInitFailed implements _RoomEventStatesOnInitFailed {
-  const _$_RoomEventStatesOnInitFailed(this.exception);
+class _$RoomEventStatesOnInitFailedImpl
+    implements _RoomEventStatesOnInitFailed {
+  const _$RoomEventStatesOnInitFailedImpl(this.exception);
 
   @override
   final Exception exception;
@@ -726,10 +732,10 @@ class _$_RoomEventStatesOnInitFailed implements _RoomEventStatesOnInitFailed {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RoomEventStatesOnInitFailed &&
+            other is _$RoomEventStatesOnInitFailedImpl &&
             (identical(other.exception, exception) ||
                 other.exception == exception));
   }
@@ -740,9 +746,9 @@ class _$_RoomEventStatesOnInitFailed implements _RoomEventStatesOnInitFailed {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_RoomEventStatesOnInitFailedCopyWith<_$_RoomEventStatesOnInitFailed>
-      get copyWith => __$$_RoomEventStatesOnInitFailedCopyWithImpl<
-          _$_RoomEventStatesOnInitFailed>(this, _$identity);
+  _$$RoomEventStatesOnInitFailedImplCopyWith<_$RoomEventStatesOnInitFailedImpl>
+      get copyWith => __$$RoomEventStatesOnInitFailedImplCopyWithImpl<
+          _$RoomEventStatesOnInitFailedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -881,36 +887,38 @@ class _$_RoomEventStatesOnInitFailed implements _RoomEventStatesOnInitFailed {
 
 abstract class _RoomEventStatesOnInitFailed implements RoomEventStates {
   const factory _RoomEventStatesOnInitFailed(final Exception exception) =
-      _$_RoomEventStatesOnInitFailed;
+      _$RoomEventStatesOnInitFailedImpl;
 
   Exception get exception;
   @JsonKey(ignore: true)
-  _$$_RoomEventStatesOnInitFailedCopyWith<_$_RoomEventStatesOnInitFailed>
+  _$$RoomEventStatesOnInitFailedImplCopyWith<_$RoomEventStatesOnInitFailedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_RoomEventStatesOnJoinStartedCopyWith<$Res> {
-  factory _$$_RoomEventStatesOnJoinStartedCopyWith(
-          _$_RoomEventStatesOnJoinStarted value,
-          $Res Function(_$_RoomEventStatesOnJoinStarted) then) =
-      __$$_RoomEventStatesOnJoinStartedCopyWithImpl<$Res>;
+abstract class _$$RoomEventStatesOnJoinStartedImplCopyWith<$Res> {
+  factory _$$RoomEventStatesOnJoinStartedImplCopyWith(
+          _$RoomEventStatesOnJoinStartedImpl value,
+          $Res Function(_$RoomEventStatesOnJoinStartedImpl) then) =
+      __$$RoomEventStatesOnJoinStartedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_RoomEventStatesOnJoinStartedCopyWithImpl<$Res>
-    extends _$RoomEventStatesCopyWithImpl<$Res, _$_RoomEventStatesOnJoinStarted>
-    implements _$$_RoomEventStatesOnJoinStartedCopyWith<$Res> {
-  __$$_RoomEventStatesOnJoinStartedCopyWithImpl(
-      _$_RoomEventStatesOnJoinStarted _value,
-      $Res Function(_$_RoomEventStatesOnJoinStarted) _then)
+class __$$RoomEventStatesOnJoinStartedImplCopyWithImpl<$Res>
+    extends _$RoomEventStatesCopyWithImpl<$Res,
+        _$RoomEventStatesOnJoinStartedImpl>
+    implements _$$RoomEventStatesOnJoinStartedImplCopyWith<$Res> {
+  __$$RoomEventStatesOnJoinStartedImplCopyWithImpl(
+      _$RoomEventStatesOnJoinStartedImpl _value,
+      $Res Function(_$RoomEventStatesOnJoinStartedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_RoomEventStatesOnJoinStarted implements _RoomEventStatesOnJoinStarted {
-  const _$_RoomEventStatesOnJoinStarted();
+class _$RoomEventStatesOnJoinStartedImpl
+    implements _RoomEventStatesOnJoinStarted {
+  const _$RoomEventStatesOnJoinStartedImpl();
 
   @override
   String toString() {
@@ -918,10 +926,10 @@ class _$_RoomEventStatesOnJoinStarted implements _RoomEventStatesOnJoinStarted {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RoomEventStatesOnJoinStarted);
+            other is _$RoomEventStatesOnJoinStartedImpl);
   }
 
   @override
@@ -1064,33 +1072,33 @@ class _$_RoomEventStatesOnJoinStarted implements _RoomEventStatesOnJoinStarted {
 
 abstract class _RoomEventStatesOnJoinStarted implements RoomEventStates {
   const factory _RoomEventStatesOnJoinStarted() =
-      _$_RoomEventStatesOnJoinStarted;
+      _$RoomEventStatesOnJoinStartedImpl;
 }
 
 /// @nodoc
-abstract class _$$_RoomEventStatesOnJoinCompletedCopyWith<$Res> {
-  factory _$$_RoomEventStatesOnJoinCompletedCopyWith(
-          _$_RoomEventStatesOnJoinCompleted value,
-          $Res Function(_$_RoomEventStatesOnJoinCompleted) then) =
-      __$$_RoomEventStatesOnJoinCompletedCopyWithImpl<$Res>;
+abstract class _$$RoomEventStatesOnJoinCompletedImplCopyWith<$Res> {
+  factory _$$RoomEventStatesOnJoinCompletedImplCopyWith(
+          _$RoomEventStatesOnJoinCompletedImpl value,
+          $Res Function(_$RoomEventStatesOnJoinCompletedImpl) then) =
+      __$$RoomEventStatesOnJoinCompletedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_RoomEventStatesOnJoinCompletedCopyWithImpl<$Res>
+class __$$RoomEventStatesOnJoinCompletedImplCopyWithImpl<$Res>
     extends _$RoomEventStatesCopyWithImpl<$Res,
-        _$_RoomEventStatesOnJoinCompleted>
-    implements _$$_RoomEventStatesOnJoinCompletedCopyWith<$Res> {
-  __$$_RoomEventStatesOnJoinCompletedCopyWithImpl(
-      _$_RoomEventStatesOnJoinCompleted _value,
-      $Res Function(_$_RoomEventStatesOnJoinCompleted) _then)
+        _$RoomEventStatesOnJoinCompletedImpl>
+    implements _$$RoomEventStatesOnJoinCompletedImplCopyWith<$Res> {
+  __$$RoomEventStatesOnJoinCompletedImplCopyWithImpl(
+      _$RoomEventStatesOnJoinCompletedImpl _value,
+      $Res Function(_$RoomEventStatesOnJoinCompletedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_RoomEventStatesOnJoinCompleted
+class _$RoomEventStatesOnJoinCompletedImpl
     implements _RoomEventStatesOnJoinCompleted {
-  const _$_RoomEventStatesOnJoinCompleted();
+  const _$RoomEventStatesOnJoinCompletedImpl();
 
   @override
   String toString() {
@@ -1098,10 +1106,10 @@ class _$_RoomEventStatesOnJoinCompleted
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RoomEventStatesOnJoinCompleted);
+            other is _$RoomEventStatesOnJoinCompletedImpl);
   }
 
   @override
@@ -1244,26 +1252,27 @@ class _$_RoomEventStatesOnJoinCompleted
 
 abstract class _RoomEventStatesOnJoinCompleted implements RoomEventStates {
   const factory _RoomEventStatesOnJoinCompleted() =
-      _$_RoomEventStatesOnJoinCompleted;
+      _$RoomEventStatesOnJoinCompletedImpl;
 }
 
 /// @nodoc
-abstract class _$$_RoomEventStatesOnJoinFailedCopyWith<$Res> {
-  factory _$$_RoomEventStatesOnJoinFailedCopyWith(
-          _$_RoomEventStatesOnJoinFailed value,
-          $Res Function(_$_RoomEventStatesOnJoinFailed) then) =
-      __$$_RoomEventStatesOnJoinFailedCopyWithImpl<$Res>;
+abstract class _$$RoomEventStatesOnJoinFailedImplCopyWith<$Res> {
+  factory _$$RoomEventStatesOnJoinFailedImplCopyWith(
+          _$RoomEventStatesOnJoinFailedImpl value,
+          $Res Function(_$RoomEventStatesOnJoinFailedImpl) then) =
+      __$$RoomEventStatesOnJoinFailedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Exception exception});
 }
 
 /// @nodoc
-class __$$_RoomEventStatesOnJoinFailedCopyWithImpl<$Res>
-    extends _$RoomEventStatesCopyWithImpl<$Res, _$_RoomEventStatesOnJoinFailed>
-    implements _$$_RoomEventStatesOnJoinFailedCopyWith<$Res> {
-  __$$_RoomEventStatesOnJoinFailedCopyWithImpl(
-      _$_RoomEventStatesOnJoinFailed _value,
-      $Res Function(_$_RoomEventStatesOnJoinFailed) _then)
+class __$$RoomEventStatesOnJoinFailedImplCopyWithImpl<$Res>
+    extends _$RoomEventStatesCopyWithImpl<$Res,
+        _$RoomEventStatesOnJoinFailedImpl>
+    implements _$$RoomEventStatesOnJoinFailedImplCopyWith<$Res> {
+  __$$RoomEventStatesOnJoinFailedImplCopyWithImpl(
+      _$RoomEventStatesOnJoinFailedImpl _value,
+      $Res Function(_$RoomEventStatesOnJoinFailedImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1271,7 +1280,7 @@ class __$$_RoomEventStatesOnJoinFailedCopyWithImpl<$Res>
   $Res call({
     Object? exception = null,
   }) {
-    return _then(_$_RoomEventStatesOnJoinFailed(
+    return _then(_$RoomEventStatesOnJoinFailedImpl(
       null == exception
           ? _value.exception
           : exception // ignore: cast_nullable_to_non_nullable
@@ -1282,8 +1291,9 @@ class __$$_RoomEventStatesOnJoinFailedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_RoomEventStatesOnJoinFailed implements _RoomEventStatesOnJoinFailed {
-  const _$_RoomEventStatesOnJoinFailed(this.exception);
+class _$RoomEventStatesOnJoinFailedImpl
+    implements _RoomEventStatesOnJoinFailed {
+  const _$RoomEventStatesOnJoinFailedImpl(this.exception);
 
   @override
   final Exception exception;
@@ -1294,10 +1304,10 @@ class _$_RoomEventStatesOnJoinFailed implements _RoomEventStatesOnJoinFailed {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RoomEventStatesOnJoinFailed &&
+            other is _$RoomEventStatesOnJoinFailedImpl &&
             (identical(other.exception, exception) ||
                 other.exception == exception));
   }
@@ -1308,9 +1318,9 @@ class _$_RoomEventStatesOnJoinFailed implements _RoomEventStatesOnJoinFailed {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_RoomEventStatesOnJoinFailedCopyWith<_$_RoomEventStatesOnJoinFailed>
-      get copyWith => __$$_RoomEventStatesOnJoinFailedCopyWithImpl<
-          _$_RoomEventStatesOnJoinFailed>(this, _$identity);
+  _$$RoomEventStatesOnJoinFailedImplCopyWith<_$RoomEventStatesOnJoinFailedImpl>
+      get copyWith => __$$RoomEventStatesOnJoinFailedImplCopyWithImpl<
+          _$RoomEventStatesOnJoinFailedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1449,38 +1459,38 @@ class _$_RoomEventStatesOnJoinFailed implements _RoomEventStatesOnJoinFailed {
 
 abstract class _RoomEventStatesOnJoinFailed implements RoomEventStates {
   const factory _RoomEventStatesOnJoinFailed(final Exception exception) =
-      _$_RoomEventStatesOnJoinFailed;
+      _$RoomEventStatesOnJoinFailedImpl;
 
   Exception get exception;
   @JsonKey(ignore: true)
-  _$$_RoomEventStatesOnJoinFailedCopyWith<_$_RoomEventStatesOnJoinFailed>
+  _$$RoomEventStatesOnJoinFailedImplCopyWith<_$RoomEventStatesOnJoinFailedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_RoomEventStatesOnLeaveStartedCopyWith<$Res> {
-  factory _$$_RoomEventStatesOnLeaveStartedCopyWith(
-          _$_RoomEventStatesOnLeaveStarted value,
-          $Res Function(_$_RoomEventStatesOnLeaveStarted) then) =
-      __$$_RoomEventStatesOnLeaveStartedCopyWithImpl<$Res>;
+abstract class _$$RoomEventStatesOnLeaveStartedImplCopyWith<$Res> {
+  factory _$$RoomEventStatesOnLeaveStartedImplCopyWith(
+          _$RoomEventStatesOnLeaveStartedImpl value,
+          $Res Function(_$RoomEventStatesOnLeaveStartedImpl) then) =
+      __$$RoomEventStatesOnLeaveStartedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_RoomEventStatesOnLeaveStartedCopyWithImpl<$Res>
+class __$$RoomEventStatesOnLeaveStartedImplCopyWithImpl<$Res>
     extends _$RoomEventStatesCopyWithImpl<$Res,
-        _$_RoomEventStatesOnLeaveStarted>
-    implements _$$_RoomEventStatesOnLeaveStartedCopyWith<$Res> {
-  __$$_RoomEventStatesOnLeaveStartedCopyWithImpl(
-      _$_RoomEventStatesOnLeaveStarted _value,
-      $Res Function(_$_RoomEventStatesOnLeaveStarted) _then)
+        _$RoomEventStatesOnLeaveStartedImpl>
+    implements _$$RoomEventStatesOnLeaveStartedImplCopyWith<$Res> {
+  __$$RoomEventStatesOnLeaveStartedImplCopyWithImpl(
+      _$RoomEventStatesOnLeaveStartedImpl _value,
+      $Res Function(_$RoomEventStatesOnLeaveStartedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_RoomEventStatesOnLeaveStarted
+class _$RoomEventStatesOnLeaveStartedImpl
     implements _RoomEventStatesOnLeaveStarted {
-  const _$_RoomEventStatesOnLeaveStarted();
+  const _$RoomEventStatesOnLeaveStartedImpl();
 
   @override
   String toString() {
@@ -1488,10 +1498,10 @@ class _$_RoomEventStatesOnLeaveStarted
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RoomEventStatesOnLeaveStarted);
+            other is _$RoomEventStatesOnLeaveStartedImpl);
   }
 
   @override
@@ -1634,33 +1644,33 @@ class _$_RoomEventStatesOnLeaveStarted
 
 abstract class _RoomEventStatesOnLeaveStarted implements RoomEventStates {
   const factory _RoomEventStatesOnLeaveStarted() =
-      _$_RoomEventStatesOnLeaveStarted;
+      _$RoomEventStatesOnLeaveStartedImpl;
 }
 
 /// @nodoc
-abstract class _$$_RoomEventStatesOnLeaveCompletedCopyWith<$Res> {
-  factory _$$_RoomEventStatesOnLeaveCompletedCopyWith(
-          _$_RoomEventStatesOnLeaveCompleted value,
-          $Res Function(_$_RoomEventStatesOnLeaveCompleted) then) =
-      __$$_RoomEventStatesOnLeaveCompletedCopyWithImpl<$Res>;
+abstract class _$$RoomEventStatesOnLeaveCompletedImplCopyWith<$Res> {
+  factory _$$RoomEventStatesOnLeaveCompletedImplCopyWith(
+          _$RoomEventStatesOnLeaveCompletedImpl value,
+          $Res Function(_$RoomEventStatesOnLeaveCompletedImpl) then) =
+      __$$RoomEventStatesOnLeaveCompletedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_RoomEventStatesOnLeaveCompletedCopyWithImpl<$Res>
+class __$$RoomEventStatesOnLeaveCompletedImplCopyWithImpl<$Res>
     extends _$RoomEventStatesCopyWithImpl<$Res,
-        _$_RoomEventStatesOnLeaveCompleted>
-    implements _$$_RoomEventStatesOnLeaveCompletedCopyWith<$Res> {
-  __$$_RoomEventStatesOnLeaveCompletedCopyWithImpl(
-      _$_RoomEventStatesOnLeaveCompleted _value,
-      $Res Function(_$_RoomEventStatesOnLeaveCompleted) _then)
+        _$RoomEventStatesOnLeaveCompletedImpl>
+    implements _$$RoomEventStatesOnLeaveCompletedImplCopyWith<$Res> {
+  __$$RoomEventStatesOnLeaveCompletedImplCopyWithImpl(
+      _$RoomEventStatesOnLeaveCompletedImpl _value,
+      $Res Function(_$RoomEventStatesOnLeaveCompletedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_RoomEventStatesOnLeaveCompleted
+class _$RoomEventStatesOnLeaveCompletedImpl
     implements _RoomEventStatesOnLeaveCompleted {
-  const _$_RoomEventStatesOnLeaveCompleted();
+  const _$RoomEventStatesOnLeaveCompletedImpl();
 
   @override
   String toString() {
@@ -1668,10 +1678,10 @@ class _$_RoomEventStatesOnLeaveCompleted
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RoomEventStatesOnLeaveCompleted);
+            other is _$RoomEventStatesOnLeaveCompletedImpl);
   }
 
   @override
@@ -1814,33 +1824,33 @@ class _$_RoomEventStatesOnLeaveCompleted
 
 abstract class _RoomEventStatesOnLeaveCompleted implements RoomEventStates {
   const factory _RoomEventStatesOnLeaveCompleted() =
-      _$_RoomEventStatesOnLeaveCompleted;
+      _$RoomEventStatesOnLeaveCompletedImpl;
 }
 
 /// @nodoc
-abstract class _$$_RoomEventStatesOnDisconnectedCopyWith<$Res> {
-  factory _$$_RoomEventStatesOnDisconnectedCopyWith(
-          _$_RoomEventStatesOnDisconnected value,
-          $Res Function(_$_RoomEventStatesOnDisconnected) then) =
-      __$$_RoomEventStatesOnDisconnectedCopyWithImpl<$Res>;
+abstract class _$$RoomEventStatesOnDisconnectedImplCopyWith<$Res> {
+  factory _$$RoomEventStatesOnDisconnectedImplCopyWith(
+          _$RoomEventStatesOnDisconnectedImpl value,
+          $Res Function(_$RoomEventStatesOnDisconnectedImpl) then) =
+      __$$RoomEventStatesOnDisconnectedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_RoomEventStatesOnDisconnectedCopyWithImpl<$Res>
+class __$$RoomEventStatesOnDisconnectedImplCopyWithImpl<$Res>
     extends _$RoomEventStatesCopyWithImpl<$Res,
-        _$_RoomEventStatesOnDisconnected>
-    implements _$$_RoomEventStatesOnDisconnectedCopyWith<$Res> {
-  __$$_RoomEventStatesOnDisconnectedCopyWithImpl(
-      _$_RoomEventStatesOnDisconnected _value,
-      $Res Function(_$_RoomEventStatesOnDisconnected) _then)
+        _$RoomEventStatesOnDisconnectedImpl>
+    implements _$$RoomEventStatesOnDisconnectedImplCopyWith<$Res> {
+  __$$RoomEventStatesOnDisconnectedImplCopyWithImpl(
+      _$RoomEventStatesOnDisconnectedImpl _value,
+      $Res Function(_$RoomEventStatesOnDisconnectedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_RoomEventStatesOnDisconnected
+class _$RoomEventStatesOnDisconnectedImpl
     implements _RoomEventStatesOnDisconnected {
-  const _$_RoomEventStatesOnDisconnected();
+  const _$RoomEventStatesOnDisconnectedImpl();
 
   @override
   String toString() {
@@ -1848,10 +1858,10 @@ class _$_RoomEventStatesOnDisconnected
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_RoomEventStatesOnDisconnected);
+            other is _$RoomEventStatesOnDisconnectedImpl);
   }
 
   @override
@@ -1994,5 +2004,5 @@ class _$_RoomEventStatesOnDisconnected
 
 abstract class _RoomEventStatesOnDisconnected implements RoomEventStates {
   const factory _RoomEventStatesOnDisconnected() =
-      _$_RoomEventStatesOnDisconnected;
+      _$RoomEventStatesOnDisconnectedImpl;
 }

@@ -12,7 +12,7 @@ part of 'participant_event_states.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ParticipantEventStates {
@@ -182,26 +182,28 @@ class _$ParticipantEventStatesCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_ParticipantEventStatesCopyWith<$Res> {
-  factory _$$_ParticipantEventStatesCopyWith(_$_ParticipantEventStates value,
-          $Res Function(_$_ParticipantEventStates) then) =
-      __$$_ParticipantEventStatesCopyWithImpl<$Res>;
+abstract class _$$ParticipantEventStatesImplCopyWith<$Res> {
+  factory _$$ParticipantEventStatesImplCopyWith(
+          _$ParticipantEventStatesImpl value,
+          $Res Function(_$ParticipantEventStatesImpl) then) =
+      __$$ParticipantEventStatesImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ParticipantEventStatesCopyWithImpl<$Res>
+class __$$ParticipantEventStatesImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_ParticipantEventStates>
-    implements _$$_ParticipantEventStatesCopyWith<$Res> {
-  __$$_ParticipantEventStatesCopyWithImpl(_$_ParticipantEventStates _value,
-      $Res Function(_$_ParticipantEventStates) _then)
+        _$ParticipantEventStatesImpl>
+    implements _$$ParticipantEventStatesImplCopyWith<$Res> {
+  __$$ParticipantEventStatesImplCopyWithImpl(
+      _$ParticipantEventStatesImpl _value,
+      $Res Function(_$ParticipantEventStatesImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ParticipantEventStates implements _ParticipantEventStates {
-  const _$_ParticipantEventStates();
+class _$ParticipantEventStatesImpl implements _ParticipantEventStates {
+  const _$ParticipantEventStatesImpl();
 
   @override
   String toString() {
@@ -209,10 +211,10 @@ class _$_ParticipantEventStates implements _ParticipantEventStates {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ParticipantEventStates);
+            other is _$ParticipantEventStatesImpl);
   }
 
   @override
@@ -388,27 +390,27 @@ class _$_ParticipantEventStates implements _ParticipantEventStates {
 }
 
 abstract class _ParticipantEventStates implements ParticipantEventStates {
-  const factory _ParticipantEventStates() = _$_ParticipantEventStates;
+  const factory _ParticipantEventStates() = _$ParticipantEventStatesImpl;
 }
 
 /// @nodoc
-abstract class _$$_ParticipantEventStatesAudioUpdateCopyWith<$Res> {
-  factory _$$_ParticipantEventStatesAudioUpdateCopyWith(
-          _$_ParticipantEventStatesAudioUpdate value,
-          $Res Function(_$_ParticipantEventStatesAudioUpdate) then) =
-      __$$_ParticipantEventStatesAudioUpdateCopyWithImpl<$Res>;
+abstract class _$$ParticipantEventStatesAudioUpdateImplCopyWith<$Res> {
+  factory _$$ParticipantEventStatesAudioUpdateImplCopyWith(
+          _$ParticipantEventStatesAudioUpdateImpl value,
+          $Res Function(_$ParticipantEventStatesAudioUpdateImpl) then) =
+      __$$ParticipantEventStatesAudioUpdateImplCopyWithImpl<$Res>;
   @useResult
   $Res call({bool audioEnabled, DyteMeetingParticipant participant});
 }
 
 /// @nodoc
-class __$$_ParticipantEventStatesAudioUpdateCopyWithImpl<$Res>
+class __$$ParticipantEventStatesAudioUpdateImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_ParticipantEventStatesAudioUpdate>
-    implements _$$_ParticipantEventStatesAudioUpdateCopyWith<$Res> {
-  __$$_ParticipantEventStatesAudioUpdateCopyWithImpl(
-      _$_ParticipantEventStatesAudioUpdate _value,
-      $Res Function(_$_ParticipantEventStatesAudioUpdate) _then)
+        _$ParticipantEventStatesAudioUpdateImpl>
+    implements _$$ParticipantEventStatesAudioUpdateImplCopyWith<$Res> {
+  __$$ParticipantEventStatesAudioUpdateImplCopyWithImpl(
+      _$ParticipantEventStatesAudioUpdateImpl _value,
+      $Res Function(_$ParticipantEventStatesAudioUpdateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -417,7 +419,7 @@ class __$$_ParticipantEventStatesAudioUpdateCopyWithImpl<$Res>
     Object? audioEnabled = null,
     Object? participant = null,
   }) {
-    return _then(_$_ParticipantEventStatesAudioUpdate(
+    return _then(_$ParticipantEventStatesAudioUpdateImpl(
       audioEnabled: null == audioEnabled
           ? _value.audioEnabled
           : audioEnabled // ignore: cast_nullable_to_non_nullable
@@ -432,9 +434,9 @@ class __$$_ParticipantEventStatesAudioUpdateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ParticipantEventStatesAudioUpdate
+class _$ParticipantEventStatesAudioUpdateImpl
     implements _ParticipantEventStatesAudioUpdate {
-  const _$_ParticipantEventStatesAudioUpdate(
+  const _$ParticipantEventStatesAudioUpdateImpl(
       {required this.audioEnabled, required this.participant});
 
   @override
@@ -448,10 +450,10 @@ class _$_ParticipantEventStatesAudioUpdate
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ParticipantEventStatesAudioUpdate &&
+            other is _$ParticipantEventStatesAudioUpdateImpl &&
             (identical(other.audioEnabled, audioEnabled) ||
                 other.audioEnabled == audioEnabled) &&
             (identical(other.participant, participant) ||
@@ -464,10 +466,10 @@ class _$_ParticipantEventStatesAudioUpdate
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ParticipantEventStatesAudioUpdateCopyWith<
-          _$_ParticipantEventStatesAudioUpdate>
-      get copyWith => __$$_ParticipantEventStatesAudioUpdateCopyWithImpl<
-          _$_ParticipantEventStatesAudioUpdate>(this, _$identity);
+  _$$ParticipantEventStatesAudioUpdateImplCopyWith<
+          _$ParticipantEventStatesAudioUpdateImpl>
+      get copyWith => __$$ParticipantEventStatesAudioUpdateImplCopyWithImpl<
+          _$ParticipantEventStatesAudioUpdateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -643,34 +645,37 @@ abstract class _ParticipantEventStatesAudioUpdate
   const factory _ParticipantEventStatesAudioUpdate(
           {required final bool audioEnabled,
           required final DyteMeetingParticipant participant}) =
-      _$_ParticipantEventStatesAudioUpdate;
+      _$ParticipantEventStatesAudioUpdateImpl;
 
   bool get audioEnabled;
   DyteMeetingParticipant get participant;
   @JsonKey(ignore: true)
-  _$$_ParticipantEventStatesAudioUpdateCopyWith<
-          _$_ParticipantEventStatesAudioUpdate>
+  _$$ParticipantEventStatesAudioUpdateImplCopyWith<
+          _$ParticipantEventStatesAudioUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ParticipantEventStateOnActiveSpeakerChangedCopyWith<$Res> {
-  factory _$$_ParticipantEventStateOnActiveSpeakerChangedCopyWith(
-          _$_ParticipantEventStateOnActiveSpeakerChanged value,
-          $Res Function(_$_ParticipantEventStateOnActiveSpeakerChanged) then) =
-      __$$_ParticipantEventStateOnActiveSpeakerChangedCopyWithImpl<$Res>;
+abstract class _$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWith<
+    $Res> {
+  factory _$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWith(
+          _$ParticipantEventStateOnActiveSpeakerChangedImpl value,
+          $Res Function(_$ParticipantEventStateOnActiveSpeakerChangedImpl)
+              then) =
+      __$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DyteMeetingParticipant participant});
 }
 
 /// @nodoc
-class __$$_ParticipantEventStateOnActiveSpeakerChangedCopyWithImpl<$Res>
+class __$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_ParticipantEventStateOnActiveSpeakerChanged>
-    implements _$$_ParticipantEventStateOnActiveSpeakerChangedCopyWith<$Res> {
-  __$$_ParticipantEventStateOnActiveSpeakerChangedCopyWithImpl(
-      _$_ParticipantEventStateOnActiveSpeakerChanged _value,
-      $Res Function(_$_ParticipantEventStateOnActiveSpeakerChanged) _then)
+        _$ParticipantEventStateOnActiveSpeakerChangedImpl>
+    implements
+        _$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWith<$Res> {
+  __$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWithImpl(
+      _$ParticipantEventStateOnActiveSpeakerChangedImpl _value,
+      $Res Function(_$ParticipantEventStateOnActiveSpeakerChangedImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -678,7 +683,7 @@ class __$$_ParticipantEventStateOnActiveSpeakerChangedCopyWithImpl<$Res>
   $Res call({
     Object? participant = null,
   }) {
-    return _then(_$_ParticipantEventStateOnActiveSpeakerChanged(
+    return _then(_$ParticipantEventStateOnActiveSpeakerChangedImpl(
       null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
@@ -689,9 +694,9 @@ class __$$_ParticipantEventStateOnActiveSpeakerChangedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ParticipantEventStateOnActiveSpeakerChanged
+class _$ParticipantEventStateOnActiveSpeakerChangedImpl
     implements _ParticipantEventStateOnActiveSpeakerChanged {
-  const _$_ParticipantEventStateOnActiveSpeakerChanged(this.participant);
+  const _$ParticipantEventStateOnActiveSpeakerChangedImpl(this.participant);
 
   @override
   final DyteMeetingParticipant participant;
@@ -702,10 +707,10 @@ class _$_ParticipantEventStateOnActiveSpeakerChanged
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ParticipantEventStateOnActiveSpeakerChanged &&
+            other is _$ParticipantEventStateOnActiveSpeakerChangedImpl &&
             (identical(other.participant, participant) ||
                 other.participant == participant));
   }
@@ -716,11 +721,12 @@ class _$_ParticipantEventStateOnActiveSpeakerChanged
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ParticipantEventStateOnActiveSpeakerChangedCopyWith<
-          _$_ParticipantEventStateOnActiveSpeakerChanged>
+  _$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWith<
+          _$ParticipantEventStateOnActiveSpeakerChangedImpl>
       get copyWith =>
-          __$$_ParticipantEventStateOnActiveSpeakerChangedCopyWithImpl<
-              _$_ParticipantEventStateOnActiveSpeakerChanged>(this, _$identity);
+          __$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWithImpl<
+                  _$ParticipantEventStateOnActiveSpeakerChangedImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -895,39 +901,39 @@ abstract class _ParticipantEventStateOnActiveSpeakerChanged
     implements ParticipantEventStates {
   const factory _ParticipantEventStateOnActiveSpeakerChanged(
           final DyteMeetingParticipant participant) =
-      _$_ParticipantEventStateOnActiveSpeakerChanged;
+      _$ParticipantEventStateOnActiveSpeakerChangedImpl;
 
   DyteMeetingParticipant get participant;
   @JsonKey(ignore: true)
-  _$$_ParticipantEventStateOnActiveSpeakerChangedCopyWith<
-          _$_ParticipantEventStateOnActiveSpeakerChanged>
+  _$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWith<
+          _$ParticipantEventStateOnActiveSpeakerChangedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ParticipantEventStatesOnNoActiveSpeakerCopyWith<$Res> {
-  factory _$$_ParticipantEventStatesOnNoActiveSpeakerCopyWith(
-          _$_ParticipantEventStatesOnNoActiveSpeaker value,
-          $Res Function(_$_ParticipantEventStatesOnNoActiveSpeaker) then) =
-      __$$_ParticipantEventStatesOnNoActiveSpeakerCopyWithImpl<$Res>;
+abstract class _$$ParticipantEventStatesOnNoActiveSpeakerImplCopyWith<$Res> {
+  factory _$$ParticipantEventStatesOnNoActiveSpeakerImplCopyWith(
+          _$ParticipantEventStatesOnNoActiveSpeakerImpl value,
+          $Res Function(_$ParticipantEventStatesOnNoActiveSpeakerImpl) then) =
+      __$$ParticipantEventStatesOnNoActiveSpeakerImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ParticipantEventStatesOnNoActiveSpeakerCopyWithImpl<$Res>
+class __$$ParticipantEventStatesOnNoActiveSpeakerImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_ParticipantEventStatesOnNoActiveSpeaker>
-    implements _$$_ParticipantEventStatesOnNoActiveSpeakerCopyWith<$Res> {
-  __$$_ParticipantEventStatesOnNoActiveSpeakerCopyWithImpl(
-      _$_ParticipantEventStatesOnNoActiveSpeaker _value,
-      $Res Function(_$_ParticipantEventStatesOnNoActiveSpeaker) _then)
+        _$ParticipantEventStatesOnNoActiveSpeakerImpl>
+    implements _$$ParticipantEventStatesOnNoActiveSpeakerImplCopyWith<$Res> {
+  __$$ParticipantEventStatesOnNoActiveSpeakerImplCopyWithImpl(
+      _$ParticipantEventStatesOnNoActiveSpeakerImpl _value,
+      $Res Function(_$ParticipantEventStatesOnNoActiveSpeakerImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ParticipantEventStatesOnNoActiveSpeaker
+class _$ParticipantEventStatesOnNoActiveSpeakerImpl
     implements _ParticipantEventStatesOnNoActiveSpeaker {
-  const _$_ParticipantEventStatesOnNoActiveSpeaker();
+  const _$ParticipantEventStatesOnNoActiveSpeakerImpl();
 
   @override
   String toString() {
@@ -935,10 +941,10 @@ class _$_ParticipantEventStatesOnNoActiveSpeaker
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ParticipantEventStatesOnNoActiveSpeaker);
+            other is _$ParticipantEventStatesOnNoActiveSpeakerImpl);
   }
 
   @override
@@ -1116,27 +1122,27 @@ class _$_ParticipantEventStatesOnNoActiveSpeaker
 abstract class _ParticipantEventStatesOnNoActiveSpeaker
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnNoActiveSpeaker() =
-      _$_ParticipantEventStatesOnNoActiveSpeaker;
+      _$ParticipantEventStatesOnNoActiveSpeakerImpl;
 }
 
 /// @nodoc
-abstract class _$$_ParticipantEventStatesOnParticipantJoinCopyWith<$Res> {
-  factory _$$_ParticipantEventStatesOnParticipantJoinCopyWith(
-          _$_ParticipantEventStatesOnParticipantJoin value,
-          $Res Function(_$_ParticipantEventStatesOnParticipantJoin) then) =
-      __$$_ParticipantEventStatesOnParticipantJoinCopyWithImpl<$Res>;
+abstract class _$$ParticipantEventStatesOnParticipantJoinImplCopyWith<$Res> {
+  factory _$$ParticipantEventStatesOnParticipantJoinImplCopyWith(
+          _$ParticipantEventStatesOnParticipantJoinImpl value,
+          $Res Function(_$ParticipantEventStatesOnParticipantJoinImpl) then) =
+      __$$ParticipantEventStatesOnParticipantJoinImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DyteMeetingParticipant participant});
 }
 
 /// @nodoc
-class __$$_ParticipantEventStatesOnParticipantJoinCopyWithImpl<$Res>
+class __$$ParticipantEventStatesOnParticipantJoinImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_ParticipantEventStatesOnParticipantJoin>
-    implements _$$_ParticipantEventStatesOnParticipantJoinCopyWith<$Res> {
-  __$$_ParticipantEventStatesOnParticipantJoinCopyWithImpl(
-      _$_ParticipantEventStatesOnParticipantJoin _value,
-      $Res Function(_$_ParticipantEventStatesOnParticipantJoin) _then)
+        _$ParticipantEventStatesOnParticipantJoinImpl>
+    implements _$$ParticipantEventStatesOnParticipantJoinImplCopyWith<$Res> {
+  __$$ParticipantEventStatesOnParticipantJoinImplCopyWithImpl(
+      _$ParticipantEventStatesOnParticipantJoinImpl _value,
+      $Res Function(_$ParticipantEventStatesOnParticipantJoinImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1144,7 +1150,7 @@ class __$$_ParticipantEventStatesOnParticipantJoinCopyWithImpl<$Res>
   $Res call({
     Object? participant = null,
   }) {
-    return _then(_$_ParticipantEventStatesOnParticipantJoin(
+    return _then(_$ParticipantEventStatesOnParticipantJoinImpl(
       null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
@@ -1155,9 +1161,9 @@ class __$$_ParticipantEventStatesOnParticipantJoinCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ParticipantEventStatesOnParticipantJoin
+class _$ParticipantEventStatesOnParticipantJoinImpl
     implements _ParticipantEventStatesOnParticipantJoin {
-  const _$_ParticipantEventStatesOnParticipantJoin(this.participant);
+  const _$ParticipantEventStatesOnParticipantJoinImpl(this.participant);
 
   @override
   final DyteMeetingParticipant participant;
@@ -1168,10 +1174,10 @@ class _$_ParticipantEventStatesOnParticipantJoin
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ParticipantEventStatesOnParticipantJoin &&
+            other is _$ParticipantEventStatesOnParticipantJoinImpl &&
             (identical(other.participant, participant) ||
                 other.participant == participant));
   }
@@ -1182,10 +1188,11 @@ class _$_ParticipantEventStatesOnParticipantJoin
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ParticipantEventStatesOnParticipantJoinCopyWith<
-          _$_ParticipantEventStatesOnParticipantJoin>
-      get copyWith => __$$_ParticipantEventStatesOnParticipantJoinCopyWithImpl<
-          _$_ParticipantEventStatesOnParticipantJoin>(this, _$identity);
+  _$$ParticipantEventStatesOnParticipantJoinImplCopyWith<
+          _$ParticipantEventStatesOnParticipantJoinImpl>
+      get copyWith =>
+          __$$ParticipantEventStatesOnParticipantJoinImplCopyWithImpl<
+              _$ParticipantEventStatesOnParticipantJoinImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1360,33 +1367,33 @@ abstract class _ParticipantEventStatesOnParticipantJoin
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnParticipantJoin(
           final DyteMeetingParticipant participant) =
-      _$_ParticipantEventStatesOnParticipantJoin;
+      _$ParticipantEventStatesOnParticipantJoinImpl;
 
   DyteMeetingParticipant get participant;
   @JsonKey(ignore: true)
-  _$$_ParticipantEventStatesOnParticipantJoinCopyWith<
-          _$_ParticipantEventStatesOnParticipantJoin>
+  _$$ParticipantEventStatesOnParticipantJoinImplCopyWith<
+          _$ParticipantEventStatesOnParticipantJoinImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ParticipantEventStatesOnParticipantLeaveCopyWith<$Res> {
-  factory _$$_ParticipantEventStatesOnParticipantLeaveCopyWith(
-          _$_ParticipantEventStatesOnParticipantLeave value,
-          $Res Function(_$_ParticipantEventStatesOnParticipantLeave) then) =
-      __$$_ParticipantEventStatesOnParticipantLeaveCopyWithImpl<$Res>;
+abstract class _$$ParticipantEventStatesOnParticipantLeaveImplCopyWith<$Res> {
+  factory _$$ParticipantEventStatesOnParticipantLeaveImplCopyWith(
+          _$ParticipantEventStatesOnParticipantLeaveImpl value,
+          $Res Function(_$ParticipantEventStatesOnParticipantLeaveImpl) then) =
+      __$$ParticipantEventStatesOnParticipantLeaveImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DyteMeetingParticipant participant});
 }
 
 /// @nodoc
-class __$$_ParticipantEventStatesOnParticipantLeaveCopyWithImpl<$Res>
+class __$$ParticipantEventStatesOnParticipantLeaveImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_ParticipantEventStatesOnParticipantLeave>
-    implements _$$_ParticipantEventStatesOnParticipantLeaveCopyWith<$Res> {
-  __$$_ParticipantEventStatesOnParticipantLeaveCopyWithImpl(
-      _$_ParticipantEventStatesOnParticipantLeave _value,
-      $Res Function(_$_ParticipantEventStatesOnParticipantLeave) _then)
+        _$ParticipantEventStatesOnParticipantLeaveImpl>
+    implements _$$ParticipantEventStatesOnParticipantLeaveImplCopyWith<$Res> {
+  __$$ParticipantEventStatesOnParticipantLeaveImplCopyWithImpl(
+      _$ParticipantEventStatesOnParticipantLeaveImpl _value,
+      $Res Function(_$ParticipantEventStatesOnParticipantLeaveImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1394,7 +1401,7 @@ class __$$_ParticipantEventStatesOnParticipantLeaveCopyWithImpl<$Res>
   $Res call({
     Object? participant = null,
   }) {
-    return _then(_$_ParticipantEventStatesOnParticipantLeave(
+    return _then(_$ParticipantEventStatesOnParticipantLeaveImpl(
       null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
@@ -1405,9 +1412,9 @@ class __$$_ParticipantEventStatesOnParticipantLeaveCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ParticipantEventStatesOnParticipantLeave
+class _$ParticipantEventStatesOnParticipantLeaveImpl
     implements _ParticipantEventStatesOnParticipantLeave {
-  const _$_ParticipantEventStatesOnParticipantLeave(this.participant);
+  const _$ParticipantEventStatesOnParticipantLeaveImpl(this.participant);
 
   @override
   final DyteMeetingParticipant participant;
@@ -1418,10 +1425,10 @@ class _$_ParticipantEventStatesOnParticipantLeave
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ParticipantEventStatesOnParticipantLeave &&
+            other is _$ParticipantEventStatesOnParticipantLeaveImpl &&
             (identical(other.participant, participant) ||
                 other.participant == participant));
   }
@@ -1432,10 +1439,11 @@ class _$_ParticipantEventStatesOnParticipantLeave
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ParticipantEventStatesOnParticipantLeaveCopyWith<
-          _$_ParticipantEventStatesOnParticipantLeave>
-      get copyWith => __$$_ParticipantEventStatesOnParticipantLeaveCopyWithImpl<
-          _$_ParticipantEventStatesOnParticipantLeave>(this, _$identity);
+  _$$ParticipantEventStatesOnParticipantLeaveImplCopyWith<
+          _$ParticipantEventStatesOnParticipantLeaveImpl>
+      get copyWith =>
+          __$$ParticipantEventStatesOnParticipantLeaveImplCopyWithImpl<
+              _$ParticipantEventStatesOnParticipantLeaveImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1610,33 +1618,33 @@ abstract class _ParticipantEventStatesOnParticipantLeave
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnParticipantLeave(
           final DyteMeetingParticipant participant) =
-      _$_ParticipantEventStatesOnParticipantLeave;
+      _$ParticipantEventStatesOnParticipantLeaveImpl;
 
   DyteMeetingParticipant get participant;
   @JsonKey(ignore: true)
-  _$$_ParticipantEventStatesOnParticipantLeaveCopyWith<
-          _$_ParticipantEventStatesOnParticipantLeave>
+  _$$ParticipantEventStatesOnParticipantLeaveImplCopyWith<
+          _$ParticipantEventStatesOnParticipantLeaveImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ParticipantEventStatesOnParticipantPinnedCopyWith<$Res> {
-  factory _$$_ParticipantEventStatesOnParticipantPinnedCopyWith(
-          _$_ParticipantEventStatesOnParticipantPinned value,
-          $Res Function(_$_ParticipantEventStatesOnParticipantPinned) then) =
-      __$$_ParticipantEventStatesOnParticipantPinnedCopyWithImpl<$Res>;
+abstract class _$$ParticipantEventStatesOnParticipantPinnedImplCopyWith<$Res> {
+  factory _$$ParticipantEventStatesOnParticipantPinnedImplCopyWith(
+          _$ParticipantEventStatesOnParticipantPinnedImpl value,
+          $Res Function(_$ParticipantEventStatesOnParticipantPinnedImpl) then) =
+      __$$ParticipantEventStatesOnParticipantPinnedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DyteMeetingParticipant participant});
 }
 
 /// @nodoc
-class __$$_ParticipantEventStatesOnParticipantPinnedCopyWithImpl<$Res>
+class __$$ParticipantEventStatesOnParticipantPinnedImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_ParticipantEventStatesOnParticipantPinned>
-    implements _$$_ParticipantEventStatesOnParticipantPinnedCopyWith<$Res> {
-  __$$_ParticipantEventStatesOnParticipantPinnedCopyWithImpl(
-      _$_ParticipantEventStatesOnParticipantPinned _value,
-      $Res Function(_$_ParticipantEventStatesOnParticipantPinned) _then)
+        _$ParticipantEventStatesOnParticipantPinnedImpl>
+    implements _$$ParticipantEventStatesOnParticipantPinnedImplCopyWith<$Res> {
+  __$$ParticipantEventStatesOnParticipantPinnedImplCopyWithImpl(
+      _$ParticipantEventStatesOnParticipantPinnedImpl _value,
+      $Res Function(_$ParticipantEventStatesOnParticipantPinnedImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1644,7 +1652,7 @@ class __$$_ParticipantEventStatesOnParticipantPinnedCopyWithImpl<$Res>
   $Res call({
     Object? participant = null,
   }) {
-    return _then(_$_ParticipantEventStatesOnParticipantPinned(
+    return _then(_$ParticipantEventStatesOnParticipantPinnedImpl(
       null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
@@ -1655,9 +1663,9 @@ class __$$_ParticipantEventStatesOnParticipantPinnedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ParticipantEventStatesOnParticipantPinned
+class _$ParticipantEventStatesOnParticipantPinnedImpl
     implements _ParticipantEventStatesOnParticipantPinned {
-  const _$_ParticipantEventStatesOnParticipantPinned(this.participant);
+  const _$ParticipantEventStatesOnParticipantPinnedImpl(this.participant);
 
   @override
   final DyteMeetingParticipant participant;
@@ -1668,10 +1676,10 @@ class _$_ParticipantEventStatesOnParticipantPinned
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ParticipantEventStatesOnParticipantPinned &&
+            other is _$ParticipantEventStatesOnParticipantPinnedImpl &&
             (identical(other.participant, participant) ||
                 other.participant == participant));
   }
@@ -1682,11 +1690,12 @@ class _$_ParticipantEventStatesOnParticipantPinned
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ParticipantEventStatesOnParticipantPinnedCopyWith<
-          _$_ParticipantEventStatesOnParticipantPinned>
+  _$$ParticipantEventStatesOnParticipantPinnedImplCopyWith<
+          _$ParticipantEventStatesOnParticipantPinnedImpl>
       get copyWith =>
-          __$$_ParticipantEventStatesOnParticipantPinnedCopyWithImpl<
-              _$_ParticipantEventStatesOnParticipantPinned>(this, _$identity);
+          __$$ParticipantEventStatesOnParticipantPinnedImplCopyWithImpl<
+                  _$ParticipantEventStatesOnParticipantPinnedImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1861,39 +1870,42 @@ abstract class _ParticipantEventStatesOnParticipantPinned
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnParticipantPinned(
           final DyteMeetingParticipant participant) =
-      _$_ParticipantEventStatesOnParticipantPinned;
+      _$ParticipantEventStatesOnParticipantPinnedImpl;
 
   DyteMeetingParticipant get participant;
   @JsonKey(ignore: true)
-  _$$_ParticipantEventStatesOnParticipantPinnedCopyWith<
-          _$_ParticipantEventStatesOnParticipantPinned>
+  _$$ParticipantEventStatesOnParticipantPinnedImplCopyWith<
+          _$ParticipantEventStatesOnParticipantPinnedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ParticipantEventStatesOnParticipantUnpinnedCopyWith<$Res> {
-  factory _$$_ParticipantEventStatesOnParticipantUnpinnedCopyWith(
-          _$_ParticipantEventStatesOnParticipantUnpinned value,
-          $Res Function(_$_ParticipantEventStatesOnParticipantUnpinned) then) =
-      __$$_ParticipantEventStatesOnParticipantUnpinnedCopyWithImpl<$Res>;
+abstract class _$$ParticipantEventStatesOnParticipantUnpinnedImplCopyWith<
+    $Res> {
+  factory _$$ParticipantEventStatesOnParticipantUnpinnedImplCopyWith(
+          _$ParticipantEventStatesOnParticipantUnpinnedImpl value,
+          $Res Function(_$ParticipantEventStatesOnParticipantUnpinnedImpl)
+              then) =
+      __$$ParticipantEventStatesOnParticipantUnpinnedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ParticipantEventStatesOnParticipantUnpinnedCopyWithImpl<$Res>
+class __$$ParticipantEventStatesOnParticipantUnpinnedImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_ParticipantEventStatesOnParticipantUnpinned>
-    implements _$$_ParticipantEventStatesOnParticipantUnpinnedCopyWith<$Res> {
-  __$$_ParticipantEventStatesOnParticipantUnpinnedCopyWithImpl(
-      _$_ParticipantEventStatesOnParticipantUnpinned _value,
-      $Res Function(_$_ParticipantEventStatesOnParticipantUnpinned) _then)
+        _$ParticipantEventStatesOnParticipantUnpinnedImpl>
+    implements
+        _$$ParticipantEventStatesOnParticipantUnpinnedImplCopyWith<$Res> {
+  __$$ParticipantEventStatesOnParticipantUnpinnedImplCopyWithImpl(
+      _$ParticipantEventStatesOnParticipantUnpinnedImpl _value,
+      $Res Function(_$ParticipantEventStatesOnParticipantUnpinnedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ParticipantEventStatesOnParticipantUnpinned
+class _$ParticipantEventStatesOnParticipantUnpinnedImpl
     implements _ParticipantEventStatesOnParticipantUnpinned {
-  const _$_ParticipantEventStatesOnParticipantUnpinned();
+  const _$ParticipantEventStatesOnParticipantUnpinnedImpl();
 
   @override
   String toString() {
@@ -1901,10 +1913,10 @@ class _$_ParticipantEventStatesOnParticipantUnpinned
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ParticipantEventStatesOnParticipantUnpinned);
+            other is _$ParticipantEventStatesOnParticipantUnpinnedImpl);
   }
 
   @override
@@ -2082,33 +2094,36 @@ class _$_ParticipantEventStatesOnParticipantUnpinned
 abstract class _ParticipantEventStatesOnParticipantUnpinned
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnParticipantUnpinned() =
-      _$_ParticipantEventStatesOnParticipantUnpinned;
+      _$ParticipantEventStatesOnParticipantUnpinnedImpl;
 }
 
 /// @nodoc
-abstract class _$$_ParticipantEventStatesOnScreenSharesUpdatedCopyWith<$Res> {
-  factory _$$_ParticipantEventStatesOnScreenSharesUpdatedCopyWith(
-          _$_ParticipantEventStatesOnScreenSharesUpdated value,
-          $Res Function(_$_ParticipantEventStatesOnScreenSharesUpdated) then) =
-      __$$_ParticipantEventStatesOnScreenSharesUpdatedCopyWithImpl<$Res>;
+abstract class _$$ParticipantEventStatesOnScreenSharesUpdatedImplCopyWith<
+    $Res> {
+  factory _$$ParticipantEventStatesOnScreenSharesUpdatedImplCopyWith(
+          _$ParticipantEventStatesOnScreenSharesUpdatedImpl value,
+          $Res Function(_$ParticipantEventStatesOnScreenSharesUpdatedImpl)
+              then) =
+      __$$ParticipantEventStatesOnScreenSharesUpdatedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ParticipantEventStatesOnScreenSharesUpdatedCopyWithImpl<$Res>
+class __$$ParticipantEventStatesOnScreenSharesUpdatedImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_ParticipantEventStatesOnScreenSharesUpdated>
-    implements _$$_ParticipantEventStatesOnScreenSharesUpdatedCopyWith<$Res> {
-  __$$_ParticipantEventStatesOnScreenSharesUpdatedCopyWithImpl(
-      _$_ParticipantEventStatesOnScreenSharesUpdated _value,
-      $Res Function(_$_ParticipantEventStatesOnScreenSharesUpdated) _then)
+        _$ParticipantEventStatesOnScreenSharesUpdatedImpl>
+    implements
+        _$$ParticipantEventStatesOnScreenSharesUpdatedImplCopyWith<$Res> {
+  __$$ParticipantEventStatesOnScreenSharesUpdatedImplCopyWithImpl(
+      _$ParticipantEventStatesOnScreenSharesUpdatedImpl _value,
+      $Res Function(_$ParticipantEventStatesOnScreenSharesUpdatedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ParticipantEventStatesOnScreenSharesUpdated
+class _$ParticipantEventStatesOnScreenSharesUpdatedImpl
     implements _ParticipantEventStatesOnScreenSharesUpdated {
-  const _$_ParticipantEventStatesOnScreenSharesUpdated();
+  const _$ParticipantEventStatesOnScreenSharesUpdatedImpl();
 
   @override
   String toString() {
@@ -2116,10 +2131,10 @@ class _$_ParticipantEventStatesOnScreenSharesUpdated
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ParticipantEventStatesOnScreenSharesUpdated);
+            other is _$ParticipantEventStatesOnScreenSharesUpdatedImpl);
   }
 
   @override
@@ -2297,27 +2312,27 @@ class _$_ParticipantEventStatesOnScreenSharesUpdated
 abstract class _ParticipantEventStatesOnScreenSharesUpdated
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnScreenSharesUpdated() =
-      _$_ParticipantEventStatesOnScreenSharesUpdated;
+      _$ParticipantEventStatesOnScreenSharesUpdatedImpl;
 }
 
 /// @nodoc
-abstract class _$$_ParticipantEventStatesOnUpdateCopyWith<$Res> {
-  factory _$$_ParticipantEventStatesOnUpdateCopyWith(
-          _$_ParticipantEventStatesOnUpdate value,
-          $Res Function(_$_ParticipantEventStatesOnUpdate) then) =
-      __$$_ParticipantEventStatesOnUpdateCopyWithImpl<$Res>;
+abstract class _$$ParticipantEventStatesOnUpdateImplCopyWith<$Res> {
+  factory _$$ParticipantEventStatesOnUpdateImplCopyWith(
+          _$ParticipantEventStatesOnUpdateImpl value,
+          $Res Function(_$ParticipantEventStatesOnUpdateImpl) then) =
+      __$$ParticipantEventStatesOnUpdateImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DyteParticipants participants});
 }
 
 /// @nodoc
-class __$$_ParticipantEventStatesOnUpdateCopyWithImpl<$Res>
+class __$$ParticipantEventStatesOnUpdateImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_ParticipantEventStatesOnUpdate>
-    implements _$$_ParticipantEventStatesOnUpdateCopyWith<$Res> {
-  __$$_ParticipantEventStatesOnUpdateCopyWithImpl(
-      _$_ParticipantEventStatesOnUpdate _value,
-      $Res Function(_$_ParticipantEventStatesOnUpdate) _then)
+        _$ParticipantEventStatesOnUpdateImpl>
+    implements _$$ParticipantEventStatesOnUpdateImplCopyWith<$Res> {
+  __$$ParticipantEventStatesOnUpdateImplCopyWithImpl(
+      _$ParticipantEventStatesOnUpdateImpl _value,
+      $Res Function(_$ParticipantEventStatesOnUpdateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2325,7 +2340,7 @@ class __$$_ParticipantEventStatesOnUpdateCopyWithImpl<$Res>
   $Res call({
     Object? participants = null,
   }) {
-    return _then(_$_ParticipantEventStatesOnUpdate(
+    return _then(_$ParticipantEventStatesOnUpdateImpl(
       null == participants
           ? _value.participants
           : participants // ignore: cast_nullable_to_non_nullable
@@ -2336,9 +2351,9 @@ class __$$_ParticipantEventStatesOnUpdateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ParticipantEventStatesOnUpdate
+class _$ParticipantEventStatesOnUpdateImpl
     implements _ParticipantEventStatesOnUpdate {
-  const _$_ParticipantEventStatesOnUpdate(this.participants);
+  const _$ParticipantEventStatesOnUpdateImpl(this.participants);
 
   @override
   final DyteParticipants participants;
@@ -2349,10 +2364,10 @@ class _$_ParticipantEventStatesOnUpdate
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ParticipantEventStatesOnUpdate &&
+            other is _$ParticipantEventStatesOnUpdateImpl &&
             (identical(other.participants, participants) ||
                 other.participants == participants));
   }
@@ -2363,9 +2378,10 @@ class _$_ParticipantEventStatesOnUpdate
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ParticipantEventStatesOnUpdateCopyWith<_$_ParticipantEventStatesOnUpdate>
-      get copyWith => __$$_ParticipantEventStatesOnUpdateCopyWithImpl<
-          _$_ParticipantEventStatesOnUpdate>(this, _$identity);
+  _$$ParticipantEventStatesOnUpdateImplCopyWith<
+          _$ParticipantEventStatesOnUpdateImpl>
+      get copyWith => __$$ParticipantEventStatesOnUpdateImplCopyWithImpl<
+          _$ParticipantEventStatesOnUpdateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2539,32 +2555,34 @@ class _$_ParticipantEventStatesOnUpdate
 abstract class _ParticipantEventStatesOnUpdate
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnUpdate(
-      final DyteParticipants participants) = _$_ParticipantEventStatesOnUpdate;
+          final DyteParticipants participants) =
+      _$ParticipantEventStatesOnUpdateImpl;
 
   DyteParticipants get participants;
   @JsonKey(ignore: true)
-  _$$_ParticipantEventStatesOnUpdateCopyWith<_$_ParticipantEventStatesOnUpdate>
+  _$$ParticipantEventStatesOnUpdateImplCopyWith<
+          _$ParticipantEventStatesOnUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ParticipantEventStatesVideoUpdateCopyWith<$Res> {
-  factory _$$_ParticipantEventStatesVideoUpdateCopyWith(
-          _$_ParticipantEventStatesVideoUpdate value,
-          $Res Function(_$_ParticipantEventStatesVideoUpdate) then) =
-      __$$_ParticipantEventStatesVideoUpdateCopyWithImpl<$Res>;
+abstract class _$$ParticipantEventStatesVideoUpdateImplCopyWith<$Res> {
+  factory _$$ParticipantEventStatesVideoUpdateImplCopyWith(
+          _$ParticipantEventStatesVideoUpdateImpl value,
+          $Res Function(_$ParticipantEventStatesVideoUpdateImpl) then) =
+      __$$ParticipantEventStatesVideoUpdateImplCopyWithImpl<$Res>;
   @useResult
   $Res call({bool videoEnabled, DyteMeetingParticipant participant});
 }
 
 /// @nodoc
-class __$$_ParticipantEventStatesVideoUpdateCopyWithImpl<$Res>
+class __$$ParticipantEventStatesVideoUpdateImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_ParticipantEventStatesVideoUpdate>
-    implements _$$_ParticipantEventStatesVideoUpdateCopyWith<$Res> {
-  __$$_ParticipantEventStatesVideoUpdateCopyWithImpl(
-      _$_ParticipantEventStatesVideoUpdate _value,
-      $Res Function(_$_ParticipantEventStatesVideoUpdate) _then)
+        _$ParticipantEventStatesVideoUpdateImpl>
+    implements _$$ParticipantEventStatesVideoUpdateImplCopyWith<$Res> {
+  __$$ParticipantEventStatesVideoUpdateImplCopyWithImpl(
+      _$ParticipantEventStatesVideoUpdateImpl _value,
+      $Res Function(_$ParticipantEventStatesVideoUpdateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2573,7 +2591,7 @@ class __$$_ParticipantEventStatesVideoUpdateCopyWithImpl<$Res>
     Object? videoEnabled = null,
     Object? participant = null,
   }) {
-    return _then(_$_ParticipantEventStatesVideoUpdate(
+    return _then(_$ParticipantEventStatesVideoUpdateImpl(
       videoEnabled: null == videoEnabled
           ? _value.videoEnabled
           : videoEnabled // ignore: cast_nullable_to_non_nullable
@@ -2588,9 +2606,9 @@ class __$$_ParticipantEventStatesVideoUpdateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ParticipantEventStatesVideoUpdate
+class _$ParticipantEventStatesVideoUpdateImpl
     implements _ParticipantEventStatesVideoUpdate {
-  const _$_ParticipantEventStatesVideoUpdate(
+  const _$ParticipantEventStatesVideoUpdateImpl(
       {required this.videoEnabled, required this.participant});
 
   @override
@@ -2604,10 +2622,10 @@ class _$_ParticipantEventStatesVideoUpdate
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ParticipantEventStatesVideoUpdate &&
+            other is _$ParticipantEventStatesVideoUpdateImpl &&
             (identical(other.videoEnabled, videoEnabled) ||
                 other.videoEnabled == videoEnabled) &&
             (identical(other.participant, participant) ||
@@ -2620,10 +2638,10 @@ class _$_ParticipantEventStatesVideoUpdate
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ParticipantEventStatesVideoUpdateCopyWith<
-          _$_ParticipantEventStatesVideoUpdate>
-      get copyWith => __$$_ParticipantEventStatesVideoUpdateCopyWithImpl<
-          _$_ParticipantEventStatesVideoUpdate>(this, _$identity);
+  _$$ParticipantEventStatesVideoUpdateImplCopyWith<
+          _$ParticipantEventStatesVideoUpdateImpl>
+      get copyWith => __$$ParticipantEventStatesVideoUpdateImplCopyWithImpl<
+          _$ParticipantEventStatesVideoUpdateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2799,34 +2817,34 @@ abstract class _ParticipantEventStatesVideoUpdate
   const factory _ParticipantEventStatesVideoUpdate(
           {required final bool videoEnabled,
           required final DyteMeetingParticipant participant}) =
-      _$_ParticipantEventStatesVideoUpdate;
+      _$ParticipantEventStatesVideoUpdateImpl;
 
   bool get videoEnabled;
   DyteMeetingParticipant get participant;
   @JsonKey(ignore: true)
-  _$$_ParticipantEventStatesVideoUpdateCopyWith<
-          _$_ParticipantEventStatesVideoUpdate>
+  _$$ParticipantEventStatesVideoUpdateImplCopyWith<
+          _$ParticipantEventStatesVideoUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_OnActiveParticipantsChangedCopyWith<$Res> {
-  factory _$$_OnActiveParticipantsChangedCopyWith(
-          _$_OnActiveParticipantsChanged value,
-          $Res Function(_$_OnActiveParticipantsChanged) then) =
-      __$$_OnActiveParticipantsChangedCopyWithImpl<$Res>;
+abstract class _$$OnActiveParticipantsChangedImplCopyWith<$Res> {
+  factory _$$OnActiveParticipantsChangedImplCopyWith(
+          _$OnActiveParticipantsChangedImpl value,
+          $Res Function(_$OnActiveParticipantsChangedImpl) then) =
+      __$$OnActiveParticipantsChangedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<DyteMeetingParticipant> activeParticipants});
 }
 
 /// @nodoc
-class __$$_OnActiveParticipantsChangedCopyWithImpl<$Res>
+class __$$OnActiveParticipantsChangedImplCopyWithImpl<$Res>
     extends _$ParticipantEventStatesCopyWithImpl<$Res,
-        _$_OnActiveParticipantsChanged>
-    implements _$$_OnActiveParticipantsChangedCopyWith<$Res> {
-  __$$_OnActiveParticipantsChangedCopyWithImpl(
-      _$_OnActiveParticipantsChanged _value,
-      $Res Function(_$_OnActiveParticipantsChanged) _then)
+        _$OnActiveParticipantsChangedImpl>
+    implements _$$OnActiveParticipantsChangedImplCopyWith<$Res> {
+  __$$OnActiveParticipantsChangedImplCopyWithImpl(
+      _$OnActiveParticipantsChangedImpl _value,
+      $Res Function(_$OnActiveParticipantsChangedImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2834,7 +2852,7 @@ class __$$_OnActiveParticipantsChangedCopyWithImpl<$Res>
   $Res call({
     Object? activeParticipants = null,
   }) {
-    return _then(_$_OnActiveParticipantsChanged(
+    return _then(_$OnActiveParticipantsChangedImpl(
       activeParticipants: null == activeParticipants
           ? _value._activeParticipants
           : activeParticipants // ignore: cast_nullable_to_non_nullable
@@ -2845,8 +2863,9 @@ class __$$_OnActiveParticipantsChangedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_OnActiveParticipantsChanged implements _OnActiveParticipantsChanged {
-  const _$_OnActiveParticipantsChanged(
+class _$OnActiveParticipantsChangedImpl
+    implements _OnActiveParticipantsChanged {
+  const _$OnActiveParticipantsChangedImpl(
       {required final List<DyteMeetingParticipant> activeParticipants})
       : _activeParticipants = activeParticipants;
 
@@ -2865,10 +2884,10 @@ class _$_OnActiveParticipantsChanged implements _OnActiveParticipantsChanged {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_OnActiveParticipantsChanged &&
+            other is _$OnActiveParticipantsChangedImpl &&
             const DeepCollectionEquality()
                 .equals(other._activeParticipants, _activeParticipants));
   }
@@ -2880,9 +2899,9 @@ class _$_OnActiveParticipantsChanged implements _OnActiveParticipantsChanged {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_OnActiveParticipantsChangedCopyWith<_$_OnActiveParticipantsChanged>
-      get copyWith => __$$_OnActiveParticipantsChangedCopyWithImpl<
-          _$_OnActiveParticipantsChanged>(this, _$identity);
+  _$$OnActiveParticipantsChangedImplCopyWith<_$OnActiveParticipantsChangedImpl>
+      get copyWith => __$$OnActiveParticipantsChangedImplCopyWithImpl<
+          _$OnActiveParticipantsChangedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3056,10 +3075,10 @@ class _$_OnActiveParticipantsChanged implements _OnActiveParticipantsChanged {
 abstract class _OnActiveParticipantsChanged implements ParticipantEventStates {
   const factory _OnActiveParticipantsChanged(
           {required final List<DyteMeetingParticipant> activeParticipants}) =
-      _$_OnActiveParticipantsChanged;
+      _$OnActiveParticipantsChangedImpl;
 
   List<DyteMeetingParticipant> get activeParticipants;
   @JsonKey(ignore: true)
-  _$$_OnActiveParticipantsChangedCopyWith<_$_OnActiveParticipantsChanged>
+  _$$OnActiveParticipantsChangedImplCopyWith<_$OnActiveParticipantsChangedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

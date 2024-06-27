@@ -12,7 +12,7 @@ part of 'local_user_states.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$LocalUserState {
@@ -161,25 +161,26 @@ class _$LocalUserStateCopyWithImpl<$Res, $Val extends LocalUserState>
 }
 
 /// @nodoc
-abstract class _$$_LocalUserInitialStateCopyWith<$Res> {
-  factory _$$_LocalUserInitialStateCopyWith(_$_LocalUserInitialState value,
-          $Res Function(_$_LocalUserInitialState) then) =
-      __$$_LocalUserInitialStateCopyWithImpl<$Res>;
+abstract class _$$LocalUserInitialStateImplCopyWith<$Res> {
+  factory _$$LocalUserInitialStateImplCopyWith(
+          _$LocalUserInitialStateImpl value,
+          $Res Function(_$LocalUserInitialStateImpl) then) =
+      __$$LocalUserInitialStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LocalUserInitialStateCopyWithImpl<$Res>
-    extends _$LocalUserStateCopyWithImpl<$Res, _$_LocalUserInitialState>
-    implements _$$_LocalUserInitialStateCopyWith<$Res> {
-  __$$_LocalUserInitialStateCopyWithImpl(_$_LocalUserInitialState _value,
-      $Res Function(_$_LocalUserInitialState) _then)
+class __$$LocalUserInitialStateImplCopyWithImpl<$Res>
+    extends _$LocalUserStateCopyWithImpl<$Res, _$LocalUserInitialStateImpl>
+    implements _$$LocalUserInitialStateImplCopyWith<$Res> {
+  __$$LocalUserInitialStateImplCopyWithImpl(_$LocalUserInitialStateImpl _value,
+      $Res Function(_$LocalUserInitialStateImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_LocalUserInitialState implements _LocalUserInitialState {
-  const _$_LocalUserInitialState();
+class _$LocalUserInitialStateImpl implements _LocalUserInitialState {
+  const _$LocalUserInitialStateImpl();
 
   @override
   String toString() {
@@ -187,9 +188,10 @@ class _$_LocalUserInitialState implements _LocalUserInitialState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_LocalUserInitialState);
+        (other.runtimeType == runtimeType &&
+            other is _$LocalUserInitialStateImpl);
   }
 
   @override
@@ -345,24 +347,24 @@ class _$_LocalUserInitialState implements _LocalUserInitialState {
 }
 
 abstract class _LocalUserInitialState implements LocalUserState {
-  const factory _LocalUserInitialState() = _$_LocalUserInitialState;
+  const factory _LocalUserInitialState() = _$LocalUserInitialStateImpl;
 }
 
 /// @nodoc
-abstract class _$$_LocalUserVideoStateCopyWith<$Res> {
-  factory _$$_LocalUserVideoStateCopyWith(_$_LocalUserVideoState value,
-          $Res Function(_$_LocalUserVideoState) then) =
-      __$$_LocalUserVideoStateCopyWithImpl<$Res>;
+abstract class _$$LocalUserVideoStateImplCopyWith<$Res> {
+  factory _$$LocalUserVideoStateImplCopyWith(_$LocalUserVideoStateImpl value,
+          $Res Function(_$LocalUserVideoStateImpl) then) =
+      __$$LocalUserVideoStateImplCopyWithImpl<$Res>;
   @useResult
   $Res call({bool isVideoEnabled});
 }
 
 /// @nodoc
-class __$$_LocalUserVideoStateCopyWithImpl<$Res>
-    extends _$LocalUserStateCopyWithImpl<$Res, _$_LocalUserVideoState>
-    implements _$$_LocalUserVideoStateCopyWith<$Res> {
-  __$$_LocalUserVideoStateCopyWithImpl(_$_LocalUserVideoState _value,
-      $Res Function(_$_LocalUserVideoState) _then)
+class __$$LocalUserVideoStateImplCopyWithImpl<$Res>
+    extends _$LocalUserStateCopyWithImpl<$Res, _$LocalUserVideoStateImpl>
+    implements _$$LocalUserVideoStateImplCopyWith<$Res> {
+  __$$LocalUserVideoStateImplCopyWithImpl(_$LocalUserVideoStateImpl _value,
+      $Res Function(_$LocalUserVideoStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -370,7 +372,7 @@ class __$$_LocalUserVideoStateCopyWithImpl<$Res>
   $Res call({
     Object? isVideoEnabled = null,
   }) {
-    return _then(_$_LocalUserVideoState(
+    return _then(_$LocalUserVideoStateImpl(
       null == isVideoEnabled
           ? _value.isVideoEnabled
           : isVideoEnabled // ignore: cast_nullable_to_non_nullable
@@ -381,8 +383,8 @@ class __$$_LocalUserVideoStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_LocalUserVideoState implements _LocalUserVideoState {
-  const _$_LocalUserVideoState(this.isVideoEnabled);
+class _$LocalUserVideoStateImpl implements _LocalUserVideoState {
+  const _$LocalUserVideoStateImpl(this.isVideoEnabled);
 
   @override
   final bool isVideoEnabled;
@@ -393,10 +395,10 @@ class _$_LocalUserVideoState implements _LocalUserVideoState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LocalUserVideoState &&
+            other is _$LocalUserVideoStateImpl &&
             (identical(other.isVideoEnabled, isVideoEnabled) ||
                 other.isVideoEnabled == isVideoEnabled));
   }
@@ -407,8 +409,8 @@ class _$_LocalUserVideoState implements _LocalUserVideoState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LocalUserVideoStateCopyWith<_$_LocalUserVideoState> get copyWith =>
-      __$$_LocalUserVideoStateCopyWithImpl<_$_LocalUserVideoState>(
+  _$$LocalUserVideoStateImplCopyWith<_$LocalUserVideoStateImpl> get copyWith =>
+      __$$LocalUserVideoStateImplCopyWithImpl<_$LocalUserVideoStateImpl>(
           this, _$identity);
 
   @override
@@ -562,29 +564,29 @@ class _$_LocalUserVideoState implements _LocalUserVideoState {
 
 abstract class _LocalUserVideoState implements LocalUserState {
   const factory _LocalUserVideoState(final bool isVideoEnabled) =
-      _$_LocalUserVideoState;
+      _$LocalUserVideoStateImpl;
 
   bool get isVideoEnabled;
   @JsonKey(ignore: true)
-  _$$_LocalUserVideoStateCopyWith<_$_LocalUserVideoState> get copyWith =>
+  _$$LocalUserVideoStateImplCopyWith<_$LocalUserVideoStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_LocalUserAudioStateCopyWith<$Res> {
-  factory _$$_LocalUserAudioStateCopyWith(_$_LocalUserAudioState value,
-          $Res Function(_$_LocalUserAudioState) then) =
-      __$$_LocalUserAudioStateCopyWithImpl<$Res>;
+abstract class _$$LocalUserAudioStateImplCopyWith<$Res> {
+  factory _$$LocalUserAudioStateImplCopyWith(_$LocalUserAudioStateImpl value,
+          $Res Function(_$LocalUserAudioStateImpl) then) =
+      __$$LocalUserAudioStateImplCopyWithImpl<$Res>;
   @useResult
   $Res call({bool isAudioEnabled});
 }
 
 /// @nodoc
-class __$$_LocalUserAudioStateCopyWithImpl<$Res>
-    extends _$LocalUserStateCopyWithImpl<$Res, _$_LocalUserAudioState>
-    implements _$$_LocalUserAudioStateCopyWith<$Res> {
-  __$$_LocalUserAudioStateCopyWithImpl(_$_LocalUserAudioState _value,
-      $Res Function(_$_LocalUserAudioState) _then)
+class __$$LocalUserAudioStateImplCopyWithImpl<$Res>
+    extends _$LocalUserStateCopyWithImpl<$Res, _$LocalUserAudioStateImpl>
+    implements _$$LocalUserAudioStateImplCopyWith<$Res> {
+  __$$LocalUserAudioStateImplCopyWithImpl(_$LocalUserAudioStateImpl _value,
+      $Res Function(_$LocalUserAudioStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -592,7 +594,7 @@ class __$$_LocalUserAudioStateCopyWithImpl<$Res>
   $Res call({
     Object? isAudioEnabled = null,
   }) {
-    return _then(_$_LocalUserAudioState(
+    return _then(_$LocalUserAudioStateImpl(
       null == isAudioEnabled
           ? _value.isAudioEnabled
           : isAudioEnabled // ignore: cast_nullable_to_non_nullable
@@ -603,8 +605,8 @@ class __$$_LocalUserAudioStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_LocalUserAudioState implements _LocalUserAudioState {
-  const _$_LocalUserAudioState(this.isAudioEnabled);
+class _$LocalUserAudioStateImpl implements _LocalUserAudioState {
+  const _$LocalUserAudioStateImpl(this.isAudioEnabled);
 
   @override
   final bool isAudioEnabled;
@@ -615,10 +617,10 @@ class _$_LocalUserAudioState implements _LocalUserAudioState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LocalUserAudioState &&
+            other is _$LocalUserAudioStateImpl &&
             (identical(other.isAudioEnabled, isAudioEnabled) ||
                 other.isAudioEnabled == isAudioEnabled));
   }
@@ -629,8 +631,8 @@ class _$_LocalUserAudioState implements _LocalUserAudioState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LocalUserAudioStateCopyWith<_$_LocalUserAudioState> get copyWith =>
-      __$$_LocalUserAudioStateCopyWithImpl<_$_LocalUserAudioState>(
+  _$$LocalUserAudioStateImplCopyWith<_$LocalUserAudioStateImpl> get copyWith =>
+      __$$LocalUserAudioStateImplCopyWithImpl<_$LocalUserAudioStateImpl>(
           this, _$identity);
 
   @override
@@ -784,43 +786,46 @@ class _$_LocalUserAudioState implements _LocalUserAudioState {
 
 abstract class _LocalUserAudioState implements LocalUserState {
   const factory _LocalUserAudioState(final bool isAudioEnabled) =
-      _$_LocalUserAudioState;
+      _$LocalUserAudioStateImpl;
 
   bool get isAudioEnabled;
   @JsonKey(ignore: true)
-  _$$_LocalUserAudioStateCopyWith<_$_LocalUserAudioState> get copyWith =>
+  _$$LocalUserAudioStateImplCopyWith<_$LocalUserAudioStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_LocalUserOnMeetingRoomJoinedWithoutCameraPermissionCopyWith<
+abstract class _$$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImplCopyWith<
     $Res> {
-  factory _$$_LocalUserOnMeetingRoomJoinedWithoutCameraPermissionCopyWith(
-          _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission value,
-          $Res Function(_$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission)
+  factory _$$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImplCopyWith(
+          _$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImpl value,
+          $Res Function(
+                  _$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImpl)
               then) =
-      __$$_LocalUserOnMeetingRoomJoinedWithoutCameraPermissionCopyWithImpl<
+      __$$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImplCopyWithImpl<
           $Res>;
 }
 
 /// @nodoc
-class __$$_LocalUserOnMeetingRoomJoinedWithoutCameraPermissionCopyWithImpl<$Res>
+class __$$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImplCopyWithImpl<
+        $Res>
     extends _$LocalUserStateCopyWithImpl<$Res,
-        _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission>
+        _$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImpl>
     implements
-        _$$_LocalUserOnMeetingRoomJoinedWithoutCameraPermissionCopyWith<$Res> {
-  __$$_LocalUserOnMeetingRoomJoinedWithoutCameraPermissionCopyWithImpl(
-      _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission _value,
-      $Res Function(_$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission)
+        _$$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImplCopyWith<
+            $Res> {
+  __$$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImplCopyWithImpl(
+      _$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImpl _value,
+      $Res Function(_$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImpl)
           _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission
+class _$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImpl
     implements _LocalUserOnMeetingRoomJoinedWithoutCameraPermission {
-  const _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission();
+  const _$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImpl();
 
   @override
   String toString() {
@@ -828,10 +833,10 @@ class _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission);
+            other is _$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImpl);
   }
 
   @override
@@ -989,36 +994,38 @@ class _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission
 abstract class _LocalUserOnMeetingRoomJoinedWithoutCameraPermission
     implements LocalUserState {
   const factory _LocalUserOnMeetingRoomJoinedWithoutCameraPermission() =
-      _$_LocalUserOnMeetingRoomJoinedWithoutCameraPermission;
+      _$LocalUserOnMeetingRoomJoinedWithoutCameraPermissionImpl;
 }
 
 /// @nodoc
-abstract class _$$_LocalUserOnMeetingRoomJoinedWithoutMicPermissionCopyWith<
+abstract class _$$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImplCopyWith<
     $Res> {
-  factory _$$_LocalUserOnMeetingRoomJoinedWithoutMicPermissionCopyWith(
-          _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission value,
-          $Res Function(_$_LocalUserOnMeetingRoomJoinedWithoutMicPermission)
+  factory _$$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImplCopyWith(
+          _$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImpl value,
+          $Res Function(_$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImpl)
               then) =
-      __$$_LocalUserOnMeetingRoomJoinedWithoutMicPermissionCopyWithImpl<$Res>;
+      __$$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImplCopyWithImpl<
+          $Res>;
 }
 
 /// @nodoc
-class __$$_LocalUserOnMeetingRoomJoinedWithoutMicPermissionCopyWithImpl<$Res>
+class __$$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImplCopyWithImpl<$Res>
     extends _$LocalUserStateCopyWithImpl<$Res,
-        _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission>
+        _$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImpl>
     implements
-        _$$_LocalUserOnMeetingRoomJoinedWithoutMicPermissionCopyWith<$Res> {
-  __$$_LocalUserOnMeetingRoomJoinedWithoutMicPermissionCopyWithImpl(
-      _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission _value,
-      $Res Function(_$_LocalUserOnMeetingRoomJoinedWithoutMicPermission) _then)
+        _$$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImplCopyWith<$Res> {
+  __$$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImplCopyWithImpl(
+      _$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImpl _value,
+      $Res Function(_$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImpl)
+          _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission
+class _$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImpl
     implements _LocalUserOnMeetingRoomJoinedWithoutMicPermission {
-  const _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission();
+  const _$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImpl();
 
   @override
   String toString() {
@@ -1026,10 +1033,10 @@ class _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission);
+            other is _$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImpl);
   }
 
   @override
@@ -1187,32 +1194,33 @@ class _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission
 abstract class _LocalUserOnMeetingRoomJoinedWithoutMicPermission
     implements LocalUserState {
   const factory _LocalUserOnMeetingRoomJoinedWithoutMicPermission() =
-      _$_LocalUserOnMeetingRoomJoinedWithoutMicPermission;
+      _$LocalUserOnMeetingRoomJoinedWithoutMicPermissionImpl;
 }
 
 /// @nodoc
-abstract class _$$_LocalUserOnRemovedFromMeetingCopyWith<$Res> {
-  factory _$$_LocalUserOnRemovedFromMeetingCopyWith(
-          _$_LocalUserOnRemovedFromMeeting value,
-          $Res Function(_$_LocalUserOnRemovedFromMeeting) then) =
-      __$$_LocalUserOnRemovedFromMeetingCopyWithImpl<$Res>;
+abstract class _$$LocalUserOnRemovedFromMeetingImplCopyWith<$Res> {
+  factory _$$LocalUserOnRemovedFromMeetingImplCopyWith(
+          _$LocalUserOnRemovedFromMeetingImpl value,
+          $Res Function(_$LocalUserOnRemovedFromMeetingImpl) then) =
+      __$$LocalUserOnRemovedFromMeetingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LocalUserOnRemovedFromMeetingCopyWithImpl<$Res>
-    extends _$LocalUserStateCopyWithImpl<$Res, _$_LocalUserOnRemovedFromMeeting>
-    implements _$$_LocalUserOnRemovedFromMeetingCopyWith<$Res> {
-  __$$_LocalUserOnRemovedFromMeetingCopyWithImpl(
-      _$_LocalUserOnRemovedFromMeeting _value,
-      $Res Function(_$_LocalUserOnRemovedFromMeeting) _then)
+class __$$LocalUserOnRemovedFromMeetingImplCopyWithImpl<$Res>
+    extends _$LocalUserStateCopyWithImpl<$Res,
+        _$LocalUserOnRemovedFromMeetingImpl>
+    implements _$$LocalUserOnRemovedFromMeetingImplCopyWith<$Res> {
+  __$$LocalUserOnRemovedFromMeetingImplCopyWithImpl(
+      _$LocalUserOnRemovedFromMeetingImpl _value,
+      $Res Function(_$LocalUserOnRemovedFromMeetingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_LocalUserOnRemovedFromMeeting
+class _$LocalUserOnRemovedFromMeetingImpl
     implements _LocalUserOnRemovedFromMeeting {
-  const _$_LocalUserOnRemovedFromMeeting();
+  const _$LocalUserOnRemovedFromMeetingImpl();
 
   @override
   String toString() {
@@ -1220,10 +1228,10 @@ class _$_LocalUserOnRemovedFromMeeting
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LocalUserOnRemovedFromMeeting);
+            other is _$LocalUserOnRemovedFromMeetingImpl);
   }
 
   @override
@@ -1380,33 +1388,33 @@ class _$_LocalUserOnRemovedFromMeeting
 
 abstract class _LocalUserOnRemovedFromMeeting implements LocalUserState {
   const factory _LocalUserOnRemovedFromMeeting() =
-      _$_LocalUserOnRemovedFromMeeting;
+      _$LocalUserOnRemovedFromMeetingImpl;
 }
 
 /// @nodoc
-abstract class _$$_LocalUserOnAudioDevicesUpdatedCopyWith<$Res> {
-  factory _$$_LocalUserOnAudioDevicesUpdatedCopyWith(
-          _$_LocalUserOnAudioDevicesUpdated value,
-          $Res Function(_$_LocalUserOnAudioDevicesUpdated) then) =
-      __$$_LocalUserOnAudioDevicesUpdatedCopyWithImpl<$Res>;
+abstract class _$$LocalUserOnAudioDevicesUpdatedImplCopyWith<$Res> {
+  factory _$$LocalUserOnAudioDevicesUpdatedImplCopyWith(
+          _$LocalUserOnAudioDevicesUpdatedImpl value,
+          $Res Function(_$LocalUserOnAudioDevicesUpdatedImpl) then) =
+      __$$LocalUserOnAudioDevicesUpdatedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LocalUserOnAudioDevicesUpdatedCopyWithImpl<$Res>
+class __$$LocalUserOnAudioDevicesUpdatedImplCopyWithImpl<$Res>
     extends _$LocalUserStateCopyWithImpl<$Res,
-        _$_LocalUserOnAudioDevicesUpdated>
-    implements _$$_LocalUserOnAudioDevicesUpdatedCopyWith<$Res> {
-  __$$_LocalUserOnAudioDevicesUpdatedCopyWithImpl(
-      _$_LocalUserOnAudioDevicesUpdated _value,
-      $Res Function(_$_LocalUserOnAudioDevicesUpdated) _then)
+        _$LocalUserOnAudioDevicesUpdatedImpl>
+    implements _$$LocalUserOnAudioDevicesUpdatedImplCopyWith<$Res> {
+  __$$LocalUserOnAudioDevicesUpdatedImplCopyWithImpl(
+      _$LocalUserOnAudioDevicesUpdatedImpl _value,
+      $Res Function(_$LocalUserOnAudioDevicesUpdatedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_LocalUserOnAudioDevicesUpdated
+class _$LocalUserOnAudioDevicesUpdatedImpl
     implements _LocalUserOnAudioDevicesUpdated {
-  const _$_LocalUserOnAudioDevicesUpdated();
+  const _$LocalUserOnAudioDevicesUpdatedImpl();
 
   @override
   String toString() {
@@ -1414,10 +1422,10 @@ class _$_LocalUserOnAudioDevicesUpdated
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LocalUserOnAudioDevicesUpdated);
+            other is _$LocalUserOnAudioDevicesUpdatedImpl);
   }
 
   @override
@@ -1574,26 +1582,27 @@ class _$_LocalUserOnAudioDevicesUpdated
 
 abstract class _LocalUserOnAudioDevicesUpdated implements LocalUserState {
   const factory _LocalUserOnAudioDevicesUpdated() =
-      _$_LocalUserOnAudioDevicesUpdated;
+      _$LocalUserOnAudioDevicesUpdatedImpl;
 }
 
 /// @nodoc
-abstract class _$$_LocalUserOnProximityChangedCopyWith<$Res> {
-  factory _$$_LocalUserOnProximityChangedCopyWith(
-          _$_LocalUserOnProximityChanged value,
-          $Res Function(_$_LocalUserOnProximityChanged) then) =
-      __$$_LocalUserOnProximityChangedCopyWithImpl<$Res>;
+abstract class _$$LocalUserOnProximityChangedImplCopyWith<$Res> {
+  factory _$$LocalUserOnProximityChangedImplCopyWith(
+          _$LocalUserOnProximityChangedImpl value,
+          $Res Function(_$LocalUserOnProximityChangedImpl) then) =
+      __$$LocalUserOnProximityChangedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({bool isNear});
 }
 
 /// @nodoc
-class __$$_LocalUserOnProximityChangedCopyWithImpl<$Res>
-    extends _$LocalUserStateCopyWithImpl<$Res, _$_LocalUserOnProximityChanged>
-    implements _$$_LocalUserOnProximityChangedCopyWith<$Res> {
-  __$$_LocalUserOnProximityChangedCopyWithImpl(
-      _$_LocalUserOnProximityChanged _value,
-      $Res Function(_$_LocalUserOnProximityChanged) _then)
+class __$$LocalUserOnProximityChangedImplCopyWithImpl<$Res>
+    extends _$LocalUserStateCopyWithImpl<$Res,
+        _$LocalUserOnProximityChangedImpl>
+    implements _$$LocalUserOnProximityChangedImplCopyWith<$Res> {
+  __$$LocalUserOnProximityChangedImplCopyWithImpl(
+      _$LocalUserOnProximityChangedImpl _value,
+      $Res Function(_$LocalUserOnProximityChangedImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1601,7 +1610,7 @@ class __$$_LocalUserOnProximityChangedCopyWithImpl<$Res>
   $Res call({
     Object? isNear = null,
   }) {
-    return _then(_$_LocalUserOnProximityChanged(
+    return _then(_$LocalUserOnProximityChangedImpl(
       null == isNear
           ? _value.isNear
           : isNear // ignore: cast_nullable_to_non_nullable
@@ -1612,8 +1621,9 @@ class __$$_LocalUserOnProximityChangedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_LocalUserOnProximityChanged implements _LocalUserOnProximityChanged {
-  const _$_LocalUserOnProximityChanged(this.isNear);
+class _$LocalUserOnProximityChangedImpl
+    implements _LocalUserOnProximityChanged {
+  const _$LocalUserOnProximityChangedImpl(this.isNear);
 
   @override
   final bool isNear;
@@ -1624,10 +1634,10 @@ class _$_LocalUserOnProximityChanged implements _LocalUserOnProximityChanged {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LocalUserOnProximityChanged &&
+            other is _$LocalUserOnProximityChangedImpl &&
             (identical(other.isNear, isNear) || other.isNear == isNear));
   }
 
@@ -1637,9 +1647,9 @@ class _$_LocalUserOnProximityChanged implements _LocalUserOnProximityChanged {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LocalUserOnProximityChangedCopyWith<_$_LocalUserOnProximityChanged>
-      get copyWith => __$$_LocalUserOnProximityChangedCopyWithImpl<
-          _$_LocalUserOnProximityChanged>(this, _$identity);
+  _$$LocalUserOnProximityChangedImplCopyWith<_$LocalUserOnProximityChangedImpl>
+      get copyWith => __$$LocalUserOnProximityChangedImplCopyWithImpl<
+          _$LocalUserOnProximityChangedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1792,29 +1802,29 @@ class _$_LocalUserOnProximityChanged implements _LocalUserOnProximityChanged {
 
 abstract class _LocalUserOnProximityChanged implements LocalUserState {
   const factory _LocalUserOnProximityChanged(final bool isNear) =
-      _$_LocalUserOnProximityChanged;
+      _$LocalUserOnProximityChangedImpl;
 
   bool get isNear;
   @JsonKey(ignore: true)
-  _$$_LocalUserOnProximityChangedCopyWith<_$_LocalUserOnProximityChanged>
+  _$$LocalUserOnProximityChangedImplCopyWith<_$LocalUserOnProximityChangedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_LocalUserOnUpdateCopyWith<$Res> {
-  factory _$$_LocalUserOnUpdateCopyWith(_$_LocalUserOnUpdate value,
-          $Res Function(_$_LocalUserOnUpdate) then) =
-      __$$_LocalUserOnUpdateCopyWithImpl<$Res>;
+abstract class _$$LocalUserOnUpdateImplCopyWith<$Res> {
+  factory _$$LocalUserOnUpdateImplCopyWith(_$LocalUserOnUpdateImpl value,
+          $Res Function(_$LocalUserOnUpdateImpl) then) =
+      __$$LocalUserOnUpdateImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DyteSelfUser participant});
 }
 
 /// @nodoc
-class __$$_LocalUserOnUpdateCopyWithImpl<$Res>
-    extends _$LocalUserStateCopyWithImpl<$Res, _$_LocalUserOnUpdate>
-    implements _$$_LocalUserOnUpdateCopyWith<$Res> {
-  __$$_LocalUserOnUpdateCopyWithImpl(
-      _$_LocalUserOnUpdate _value, $Res Function(_$_LocalUserOnUpdate) _then)
+class __$$LocalUserOnUpdateImplCopyWithImpl<$Res>
+    extends _$LocalUserStateCopyWithImpl<$Res, _$LocalUserOnUpdateImpl>
+    implements _$$LocalUserOnUpdateImplCopyWith<$Res> {
+  __$$LocalUserOnUpdateImplCopyWithImpl(_$LocalUserOnUpdateImpl _value,
+      $Res Function(_$LocalUserOnUpdateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1822,7 +1832,7 @@ class __$$_LocalUserOnUpdateCopyWithImpl<$Res>
   $Res call({
     Object? participant = null,
   }) {
-    return _then(_$_LocalUserOnUpdate(
+    return _then(_$LocalUserOnUpdateImpl(
       null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
@@ -1833,8 +1843,8 @@ class __$$_LocalUserOnUpdateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_LocalUserOnUpdate implements _LocalUserOnUpdate {
-  const _$_LocalUserOnUpdate(this.participant);
+class _$LocalUserOnUpdateImpl implements _LocalUserOnUpdate {
+  const _$LocalUserOnUpdateImpl(this.participant);
 
   @override
   final DyteSelfUser participant;
@@ -1845,10 +1855,10 @@ class _$_LocalUserOnUpdate implements _LocalUserOnUpdate {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LocalUserOnUpdate &&
+            other is _$LocalUserOnUpdateImpl &&
             (identical(other.participant, participant) ||
                 other.participant == participant));
   }
@@ -1859,8 +1869,8 @@ class _$_LocalUserOnUpdate implements _LocalUserOnUpdate {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LocalUserOnUpdateCopyWith<_$_LocalUserOnUpdate> get copyWith =>
-      __$$_LocalUserOnUpdateCopyWithImpl<_$_LocalUserOnUpdate>(
+  _$$LocalUserOnUpdateImplCopyWith<_$LocalUserOnUpdateImpl> get copyWith =>
+      __$$LocalUserOnUpdateImplCopyWithImpl<_$LocalUserOnUpdateImpl>(
           this, _$identity);
 
   @override
@@ -2014,36 +2024,38 @@ class _$_LocalUserOnUpdate implements _LocalUserOnUpdate {
 
 abstract class _LocalUserOnUpdate implements LocalUserState {
   const factory _LocalUserOnUpdate(final DyteSelfUser participant) =
-      _$_LocalUserOnUpdate;
+      _$LocalUserOnUpdateImpl;
 
   DyteSelfUser get participant;
   @JsonKey(ignore: true)
-  _$$_LocalUserOnUpdateCopyWith<_$_LocalUserOnUpdate> get copyWith =>
+  _$$LocalUserOnUpdateImplCopyWith<_$LocalUserOnUpdateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_LocalUserOnStoppedPresentingCopyWith<$Res> {
-  factory _$$_LocalUserOnStoppedPresentingCopyWith(
-          _$_LocalUserOnStoppedPresenting value,
-          $Res Function(_$_LocalUserOnStoppedPresenting) then) =
-      __$$_LocalUserOnStoppedPresentingCopyWithImpl<$Res>;
+abstract class _$$LocalUserOnStoppedPresentingImplCopyWith<$Res> {
+  factory _$$LocalUserOnStoppedPresentingImplCopyWith(
+          _$LocalUserOnStoppedPresentingImpl value,
+          $Res Function(_$LocalUserOnStoppedPresentingImpl) then) =
+      __$$LocalUserOnStoppedPresentingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LocalUserOnStoppedPresentingCopyWithImpl<$Res>
-    extends _$LocalUserStateCopyWithImpl<$Res, _$_LocalUserOnStoppedPresenting>
-    implements _$$_LocalUserOnStoppedPresentingCopyWith<$Res> {
-  __$$_LocalUserOnStoppedPresentingCopyWithImpl(
-      _$_LocalUserOnStoppedPresenting _value,
-      $Res Function(_$_LocalUserOnStoppedPresenting) _then)
+class __$$LocalUserOnStoppedPresentingImplCopyWithImpl<$Res>
+    extends _$LocalUserStateCopyWithImpl<$Res,
+        _$LocalUserOnStoppedPresentingImpl>
+    implements _$$LocalUserOnStoppedPresentingImplCopyWith<$Res> {
+  __$$LocalUserOnStoppedPresentingImplCopyWithImpl(
+      _$LocalUserOnStoppedPresentingImpl _value,
+      $Res Function(_$LocalUserOnStoppedPresentingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_LocalUserOnStoppedPresenting implements _LocalUserOnStoppedPresenting {
-  const _$_LocalUserOnStoppedPresenting();
+class _$LocalUserOnStoppedPresentingImpl
+    implements _LocalUserOnStoppedPresenting {
+  const _$LocalUserOnStoppedPresentingImpl();
 
   @override
   String toString() {
@@ -2051,10 +2063,10 @@ class _$_LocalUserOnStoppedPresenting implements _LocalUserOnStoppedPresenting {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LocalUserOnStoppedPresenting);
+            other is _$LocalUserOnStoppedPresentingImpl);
   }
 
   @override
@@ -2211,27 +2223,27 @@ class _$_LocalUserOnStoppedPresenting implements _LocalUserOnStoppedPresenting {
 
 abstract class _LocalUserOnStoppedPresenting implements LocalUserState {
   const factory _LocalUserOnStoppedPresenting() =
-      _$_LocalUserOnStoppedPresenting;
+      _$LocalUserOnStoppedPresentingImpl;
 }
 
 /// @nodoc
-abstract class _$$_LocalUserOnWaitListStatusUpdateCopyWith<$Res> {
-  factory _$$_LocalUserOnWaitListStatusUpdateCopyWith(
-          _$_LocalUserOnWaitListStatusUpdate value,
-          $Res Function(_$_LocalUserOnWaitListStatusUpdate) then) =
-      __$$_LocalUserOnWaitListStatusUpdateCopyWithImpl<$Res>;
+abstract class _$$LocalUserOnWaitListStatusUpdateImplCopyWith<$Res> {
+  factory _$$LocalUserOnWaitListStatusUpdateImplCopyWith(
+          _$LocalUserOnWaitListStatusUpdateImpl value,
+          $Res Function(_$LocalUserOnWaitListStatusUpdateImpl) then) =
+      __$$LocalUserOnWaitListStatusUpdateImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DyteWaitListStatus waitListStatus});
 }
 
 /// @nodoc
-class __$$_LocalUserOnWaitListStatusUpdateCopyWithImpl<$Res>
+class __$$LocalUserOnWaitListStatusUpdateImplCopyWithImpl<$Res>
     extends _$LocalUserStateCopyWithImpl<$Res,
-        _$_LocalUserOnWaitListStatusUpdate>
-    implements _$$_LocalUserOnWaitListStatusUpdateCopyWith<$Res> {
-  __$$_LocalUserOnWaitListStatusUpdateCopyWithImpl(
-      _$_LocalUserOnWaitListStatusUpdate _value,
-      $Res Function(_$_LocalUserOnWaitListStatusUpdate) _then)
+        _$LocalUserOnWaitListStatusUpdateImpl>
+    implements _$$LocalUserOnWaitListStatusUpdateImplCopyWith<$Res> {
+  __$$LocalUserOnWaitListStatusUpdateImplCopyWithImpl(
+      _$LocalUserOnWaitListStatusUpdateImpl _value,
+      $Res Function(_$LocalUserOnWaitListStatusUpdateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2239,7 +2251,7 @@ class __$$_LocalUserOnWaitListStatusUpdateCopyWithImpl<$Res>
   $Res call({
     Object? waitListStatus = null,
   }) {
-    return _then(_$_LocalUserOnWaitListStatusUpdate(
+    return _then(_$LocalUserOnWaitListStatusUpdateImpl(
       null == waitListStatus
           ? _value.waitListStatus
           : waitListStatus // ignore: cast_nullable_to_non_nullable
@@ -2250,9 +2262,9 @@ class __$$_LocalUserOnWaitListStatusUpdateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_LocalUserOnWaitListStatusUpdate
+class _$LocalUserOnWaitListStatusUpdateImpl
     implements _LocalUserOnWaitListStatusUpdate {
-  const _$_LocalUserOnWaitListStatusUpdate(this.waitListStatus);
+  const _$LocalUserOnWaitListStatusUpdateImpl(this.waitListStatus);
 
   @override
   final DyteWaitListStatus waitListStatus;
@@ -2263,10 +2275,10 @@ class _$_LocalUserOnWaitListStatusUpdate
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LocalUserOnWaitListStatusUpdate &&
+            other is _$LocalUserOnWaitListStatusUpdateImpl &&
             (identical(other.waitListStatus, waitListStatus) ||
                 other.waitListStatus == waitListStatus));
   }
@@ -2277,10 +2289,10 @@ class _$_LocalUserOnWaitListStatusUpdate
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LocalUserOnWaitListStatusUpdateCopyWith<
-          _$_LocalUserOnWaitListStatusUpdate>
-      get copyWith => __$$_LocalUserOnWaitListStatusUpdateCopyWithImpl<
-          _$_LocalUserOnWaitListStatusUpdate>(this, _$identity);
+  _$$LocalUserOnWaitListStatusUpdateImplCopyWith<
+          _$LocalUserOnWaitListStatusUpdateImpl>
+      get copyWith => __$$LocalUserOnWaitListStatusUpdateImplCopyWithImpl<
+          _$LocalUserOnWaitListStatusUpdateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2434,39 +2446,39 @@ class _$_LocalUserOnWaitListStatusUpdate
 abstract class _LocalUserOnWaitListStatusUpdate implements LocalUserState {
   const factory _LocalUserOnWaitListStatusUpdate(
           final DyteWaitListStatus waitListStatus) =
-      _$_LocalUserOnWaitListStatusUpdate;
+      _$LocalUserOnWaitListStatusUpdateImpl;
 
   DyteWaitListStatus get waitListStatus;
   @JsonKey(ignore: true)
-  _$$_LocalUserOnWaitListStatusUpdateCopyWith<
-          _$_LocalUserOnWaitListStatusUpdate>
+  _$$LocalUserOnWaitListStatusUpdateImplCopyWith<
+          _$LocalUserOnWaitListStatusUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_LocalUserOnWebinarPresentRequestReceivedCopyWith<$Res> {
-  factory _$$_LocalUserOnWebinarPresentRequestReceivedCopyWith(
-          _$_LocalUserOnWebinarPresentRequestReceived value,
-          $Res Function(_$_LocalUserOnWebinarPresentRequestReceived) then) =
-      __$$_LocalUserOnWebinarPresentRequestReceivedCopyWithImpl<$Res>;
+abstract class _$$LocalUserOnWebinarPresentRequestReceivedImplCopyWith<$Res> {
+  factory _$$LocalUserOnWebinarPresentRequestReceivedImplCopyWith(
+          _$LocalUserOnWebinarPresentRequestReceivedImpl value,
+          $Res Function(_$LocalUserOnWebinarPresentRequestReceivedImpl) then) =
+      __$$LocalUserOnWebinarPresentRequestReceivedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LocalUserOnWebinarPresentRequestReceivedCopyWithImpl<$Res>
+class __$$LocalUserOnWebinarPresentRequestReceivedImplCopyWithImpl<$Res>
     extends _$LocalUserStateCopyWithImpl<$Res,
-        _$_LocalUserOnWebinarPresentRequestReceived>
-    implements _$$_LocalUserOnWebinarPresentRequestReceivedCopyWith<$Res> {
-  __$$_LocalUserOnWebinarPresentRequestReceivedCopyWithImpl(
-      _$_LocalUserOnWebinarPresentRequestReceived _value,
-      $Res Function(_$_LocalUserOnWebinarPresentRequestReceived) _then)
+        _$LocalUserOnWebinarPresentRequestReceivedImpl>
+    implements _$$LocalUserOnWebinarPresentRequestReceivedImplCopyWith<$Res> {
+  __$$LocalUserOnWebinarPresentRequestReceivedImplCopyWithImpl(
+      _$LocalUserOnWebinarPresentRequestReceivedImpl _value,
+      $Res Function(_$LocalUserOnWebinarPresentRequestReceivedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_LocalUserOnWebinarPresentRequestReceived
+class _$LocalUserOnWebinarPresentRequestReceivedImpl
     implements _LocalUserOnWebinarPresentRequestReceived {
-  const _$_LocalUserOnWebinarPresentRequestReceived();
+  const _$LocalUserOnWebinarPresentRequestReceivedImpl();
 
   @override
   String toString() {
@@ -2474,10 +2486,10 @@ class _$_LocalUserOnWebinarPresentRequestReceived
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LocalUserOnWebinarPresentRequestReceived);
+            other is _$LocalUserOnWebinarPresentRequestReceivedImpl);
   }
 
   @override
@@ -2635,5 +2647,5 @@ class _$_LocalUserOnWebinarPresentRequestReceived
 abstract class _LocalUserOnWebinarPresentRequestReceived
     implements LocalUserState {
   const factory _LocalUserOnWebinarPresentRequestReceived() =
-      _$_LocalUserOnWebinarPresentRequestReceived;
+      _$LocalUserOnWebinarPresentRequestReceivedImpl;
 }

@@ -12,7 +12,7 @@ part of 'chat_events_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$DyteChatStates {
@@ -81,25 +81,25 @@ class _$DyteChatStatesCopyWithImpl<$Res, $Val extends DyteChatStates>
 }
 
 /// @nodoc
-abstract class _$$_DyteChatStatesCopyWith<$Res> {
-  factory _$$_DyteChatStatesCopyWith(
-          _$_DyteChatStates value, $Res Function(_$_DyteChatStates) then) =
-      __$$_DyteChatStatesCopyWithImpl<$Res>;
+abstract class _$$DyteChatStatesImplCopyWith<$Res> {
+  factory _$$DyteChatStatesImplCopyWith(_$DyteChatStatesImpl value,
+          $Res Function(_$DyteChatStatesImpl) then) =
+      __$$DyteChatStatesImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_DyteChatStatesCopyWithImpl<$Res>
-    extends _$DyteChatStatesCopyWithImpl<$Res, _$_DyteChatStates>
-    implements _$$_DyteChatStatesCopyWith<$Res> {
-  __$$_DyteChatStatesCopyWithImpl(
-      _$_DyteChatStates _value, $Res Function(_$_DyteChatStates) _then)
+class __$$DyteChatStatesImplCopyWithImpl<$Res>
+    extends _$DyteChatStatesCopyWithImpl<$Res, _$DyteChatStatesImpl>
+    implements _$$DyteChatStatesImplCopyWith<$Res> {
+  __$$DyteChatStatesImplCopyWithImpl(
+      _$DyteChatStatesImpl _value, $Res Function(_$DyteChatStatesImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_DyteChatStates implements _DyteChatStates {
-  const _$_DyteChatStates();
+class _$DyteChatStatesImpl implements _DyteChatStates {
+  const _$DyteChatStatesImpl();
 
   @override
   String toString() {
@@ -107,9 +107,9 @@ class _$_DyteChatStates implements _DyteChatStates {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DyteChatStates);
+        (other.runtimeType == runtimeType && other is _$DyteChatStatesImpl);
   }
 
   @override
@@ -185,24 +185,25 @@ class _$_DyteChatStates implements _DyteChatStates {
 }
 
 abstract class _DyteChatStates implements DyteChatStates {
-  const factory _DyteChatStates() = _$_DyteChatStates;
+  const factory _DyteChatStates() = _$DyteChatStatesImpl;
 }
 
 /// @nodoc
-abstract class _$$_DyteChatStatesNewChatCopyWith<$Res> {
-  factory _$$_DyteChatStatesNewChatCopyWith(_$_DyteChatStatesNewChat value,
-          $Res Function(_$_DyteChatStatesNewChat) then) =
-      __$$_DyteChatStatesNewChatCopyWithImpl<$Res>;
+abstract class _$$DyteChatStatesNewChatImplCopyWith<$Res> {
+  factory _$$DyteChatStatesNewChatImplCopyWith(
+          _$DyteChatStatesNewChatImpl value,
+          $Res Function(_$DyteChatStatesNewChatImpl) then) =
+      __$$DyteChatStatesNewChatImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DyteChatMessage message});
 }
 
 /// @nodoc
-class __$$_DyteChatStatesNewChatCopyWithImpl<$Res>
-    extends _$DyteChatStatesCopyWithImpl<$Res, _$_DyteChatStatesNewChat>
-    implements _$$_DyteChatStatesNewChatCopyWith<$Res> {
-  __$$_DyteChatStatesNewChatCopyWithImpl(_$_DyteChatStatesNewChat _value,
-      $Res Function(_$_DyteChatStatesNewChat) _then)
+class __$$DyteChatStatesNewChatImplCopyWithImpl<$Res>
+    extends _$DyteChatStatesCopyWithImpl<$Res, _$DyteChatStatesNewChatImpl>
+    implements _$$DyteChatStatesNewChatImplCopyWith<$Res> {
+  __$$DyteChatStatesNewChatImplCopyWithImpl(_$DyteChatStatesNewChatImpl _value,
+      $Res Function(_$DyteChatStatesNewChatImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -210,7 +211,7 @@ class __$$_DyteChatStatesNewChatCopyWithImpl<$Res>
   $Res call({
     Object? message = null,
   }) {
-    return _then(_$_DyteChatStatesNewChat(
+    return _then(_$DyteChatStatesNewChatImpl(
       null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -221,8 +222,8 @@ class __$$_DyteChatStatesNewChatCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DyteChatStatesNewChat implements _DyteChatStatesNewChat {
-  const _$_DyteChatStatesNewChat(this.message);
+class _$DyteChatStatesNewChatImpl implements _DyteChatStatesNewChat {
+  const _$DyteChatStatesNewChatImpl(this.message);
 
   @override
   final DyteChatMessage message;
@@ -233,10 +234,10 @@ class _$_DyteChatStatesNewChat implements _DyteChatStatesNewChat {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DyteChatStatesNewChat &&
+            other is _$DyteChatStatesNewChatImpl &&
             (identical(other.message, message) || other.message == message));
   }
 
@@ -246,9 +247,9 @@ class _$_DyteChatStatesNewChat implements _DyteChatStatesNewChat {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DyteChatStatesNewChatCopyWith<_$_DyteChatStatesNewChat> get copyWith =>
-      __$$_DyteChatStatesNewChatCopyWithImpl<_$_DyteChatStatesNewChat>(
-          this, _$identity);
+  _$$DyteChatStatesNewChatImplCopyWith<_$DyteChatStatesNewChatImpl>
+      get copyWith => __$$DyteChatStatesNewChatImplCopyWithImpl<
+          _$DyteChatStatesNewChatImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -321,31 +322,31 @@ class _$_DyteChatStatesNewChat implements _DyteChatStatesNewChat {
 
 abstract class _DyteChatStatesNewChat implements DyteChatStates {
   const factory _DyteChatStatesNewChat(final DyteChatMessage message) =
-      _$_DyteChatStatesNewChat;
+      _$DyteChatStatesNewChatImpl;
 
   DyteChatMessage get message;
   @JsonKey(ignore: true)
-  _$$_DyteChatStatesNewChatCopyWith<_$_DyteChatStatesNewChat> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DyteChatStatesNewChatImplCopyWith<_$DyteChatStatesNewChatImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_DyteChatStatesChatUpdatesCopyWith<$Res> {
-  factory _$$_DyteChatStatesChatUpdatesCopyWith(
-          _$_DyteChatStatesChatUpdates value,
-          $Res Function(_$_DyteChatStatesChatUpdates) then) =
-      __$$_DyteChatStatesChatUpdatesCopyWithImpl<$Res>;
+abstract class _$$DyteChatStatesChatUpdatesImplCopyWith<$Res> {
+  factory _$$DyteChatStatesChatUpdatesImplCopyWith(
+          _$DyteChatStatesChatUpdatesImpl value,
+          $Res Function(_$DyteChatStatesChatUpdatesImpl) then) =
+      __$$DyteChatStatesChatUpdatesImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<DyteChatMessage> messages});
 }
 
 /// @nodoc
-class __$$_DyteChatStatesChatUpdatesCopyWithImpl<$Res>
-    extends _$DyteChatStatesCopyWithImpl<$Res, _$_DyteChatStatesChatUpdates>
-    implements _$$_DyteChatStatesChatUpdatesCopyWith<$Res> {
-  __$$_DyteChatStatesChatUpdatesCopyWithImpl(
-      _$_DyteChatStatesChatUpdates _value,
-      $Res Function(_$_DyteChatStatesChatUpdates) _then)
+class __$$DyteChatStatesChatUpdatesImplCopyWithImpl<$Res>
+    extends _$DyteChatStatesCopyWithImpl<$Res, _$DyteChatStatesChatUpdatesImpl>
+    implements _$$DyteChatStatesChatUpdatesImplCopyWith<$Res> {
+  __$$DyteChatStatesChatUpdatesImplCopyWithImpl(
+      _$DyteChatStatesChatUpdatesImpl _value,
+      $Res Function(_$DyteChatStatesChatUpdatesImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -353,7 +354,7 @@ class __$$_DyteChatStatesChatUpdatesCopyWithImpl<$Res>
   $Res call({
     Object? messages = null,
   }) {
-    return _then(_$_DyteChatStatesChatUpdates(
+    return _then(_$DyteChatStatesChatUpdatesImpl(
       null == messages
           ? _value._messages
           : messages // ignore: cast_nullable_to_non_nullable
@@ -364,8 +365,8 @@ class __$$_DyteChatStatesChatUpdatesCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DyteChatStatesChatUpdates implements _DyteChatStatesChatUpdates {
-  const _$_DyteChatStatesChatUpdates(final List<DyteChatMessage> messages)
+class _$DyteChatStatesChatUpdatesImpl implements _DyteChatStatesChatUpdates {
+  const _$DyteChatStatesChatUpdatesImpl(final List<DyteChatMessage> messages)
       : _messages = messages;
 
   final List<DyteChatMessage> _messages;
@@ -382,10 +383,10 @@ class _$_DyteChatStatesChatUpdates implements _DyteChatStatesChatUpdates {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DyteChatStatesChatUpdates &&
+            other is _$DyteChatStatesChatUpdatesImpl &&
             const DeepCollectionEquality().equals(other._messages, _messages));
   }
 
@@ -396,9 +397,9 @@ class _$_DyteChatStatesChatUpdates implements _DyteChatStatesChatUpdates {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DyteChatStatesChatUpdatesCopyWith<_$_DyteChatStatesChatUpdates>
-      get copyWith => __$$_DyteChatStatesChatUpdatesCopyWithImpl<
-          _$_DyteChatStatesChatUpdates>(this, _$identity);
+  _$$DyteChatStatesChatUpdatesImplCopyWith<_$DyteChatStatesChatUpdatesImpl>
+      get copyWith => __$$DyteChatStatesChatUpdatesImplCopyWithImpl<
+          _$DyteChatStatesChatUpdatesImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -471,10 +472,10 @@ class _$_DyteChatStatesChatUpdates implements _DyteChatStatesChatUpdates {
 
 abstract class _DyteChatStatesChatUpdates implements DyteChatStates {
   const factory _DyteChatStatesChatUpdates(
-      final List<DyteChatMessage> messages) = _$_DyteChatStatesChatUpdates;
+      final List<DyteChatMessage> messages) = _$DyteChatStatesChatUpdatesImpl;
 
   List<DyteChatMessage> get messages;
   @JsonKey(ignore: true)
-  _$$_DyteChatStatesChatUpdatesCopyWith<_$_DyteChatStatesChatUpdates>
+  _$$DyteChatStatesChatUpdatesImplCopyWith<_$DyteChatStatesChatUpdatesImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

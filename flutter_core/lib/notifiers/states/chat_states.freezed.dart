@@ -12,7 +12,7 @@ part of 'chat_states.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ChatStates {
@@ -82,25 +82,25 @@ class _$ChatStatesCopyWithImpl<$Res, $Val extends ChatStates>
 }
 
 /// @nodoc
-abstract class _$$_ChatStatesCopyWith<$Res> {
-  factory _$$_ChatStatesCopyWith(
-          _$_ChatStates value, $Res Function(_$_ChatStates) then) =
-      __$$_ChatStatesCopyWithImpl<$Res>;
+abstract class _$$ChatStatesImplCopyWith<$Res> {
+  factory _$$ChatStatesImplCopyWith(
+          _$ChatStatesImpl value, $Res Function(_$ChatStatesImpl) then) =
+      __$$ChatStatesImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ChatStatesCopyWithImpl<$Res>
-    extends _$ChatStatesCopyWithImpl<$Res, _$_ChatStates>
-    implements _$$_ChatStatesCopyWith<$Res> {
-  __$$_ChatStatesCopyWithImpl(
-      _$_ChatStates _value, $Res Function(_$_ChatStates) _then)
+class __$$ChatStatesImplCopyWithImpl<$Res>
+    extends _$ChatStatesCopyWithImpl<$Res, _$ChatStatesImpl>
+    implements _$$ChatStatesImplCopyWith<$Res> {
+  __$$ChatStatesImplCopyWithImpl(
+      _$ChatStatesImpl _value, $Res Function(_$ChatStatesImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ChatStates implements _ChatStates {
-  const _$_ChatStates();
+class _$ChatStatesImpl implements _ChatStates {
+  const _$ChatStatesImpl();
 
   @override
   String toString() {
@@ -108,9 +108,9 @@ class _$_ChatStates implements _ChatStates {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_ChatStates);
+        (other.runtimeType == runtimeType && other is _$ChatStatesImpl);
   }
 
   @override
@@ -187,24 +187,26 @@ class _$_ChatStates implements _ChatStates {
 }
 
 abstract class _ChatStates implements ChatStates {
-  const factory _ChatStates() = _$_ChatStates;
+  const factory _ChatStates() = _$ChatStatesImpl;
 }
 
 /// @nodoc
-abstract class _$$_ChatStatesOnChatUpdatesCopyWith<$Res> {
-  factory _$$_ChatStatesOnChatUpdatesCopyWith(_$_ChatStatesOnChatUpdates value,
-          $Res Function(_$_ChatStatesOnChatUpdates) then) =
-      __$$_ChatStatesOnChatUpdatesCopyWithImpl<$Res>;
+abstract class _$$ChatStatesOnChatUpdatesImplCopyWith<$Res> {
+  factory _$$ChatStatesOnChatUpdatesImplCopyWith(
+          _$ChatStatesOnChatUpdatesImpl value,
+          $Res Function(_$ChatStatesOnChatUpdatesImpl) then) =
+      __$$ChatStatesOnChatUpdatesImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<DyteChatMessage> messages});
 }
 
 /// @nodoc
-class __$$_ChatStatesOnChatUpdatesCopyWithImpl<$Res>
-    extends _$ChatStatesCopyWithImpl<$Res, _$_ChatStatesOnChatUpdates>
-    implements _$$_ChatStatesOnChatUpdatesCopyWith<$Res> {
-  __$$_ChatStatesOnChatUpdatesCopyWithImpl(_$_ChatStatesOnChatUpdates _value,
-      $Res Function(_$_ChatStatesOnChatUpdates) _then)
+class __$$ChatStatesOnChatUpdatesImplCopyWithImpl<$Res>
+    extends _$ChatStatesCopyWithImpl<$Res, _$ChatStatesOnChatUpdatesImpl>
+    implements _$$ChatStatesOnChatUpdatesImplCopyWith<$Res> {
+  __$$ChatStatesOnChatUpdatesImplCopyWithImpl(
+      _$ChatStatesOnChatUpdatesImpl _value,
+      $Res Function(_$ChatStatesOnChatUpdatesImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -212,7 +214,7 @@ class __$$_ChatStatesOnChatUpdatesCopyWithImpl<$Res>
   $Res call({
     Object? messages = null,
   }) {
-    return _then(_$_ChatStatesOnChatUpdates(
+    return _then(_$ChatStatesOnChatUpdatesImpl(
       null == messages
           ? _value._messages
           : messages // ignore: cast_nullable_to_non_nullable
@@ -223,8 +225,8 @@ class __$$_ChatStatesOnChatUpdatesCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ChatStatesOnChatUpdates implements _ChatStatesOnChatUpdates {
-  const _$_ChatStatesOnChatUpdates(final List<DyteChatMessage> messages)
+class _$ChatStatesOnChatUpdatesImpl implements _ChatStatesOnChatUpdates {
+  const _$ChatStatesOnChatUpdatesImpl(final List<DyteChatMessage> messages)
       : _messages = messages;
 
   final List<DyteChatMessage> _messages;
@@ -241,10 +243,10 @@ class _$_ChatStatesOnChatUpdates implements _ChatStatesOnChatUpdates {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ChatStatesOnChatUpdates &&
+            other is _$ChatStatesOnChatUpdatesImpl &&
             const DeepCollectionEquality().equals(other._messages, _messages));
   }
 
@@ -255,10 +257,9 @@ class _$_ChatStatesOnChatUpdates implements _ChatStatesOnChatUpdates {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ChatStatesOnChatUpdatesCopyWith<_$_ChatStatesOnChatUpdates>
-      get copyWith =>
-          __$$_ChatStatesOnChatUpdatesCopyWithImpl<_$_ChatStatesOnChatUpdates>(
-              this, _$identity);
+  _$$ChatStatesOnChatUpdatesImplCopyWith<_$ChatStatesOnChatUpdatesImpl>
+      get copyWith => __$$ChatStatesOnChatUpdatesImplCopyWithImpl<
+          _$ChatStatesOnChatUpdatesImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -332,31 +333,31 @@ class _$_ChatStatesOnChatUpdates implements _ChatStatesOnChatUpdates {
 
 abstract class _ChatStatesOnChatUpdates implements ChatStates {
   const factory _ChatStatesOnChatUpdates(final List<DyteChatMessage> messages) =
-      _$_ChatStatesOnChatUpdates;
+      _$ChatStatesOnChatUpdatesImpl;
 
   List<DyteChatMessage> get messages;
   @JsonKey(ignore: true)
-  _$$_ChatStatesOnChatUpdatesCopyWith<_$_ChatStatesOnChatUpdates>
+  _$$ChatStatesOnChatUpdatesImplCopyWith<_$ChatStatesOnChatUpdatesImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ChatStatesOnNewChatMessageCopyWith<$Res> {
-  factory _$$_ChatStatesOnNewChatMessageCopyWith(
-          _$_ChatStatesOnNewChatMessage value,
-          $Res Function(_$_ChatStatesOnNewChatMessage) then) =
-      __$$_ChatStatesOnNewChatMessageCopyWithImpl<$Res>;
+abstract class _$$ChatStatesOnNewChatMessageImplCopyWith<$Res> {
+  factory _$$ChatStatesOnNewChatMessageImplCopyWith(
+          _$ChatStatesOnNewChatMessageImpl value,
+          $Res Function(_$ChatStatesOnNewChatMessageImpl) then) =
+      __$$ChatStatesOnNewChatMessageImplCopyWithImpl<$Res>;
   @useResult
   $Res call({DyteChatMessage message});
 }
 
 /// @nodoc
-class __$$_ChatStatesOnNewChatMessageCopyWithImpl<$Res>
-    extends _$ChatStatesCopyWithImpl<$Res, _$_ChatStatesOnNewChatMessage>
-    implements _$$_ChatStatesOnNewChatMessageCopyWith<$Res> {
-  __$$_ChatStatesOnNewChatMessageCopyWithImpl(
-      _$_ChatStatesOnNewChatMessage _value,
-      $Res Function(_$_ChatStatesOnNewChatMessage) _then)
+class __$$ChatStatesOnNewChatMessageImplCopyWithImpl<$Res>
+    extends _$ChatStatesCopyWithImpl<$Res, _$ChatStatesOnNewChatMessageImpl>
+    implements _$$ChatStatesOnNewChatMessageImplCopyWith<$Res> {
+  __$$ChatStatesOnNewChatMessageImplCopyWithImpl(
+      _$ChatStatesOnNewChatMessageImpl _value,
+      $Res Function(_$ChatStatesOnNewChatMessageImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -364,7 +365,7 @@ class __$$_ChatStatesOnNewChatMessageCopyWithImpl<$Res>
   $Res call({
     Object? message = null,
   }) {
-    return _then(_$_ChatStatesOnNewChatMessage(
+    return _then(_$ChatStatesOnNewChatMessageImpl(
       null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -375,8 +376,8 @@ class __$$_ChatStatesOnNewChatMessageCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ChatStatesOnNewChatMessage implements _ChatStatesOnNewChatMessage {
-  const _$_ChatStatesOnNewChatMessage(this.message);
+class _$ChatStatesOnNewChatMessageImpl implements _ChatStatesOnNewChatMessage {
+  const _$ChatStatesOnNewChatMessageImpl(this.message);
 
   @override
   final DyteChatMessage message;
@@ -387,10 +388,10 @@ class _$_ChatStatesOnNewChatMessage implements _ChatStatesOnNewChatMessage {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ChatStatesOnNewChatMessage &&
+            other is _$ChatStatesOnNewChatMessageImpl &&
             (identical(other.message, message) || other.message == message));
   }
 
@@ -400,9 +401,9 @@ class _$_ChatStatesOnNewChatMessage implements _ChatStatesOnNewChatMessage {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ChatStatesOnNewChatMessageCopyWith<_$_ChatStatesOnNewChatMessage>
-      get copyWith => __$$_ChatStatesOnNewChatMessageCopyWithImpl<
-          _$_ChatStatesOnNewChatMessage>(this, _$identity);
+  _$$ChatStatesOnNewChatMessageImplCopyWith<_$ChatStatesOnNewChatMessageImpl>
+      get copyWith => __$$ChatStatesOnNewChatMessageImplCopyWithImpl<
+          _$ChatStatesOnNewChatMessageImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -476,10 +477,10 @@ class _$_ChatStatesOnNewChatMessage implements _ChatStatesOnNewChatMessage {
 
 abstract class _ChatStatesOnNewChatMessage implements ChatStates {
   const factory _ChatStatesOnNewChatMessage(final DyteChatMessage message) =
-      _$_ChatStatesOnNewChatMessage;
+      _$ChatStatesOnNewChatMessageImpl;
 
   DyteChatMessage get message;
   @JsonKey(ignore: true)
-  _$$_ChatStatesOnNewChatMessageCopyWith<_$_ChatStatesOnNewChatMessage>
+  _$$ChatStatesOnNewChatMessageImplCopyWith<_$ChatStatesOnNewChatMessageImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
