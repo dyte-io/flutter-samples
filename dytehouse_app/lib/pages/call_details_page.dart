@@ -5,6 +5,7 @@ import 'package:dytehouse/pages/widgets/size/size_util.dart';
 import 'package:dytehouse/pages/widgets/space/vh_space.dart';
 import 'package:dytehouse/riverpod/riverpod.dart';
 import 'package:dytehouse/riverpod/states/room_states.dart';
+import 'package:dytehouse/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -30,9 +31,12 @@ class CallDetailsPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     ref.listen(
       dyteRoomNotifier,
-      (before, current) {
+      (before, current) async {
         if (current is DyteHouseRoomLeaveCompleted) {
-          Navigator.of(context).pop();
+          final navigator = Navigator.of(context);
+
+          await Utils().leave(context);
+          navigator.pop();
         }
       },
     );
@@ -53,10 +57,16 @@ class CallDetailsPage extends ConsumerWidget {
                   vspace2,
                   SizedBox(
                     width: context.width,
-                    height: context.height * .7,
+                    height: context.height * .6,
                     child: StreamBuilder(
                         initialData: mobileClient.participants.active,
-                        stream: mobileClient.activeStream,
+                        stream: mobileClient.activeStream.distinct(
+                          (previous, next) =>
+                              previous.length == next.length &&
+                              previous.map((e) => e.id).toSet().containsAll(
+                                    next.map((e) => e.id).toSet(),
+                                  ),
+                        ),
                         builder: (context, snapshot) {
                           if (snapshot.data == null) {
                             return const Center(
@@ -163,6 +173,7 @@ class LiveEventDetailsWidget extends StatelessWidget {
                 dyteMobileClient: mobileClient,
                 width: context.width * .9,
                 height: context.height * .06,
+                onMeetingJoined: () => Navigator.of(context).pop(),
               ),
             ],
           ),

@@ -62,7 +62,8 @@ class MyHomePage extends ConsumerWidget {
       if (current is DyteHouseInitFailed) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Loading Failed: ${current.error}'),
+            content:
+                Text('Loading Failed: ${(current.error as DyteError).details}'),
           ),
         );
       } else if (current is DyteHouseInitCompleted) {
@@ -109,7 +110,8 @@ class MyHomePage extends ConsumerWidget {
       body: Center(
         child: GestureDetector(
           onTap: () {
-            mobileClient.init(DyteMeetingInfoV2(authToken: authToken));
+            mobileClient.init(DyteMeetingInfoV2(
+                authToken: _dyteUIKitInfo.meetingInfo.authToken));
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(
                 content: Text('Loading DyteHouse 🦄'),

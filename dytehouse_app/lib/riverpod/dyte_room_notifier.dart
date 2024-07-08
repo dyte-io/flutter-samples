@@ -1,4 +1,5 @@
 import 'package:dyte_uikit/dyte_uikit.dart';
+import 'package:dytehouse/main.dart';
 import 'package:dytehouse/riverpod/states/room_states.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -44,6 +45,7 @@ class DyteRoomNotifier extends Notifier<DyteHouseStates>
   @override
   void onMeetingRoomLeaveCompleted() {
     state = DyteHouseRoomLeaveCompleted();
+    mobileClient.removeMeetingRoomEventsListener(this);
   }
 
   @override
