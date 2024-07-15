@@ -35,7 +35,10 @@ class CallDetailsPage extends ConsumerWidget {
         if (current is DyteHouseRoomLeaveCompleted) {
           final navigator = Navigator.of(context);
 
-          await Utils().leave(context);
+          mobileClient.removeMeetingRoomEventsListener(
+              ref.read(dyteRoomNotifier.notifier));
+
+          await Utils().leave(context, release: current.release);
           navigator.pop();
         }
       },

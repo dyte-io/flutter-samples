@@ -24,7 +24,10 @@ class DyteHouseRoomJoinFailed extends DyteHouseStates {
 
 class DyteHouseRoomJoinStarted extends DyteHouseStates {}
 
-class DyteHouseRoomLeaveCompleted extends DyteHouseStates {}
+class DyteHouseRoomLeaveCompleted extends DyteHouseStates {
+  bool release;
+  DyteHouseRoomLeaveCompleted({this.release = false});
+}
 
 class DyteHouseRoomLeaveStarted extends DyteHouseStates {}
 

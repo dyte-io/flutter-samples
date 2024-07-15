@@ -43,17 +43,19 @@ class CallHeader extends StatelessWidget {
           ),
         ),
       ),
-      child: const Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          HeaderDateRow(),
-          SizedBox(height: 16),
-          TitleAndTags(
-              title: 'Binance NFT Chat: Supercharge your spaces',
-              tags: ['Small business', 'Cryptocurrency']),
-        ],
+      child: const SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            HeaderDateRow(),
+            SizedBox(height: 16),
+            TitleAndTags(
+                title: 'Binance NFT Chat: Supercharge your spaces',
+                tags: ['Small business', 'Cryptocurrency']),
+          ],
+        ),
       ),
     );
   }
@@ -150,15 +152,17 @@ class UserInfo extends StatelessWidget {
           ),
         ),
       ),
-      child: const Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          UserHeader(),
-          SizedBox(height: 8),
-          UserDetails(),
-        ],
+      child: const SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            UserHeader(),
+            SizedBox(height: 8),
+            UserDetails(),
+          ],
+        ),
       ),
     );
   }

@@ -61,7 +61,9 @@ class DyteRoomNotifier extends Notifier<DyteHouseStates>
   void onDisconnectedFromMeetingRoom(String reason) {}
 
   @override
-  void onMeetingEnded() {}
+  void onMeetingEnded() {
+    state = DyteHouseRoomLeaveCompleted(release: true);
+  }
 
   @override
   void onMeetingRoomConnectionFailed() {}

@@ -6,7 +6,7 @@ import 'package:dytehouse/pages/widgets/size/size_util.dart';
 import 'package:dytehouse/provider_logger.dart';
 import 'package:dytehouse/riverpod/riverpod.dart';
 import 'package:dytehouse/riverpod/states/room_states.dart';
-import 'package:dytehouse/secrets.dart';
+// import 'package:dytehouse/secrets.dart';
 import 'package:dytehouse/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -22,7 +22,7 @@ void main() {
 
 final DyteMobileClient mobileClient = DyteMobileClient();
 final DyteUIKitInfo _dyteUIKitInfo = DyteUIKitInfo(
-  DyteMeetingInfoV2(authToken: authToken),
+  DyteMeetingInfoV2(authToken: hiveAuthToken1),
   designToken: DyteDesignTokens(
     colorToken: DyteColorToken(
       brandColor: const Color(0xffa5d6a7),
@@ -41,6 +41,7 @@ class MyApp extends ConsumerWidget {
     SizeConfig().init(context);
     DyteListenerManager.init(ref);
     DyteListenerManager.instance.registerListener();
+
     return DyteProvider(
       client: mobileClient,
       uiKitInfo: _dyteUIKitInfo,
@@ -110,6 +111,7 @@ class MyHomePage extends ConsumerWidget {
       body: Center(
         child: GestureDetector(
           onTap: () {
+            DyteListenerManager.instance.registerListener();
             mobileClient.init(DyteMeetingInfoV2(
                 authToken: _dyteUIKitInfo.meetingInfo.authToken));
             ScaffoldMessenger.of(context).showSnackBar(
