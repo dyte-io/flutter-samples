@@ -18,7 +18,7 @@ This repository consists of all the different ways in which you can use Dyte's F
 
 Here are the list of available samples at the moment.
 
-1. [Flutter Core Sample](flutter_core)
+1. [Flutter Core Sample](realtimekit_demo)
 2. [Flutter UI kit sample](flutter_uikit)
 
 ## Usage

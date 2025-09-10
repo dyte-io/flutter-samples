@@ -1,1 +1,0 @@
-# Sample app demonstrating usage of Dyte's flutter core SDK
