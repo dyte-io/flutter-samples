@@ -11,9 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(),
-    );
+    return const MaterialApp(home: HomePage());
   }
 }
 
@@ -29,17 +27,18 @@ class HomePage extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) {
-                final RealtimeKitUIInfo uiKitInfo = RealtimeKitUIInfo(
-                  RealtimeKitUIInfo(
-                    authToken: MeetingConfig.authToken,
-                  ),
-                );
-                final uiKit = RealtimeKitUIBuilder.build(uiKitInfo: uiKitInfo);
-                return DyteMeetingPage(uiKit);
-              }),
+              MaterialPageRoute(
+                builder: (context) {
+                  final uiKitInfo = RealtimeKitUIInfo(
+                    RtkMeetingInfo(authToken: MeetingConfig.authToken),
+                  );
+                  final uiKit = RealtimeKitUIBuilder.build(
+                    uiKitInfo: uiKitInfo,
+                  );
+                  return RtkMeetingPage(uiKit);
+                },
+              ),
             );
-            // DyteUIKit.loadUI();
           },
           child: const Text(
             "Load UIKit",
@@ -51,15 +50,15 @@ class HomePage extends StatelessWidget {
   }
 }
 
-class DyteMeetingPage extends StatefulWidget {
-  const DyteMeetingPage(this.uikit, {super.key});
+class RtkMeetingPage extends StatefulWidget {
+  const RtkMeetingPage(this.uikit, {super.key});
   final Widget uikit;
 
   @override
-  State<DyteMeetingPage> createState() => _DyteMeetingPageState();
+  State<RtkMeetingPage> createState() => _RtkMeetingPageState();
 }
 
-class _DyteMeetingPageState extends State<DyteMeetingPage> {
+class _RtkMeetingPageState extends State<RtkMeetingPage> {
   @override
   Widget build(BuildContext context) {
     return widget.uikit;
