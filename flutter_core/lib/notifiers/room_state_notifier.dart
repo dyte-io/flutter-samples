@@ -1,9 +1,9 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:flutter_core/models/states/room_event_states.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class RoomStateNotifier extends Notifier<RoomEventStates>
-    implements DyteMeetingRoomEventsListener {
+    implements RtkMeetingRoomEventListener {
   @override
   RoomEventStates build() {
     return const RoomEventStates.onMeetingInitStarted();
@@ -15,18 +15,13 @@ class RoomStateNotifier extends Notifier<RoomEventStates>
   }
 
   @override
-  void onMeetingInitFailed(Exception exception) {
-    state = RoomEventStates.onMeetingInitFailed(exception);
+  void onMeetingInitFailed(MeetingError error) {
+    state = RoomEventStates.onMeetingInitFailed(error);
   }
 
   @override
   void onMeetingInitStarted() {
     state = const RoomEventStates.onMeetingInitStarted();
-  }
-
-  @override
-  void onMeetingRoomDisconnected() {
-    state = const RoomEventStates.onMeetingRoomDisconnected();
   }
 
   @override
@@ -40,8 +35,8 @@ class RoomStateNotifier extends Notifier<RoomEventStates>
   }
 
   @override
-  void onMeetingRoomJoinFailed(Exception exception) {
-    state = RoomEventStates.joinFailed(exception);
+  void onMeetingRoomJoinFailed(MeetingError error) {
+    state = RoomEventStates.joinFailed(error);
   }
 
   @override
@@ -55,29 +50,11 @@ class RoomStateNotifier extends Notifier<RoomEventStates>
   }
 
   @override
-  void onActiveTabUpdate(DyteActiveTab? activeTab) {}
-
-  @override
-  void onConnectedToMeetingRoom() {}
-
-  @override
-  void onConnectingToMeetingRoom() {}
-
-  @override
-  void onDisconnectedFromMeetingRoom(String reason) {}
+  void onActiveTabUpdate(ActiveTab? activeTab) {}
 
   @override
   void onMeetingEnded() {}
 
   @override
-  void onMeetingRoomConnectionFailed() {}
-
-  @override
-  void onMeetingRoomReconnectionFailed() {}
-
-  @override
-  void onReconnectedToMeetingRoom() {}
-
-  @override
-  void onReconnectingToMeetingRoom() {}
+  void onSocketConnectionUpdate(SocketConnectionState connectionState) {}
 }

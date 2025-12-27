@@ -1,4 +1,4 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'local_user_event_states.freezed.dart';
@@ -26,9 +26,9 @@ class LocalUserEventStates with _$LocalUserEventStates {
       _LocalUserEventStateonProximityChanged;
 
   const factory LocalUserEventStates.onWaitListStatusUpdate(
-      DyteWaitListStatus status) = _LocalUserEventStateonWaitListStatusUpdate;
+      WaitlistStatus status) = _LocalUserEventStateonWaitListStatusUpdate;
 
-  const factory LocalUserEventStates.onUpdate(DyteSelfUser participant) =
+  const factory LocalUserEventStates.onUpdate(RtkSelfParticipant participant) =
       _LocalUserEventStateonUpdate;
 
   const factory LocalUserEventStates.onWebinarPresentRequestReceived() =

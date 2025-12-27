@@ -1,32 +1,26 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class PluginNotifer extends Notifier<List<DytePlugin>>
-    implements DyteDataEventsListener {
+class PluginNotifer extends Notifier<List<RtkPlugin>>
+    implements RtkPluginsEventListener {
   @override
-  void onPluginUpdate(List<DytePlugin> plugin) {
-    state = plugin;
-  }
-
-  @override
-  List<DytePlugin> build() {
+  List<RtkPlugin> build() {
     return [];
   }
 
   @override
-  void onLivestreamUpdate(DyteLivestreamData livestreamData) {}
+  void onPluginActivated(RtkPlugin plugin) {
+    state = [...state, plugin];
+  }
 
   @override
-  void onMetaUpdate(
-      String roomName,
-      String meetingTitle,
-      String meetingStartedTimestamp,
-      DyteRoomType roomType,
-      DyteDesignTokens designToken) {}
+  void onPluginDeactivated(RtkPlugin plugin) {
+    state = state.where((element) => element.id != plugin.id).toList();
+  }
 
   @override
-  void onScreenShareUpdate(List<DyteJoinedMeetingParticipant> screenShares) {}
+  void onPluginFileRequest(RtkPlugin plugin) {}
 
   @override
-  void onSelfPermissionsUpdate(DytePermissions permissions) {}
+  void onPluginMessage(RtkPlugin plugin, String eventName, String data) {}
 }

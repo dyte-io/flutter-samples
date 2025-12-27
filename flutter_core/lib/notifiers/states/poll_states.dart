@@ -1,17 +1,25 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 
-abstract class PollStates {}
+abstract class PollStates {
+  const PollStates();
 
-class InitialPollState extends PollStates {}
+  const factory PollStates.initial() = InitialPollState;
+  const factory PollStates.onNewPoll(Poll poll) = OnNewPoll;
+  const factory PollStates.onPollUpdates(List<Poll> polls) = OnPollUpdates;
+}
+
+class InitialPollState extends PollStates {
+  const InitialPollState();
+}
 
 class OnNewPoll extends PollStates {
-  final DytePollMessage poll;
+  final Poll poll;
 
-  OnNewPoll(this.poll);
+  const OnNewPoll(this.poll);
 }
 
 class OnPollUpdates extends PollStates {
-  final List<DytePollMessage> polls;
+  final List<Poll> polls;
 
-  OnPollUpdates(this.polls);
+  const OnPollUpdates(this.polls);
 }

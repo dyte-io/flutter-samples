@@ -19,22 +19,22 @@ mixin _$ChatStates {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(List<DyteChatMessage> messages) onChatUpdates,
-    required TResult Function(DyteChatMessage message) onNewChatMessage,
+    required TResult Function(List<ChatMessage> messages) onChatUpdates,
+    required TResult Function(ChatMessage message) onNewChatMessage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(List<DyteChatMessage> messages)? onChatUpdates,
-    TResult? Function(DyteChatMessage message)? onNewChatMessage,
+    TResult? Function(List<ChatMessage> messages)? onChatUpdates,
+    TResult? Function(ChatMessage message)? onNewChatMessage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(List<DyteChatMessage> messages)? onChatUpdates,
-    TResult Function(DyteChatMessage message)? onNewChatMessage,
+    TResult Function(List<ChatMessage> messages)? onChatUpdates,
+    TResult Function(ChatMessage message)? onNewChatMessage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -79,6 +79,9 @@ class _$ChatStatesCopyWithImpl<$Res, $Val extends ChatStates>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ChatStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -95,6 +98,9 @@ class __$$ChatStatesImplCopyWithImpl<$Res>
   __$$ChatStatesImplCopyWithImpl(
       _$ChatStatesImpl _value, $Res Function(_$ChatStatesImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of ChatStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -120,8 +126,8 @@ class _$ChatStatesImpl implements _ChatStates {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(List<DyteChatMessage> messages) onChatUpdates,
-    required TResult Function(DyteChatMessage message) onNewChatMessage,
+    required TResult Function(List<ChatMessage> messages) onChatUpdates,
+    required TResult Function(ChatMessage message) onNewChatMessage,
   }) {
     return initial();
   }
@@ -130,8 +136,8 @@ class _$ChatStatesImpl implements _ChatStates {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(List<DyteChatMessage> messages)? onChatUpdates,
-    TResult? Function(DyteChatMessage message)? onNewChatMessage,
+    TResult? Function(List<ChatMessage> messages)? onChatUpdates,
+    TResult? Function(ChatMessage message)? onNewChatMessage,
   }) {
     return initial?.call();
   }
@@ -140,8 +146,8 @@ class _$ChatStatesImpl implements _ChatStates {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(List<DyteChatMessage> messages)? onChatUpdates,
-    TResult Function(DyteChatMessage message)? onNewChatMessage,
+    TResult Function(List<ChatMessage> messages)? onChatUpdates,
+    TResult Function(ChatMessage message)? onNewChatMessage,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -197,7 +203,7 @@ abstract class _$$ChatStatesOnChatUpdatesImplCopyWith<$Res> {
           $Res Function(_$ChatStatesOnChatUpdatesImpl) then) =
       __$$ChatStatesOnChatUpdatesImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({List<DyteChatMessage> messages});
+  $Res call({List<ChatMessage> messages});
 }
 
 /// @nodoc
@@ -209,6 +215,8 @@ class __$$ChatStatesOnChatUpdatesImplCopyWithImpl<$Res>
       $Res Function(_$ChatStatesOnChatUpdatesImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ChatStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -218,7 +226,7 @@ class __$$ChatStatesOnChatUpdatesImplCopyWithImpl<$Res>
       null == messages
           ? _value._messages
           : messages // ignore: cast_nullable_to_non_nullable
-              as List<DyteChatMessage>,
+              as List<ChatMessage>,
     ));
   }
 }
@@ -226,12 +234,12 @@ class __$$ChatStatesOnChatUpdatesImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$ChatStatesOnChatUpdatesImpl implements _ChatStatesOnChatUpdates {
-  const _$ChatStatesOnChatUpdatesImpl(final List<DyteChatMessage> messages)
+  const _$ChatStatesOnChatUpdatesImpl(final List<ChatMessage> messages)
       : _messages = messages;
 
-  final List<DyteChatMessage> _messages;
+  final List<ChatMessage> _messages;
   @override
-  List<DyteChatMessage> get messages {
+  List<ChatMessage> get messages {
     if (_messages is EqualUnmodifiableListView) return _messages;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_messages);
@@ -254,7 +262,9 @@ class _$ChatStatesOnChatUpdatesImpl implements _ChatStatesOnChatUpdates {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_messages));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ChatStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ChatStatesOnChatUpdatesImplCopyWith<_$ChatStatesOnChatUpdatesImpl>
@@ -265,8 +275,8 @@ class _$ChatStatesOnChatUpdatesImpl implements _ChatStatesOnChatUpdates {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(List<DyteChatMessage> messages) onChatUpdates,
-    required TResult Function(DyteChatMessage message) onNewChatMessage,
+    required TResult Function(List<ChatMessage> messages) onChatUpdates,
+    required TResult Function(ChatMessage message) onNewChatMessage,
   }) {
     return onChatUpdates(messages);
   }
@@ -275,8 +285,8 @@ class _$ChatStatesOnChatUpdatesImpl implements _ChatStatesOnChatUpdates {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(List<DyteChatMessage> messages)? onChatUpdates,
-    TResult? Function(DyteChatMessage message)? onNewChatMessage,
+    TResult? Function(List<ChatMessage> messages)? onChatUpdates,
+    TResult? Function(ChatMessage message)? onNewChatMessage,
   }) {
     return onChatUpdates?.call(messages);
   }
@@ -285,8 +295,8 @@ class _$ChatStatesOnChatUpdatesImpl implements _ChatStatesOnChatUpdates {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(List<DyteChatMessage> messages)? onChatUpdates,
-    TResult Function(DyteChatMessage message)? onNewChatMessage,
+    TResult Function(List<ChatMessage> messages)? onChatUpdates,
+    TResult Function(ChatMessage message)? onNewChatMessage,
     required TResult orElse(),
   }) {
     if (onChatUpdates != null) {
@@ -332,11 +342,14 @@ class _$ChatStatesOnChatUpdatesImpl implements _ChatStatesOnChatUpdates {
 }
 
 abstract class _ChatStatesOnChatUpdates implements ChatStates {
-  const factory _ChatStatesOnChatUpdates(final List<DyteChatMessage> messages) =
+  const factory _ChatStatesOnChatUpdates(final List<ChatMessage> messages) =
       _$ChatStatesOnChatUpdatesImpl;
 
-  List<DyteChatMessage> get messages;
-  @JsonKey(ignore: true)
+  List<ChatMessage> get messages;
+
+  /// Create a copy of ChatStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ChatStatesOnChatUpdatesImplCopyWith<_$ChatStatesOnChatUpdatesImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -348,7 +361,7 @@ abstract class _$$ChatStatesOnNewChatMessageImplCopyWith<$Res> {
           $Res Function(_$ChatStatesOnNewChatMessageImpl) then) =
       __$$ChatStatesOnNewChatMessageImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DyteChatMessage message});
+  $Res call({ChatMessage message});
 }
 
 /// @nodoc
@@ -360,6 +373,8 @@ class __$$ChatStatesOnNewChatMessageImplCopyWithImpl<$Res>
       $Res Function(_$ChatStatesOnNewChatMessageImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ChatStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -369,7 +384,7 @@ class __$$ChatStatesOnNewChatMessageImplCopyWithImpl<$Res>
       null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
-              as DyteChatMessage,
+              as ChatMessage,
     ));
   }
 }
@@ -380,7 +395,7 @@ class _$ChatStatesOnNewChatMessageImpl implements _ChatStatesOnNewChatMessage {
   const _$ChatStatesOnNewChatMessageImpl(this.message);
 
   @override
-  final DyteChatMessage message;
+  final ChatMessage message;
 
   @override
   String toString() {
@@ -398,7 +413,9 @@ class _$ChatStatesOnNewChatMessageImpl implements _ChatStatesOnNewChatMessage {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ChatStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ChatStatesOnNewChatMessageImplCopyWith<_$ChatStatesOnNewChatMessageImpl>
@@ -409,8 +426,8 @@ class _$ChatStatesOnNewChatMessageImpl implements _ChatStatesOnNewChatMessage {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(List<DyteChatMessage> messages) onChatUpdates,
-    required TResult Function(DyteChatMessage message) onNewChatMessage,
+    required TResult Function(List<ChatMessage> messages) onChatUpdates,
+    required TResult Function(ChatMessage message) onNewChatMessage,
   }) {
     return onNewChatMessage(message);
   }
@@ -419,8 +436,8 @@ class _$ChatStatesOnNewChatMessageImpl implements _ChatStatesOnNewChatMessage {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(List<DyteChatMessage> messages)? onChatUpdates,
-    TResult? Function(DyteChatMessage message)? onNewChatMessage,
+    TResult? Function(List<ChatMessage> messages)? onChatUpdates,
+    TResult? Function(ChatMessage message)? onNewChatMessage,
   }) {
     return onNewChatMessage?.call(message);
   }
@@ -429,8 +446,8 @@ class _$ChatStatesOnNewChatMessageImpl implements _ChatStatesOnNewChatMessage {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(List<DyteChatMessage> messages)? onChatUpdates,
-    TResult Function(DyteChatMessage message)? onNewChatMessage,
+    TResult Function(List<ChatMessage> messages)? onChatUpdates,
+    TResult Function(ChatMessage message)? onNewChatMessage,
     required TResult orElse(),
   }) {
     if (onNewChatMessage != null) {
@@ -476,11 +493,14 @@ class _$ChatStatesOnNewChatMessageImpl implements _ChatStatesOnNewChatMessage {
 }
 
 abstract class _ChatStatesOnNewChatMessage implements ChatStates {
-  const factory _ChatStatesOnNewChatMessage(final DyteChatMessage message) =
+  const factory _ChatStatesOnNewChatMessage(final ChatMessage message) =
       _$ChatStatesOnNewChatMessageImpl;
 
-  DyteChatMessage get message;
-  @JsonKey(ignore: true)
+  ChatMessage get message;
+
+  /// Create a copy of ChatStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ChatStatesOnNewChatMessageImplCopyWith<_$ChatStatesOnNewChatMessageImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

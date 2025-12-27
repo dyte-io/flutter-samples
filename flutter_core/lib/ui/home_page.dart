@@ -1,4 +1,4 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_core/constants/colors.dart';
 import 'package:flutter_core/di/di.dart';
@@ -100,8 +100,8 @@ class _HomePageState extends ConsumerState<HomePage> {
     return Center(
       child: MaterialButton(
         onPressed: () {
-          dyteMobileClient.init(
-            DyteMeetingInfoV2(
+          realtimekitClient.init(
+            RtkMeetingInfo(
               authToken: MeetingConfig.authToken,
             ),
           );
@@ -131,43 +131,40 @@ class _HomePageState extends ConsumerState<HomePage> {
   }
 
   void attachAllListeners(WidgetRef ref) {
-    dyteMobileClient.addMeetingRoomEventsListener(
+    realtimekitClient.addMeetingRoomEventListener(
       ref.read(roomEventNotifier.notifier),
     );
-    dyteMobileClient.addMeetingRoomEventsListener(
+    realtimekitClient.addMeetingRoomEventListener(
       ref.read(routerNotifier.notifier),
     );
-    dyteMobileClient.addSelfEventsListener(
+    realtimekitClient.addSelfEventListener(
       ref.read(localUserSettingsProvider.notifier),
     );
-    dyteMobileClient.addSelfEventsListener(
+    realtimekitClient.addSelfEventListener(
       ref.read(routerNotifier.notifier),
     );
-    dyteMobileClient.addParticipantEventsListener(
+    realtimekitClient.addParticipantsEventListener(
       ref.read(participantEventNotifier.notifier),
     );
-    dyteMobileClient.addChatEventsListener(
+    realtimekitClient.addChatEventListener(
       ref.read(chatNotifier.notifier),
     );
-    dyteMobileClient.addParticipantEventsListener(
-      ref.read(pinUnpinProvider.notifier),
-    );
-    dyteMobileClient.addDataEventsListener(
+    realtimekitClient.addDataUpdateEventListener(
       ref.read(screenshareProvider.notifier),
     );
-    dyteMobileClient.addRecordingListener(
+    realtimekitClient.addRecordingEventListener(
       ref.read(recordingNotifier.notifier),
     );
-    dyteMobileClient.addDataEventsListener(
+    realtimekitClient.addPluginsEventListener(
       ref.read(pluginProvider.notifier),
     );
-    dyteMobileClient.addWaitingRoomListener(
+    realtimekitClient.addWaitlistEventListener(
       ref.read(waitingRoomNotifier.notifier),
     );
-    dyteMobileClient.addPollEventsListener(
+    realtimekitClient.addPollsEventListener(
       ref.read(newPollEventNotifier.notifier),
     );
-    dyteMobileClient.addPollEventsListener(
+    realtimekitClient.addPollsEventListener(
       ref.read(pollsListNotifier.notifier),
     );
   }

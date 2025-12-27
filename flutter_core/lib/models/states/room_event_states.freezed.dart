@@ -21,10 +21,10 @@ mixin _$RoomEventStates {
     required TResult Function() initial,
     required TResult Function() onMeetingInitStarted,
     required TResult Function() onMeetingInitCompleted,
-    required TResult Function(Exception exception) onMeetingInitFailed,
+    required TResult Function(MeetingError error) onMeetingInitFailed,
     required TResult Function() onMeetingRoomJoinCompleted,
     required TResult Function() onMeetingRoomDisconnected,
-    required TResult Function(Exception exception) joinFailed,
+    required TResult Function(MeetingError error) joinFailed,
     required TResult Function() onMeetingRoomJoinStarted,
     required TResult Function() onMeetingRoomLeaveCompleted,
     required TResult Function() onMeetingRoomLeaveStarted,
@@ -35,10 +35,10 @@ mixin _$RoomEventStates {
     TResult? Function()? initial,
     TResult? Function()? onMeetingInitStarted,
     TResult? Function()? onMeetingInitCompleted,
-    TResult? Function(Exception exception)? onMeetingInitFailed,
+    TResult? Function(MeetingError error)? onMeetingInitFailed,
     TResult? Function()? onMeetingRoomJoinCompleted,
     TResult? Function()? onMeetingRoomDisconnected,
-    TResult? Function(Exception exception)? joinFailed,
+    TResult? Function(MeetingError error)? joinFailed,
     TResult? Function()? onMeetingRoomJoinStarted,
     TResult? Function()? onMeetingRoomLeaveCompleted,
     TResult? Function()? onMeetingRoomLeaveStarted,
@@ -49,10 +49,10 @@ mixin _$RoomEventStates {
     TResult Function()? initial,
     TResult Function()? onMeetingInitStarted,
     TResult Function()? onMeetingInitCompleted,
-    TResult Function(Exception exception)? onMeetingInitFailed,
+    TResult Function(MeetingError error)? onMeetingInitFailed,
     TResult Function()? onMeetingRoomJoinCompleted,
     TResult Function()? onMeetingRoomDisconnected,
-    TResult Function(Exception exception)? joinFailed,
+    TResult Function(MeetingError error)? joinFailed,
     TResult Function()? onMeetingRoomJoinStarted,
     TResult Function()? onMeetingRoomLeaveCompleted,
     TResult Function()? onMeetingRoomLeaveStarted,
@@ -142,6 +142,9 @@ class _$RoomEventStatesCopyWithImpl<$Res, $Val extends RoomEventStates>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -160,6 +163,9 @@ class __$$RoomEventStatesInitialImplCopyWithImpl<$Res>
       _$RoomEventStatesInitialImpl _value,
       $Res Function(_$RoomEventStatesInitialImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -188,10 +194,10 @@ class _$RoomEventStatesInitialImpl implements _RoomEventStatesInitial {
     required TResult Function() initial,
     required TResult Function() onMeetingInitStarted,
     required TResult Function() onMeetingInitCompleted,
-    required TResult Function(Exception exception) onMeetingInitFailed,
+    required TResult Function(MeetingError error) onMeetingInitFailed,
     required TResult Function() onMeetingRoomJoinCompleted,
     required TResult Function() onMeetingRoomDisconnected,
-    required TResult Function(Exception exception) joinFailed,
+    required TResult Function(MeetingError error) joinFailed,
     required TResult Function() onMeetingRoomJoinStarted,
     required TResult Function() onMeetingRoomLeaveCompleted,
     required TResult Function() onMeetingRoomLeaveStarted,
@@ -205,10 +211,10 @@ class _$RoomEventStatesInitialImpl implements _RoomEventStatesInitial {
     TResult? Function()? initial,
     TResult? Function()? onMeetingInitStarted,
     TResult? Function()? onMeetingInitCompleted,
-    TResult? Function(Exception exception)? onMeetingInitFailed,
+    TResult? Function(MeetingError error)? onMeetingInitFailed,
     TResult? Function()? onMeetingRoomJoinCompleted,
     TResult? Function()? onMeetingRoomDisconnected,
-    TResult? Function(Exception exception)? joinFailed,
+    TResult? Function(MeetingError error)? joinFailed,
     TResult? Function()? onMeetingRoomJoinStarted,
     TResult? Function()? onMeetingRoomLeaveCompleted,
     TResult? Function()? onMeetingRoomLeaveStarted,
@@ -222,10 +228,10 @@ class _$RoomEventStatesInitialImpl implements _RoomEventStatesInitial {
     TResult Function()? initial,
     TResult Function()? onMeetingInitStarted,
     TResult Function()? onMeetingInitCompleted,
-    TResult Function(Exception exception)? onMeetingInitFailed,
+    TResult Function(MeetingError error)? onMeetingInitFailed,
     TResult Function()? onMeetingRoomJoinCompleted,
     TResult Function()? onMeetingRoomDisconnected,
-    TResult Function(Exception exception)? joinFailed,
+    TResult Function(MeetingError error)? joinFailed,
     TResult Function()? onMeetingRoomJoinStarted,
     TResult Function()? onMeetingRoomLeaveCompleted,
     TResult Function()? onMeetingRoomLeaveStarted,
@@ -336,6 +342,9 @@ class __$$RoomEventStatesOnInitStartedImplCopyWithImpl<$Res>
       _$RoomEventStatesOnInitStartedImpl _value,
       $Res Function(_$RoomEventStatesOnInitStartedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -365,10 +374,10 @@ class _$RoomEventStatesOnInitStartedImpl
     required TResult Function() initial,
     required TResult Function() onMeetingInitStarted,
     required TResult Function() onMeetingInitCompleted,
-    required TResult Function(Exception exception) onMeetingInitFailed,
+    required TResult Function(MeetingError error) onMeetingInitFailed,
     required TResult Function() onMeetingRoomJoinCompleted,
     required TResult Function() onMeetingRoomDisconnected,
-    required TResult Function(Exception exception) joinFailed,
+    required TResult Function(MeetingError error) joinFailed,
     required TResult Function() onMeetingRoomJoinStarted,
     required TResult Function() onMeetingRoomLeaveCompleted,
     required TResult Function() onMeetingRoomLeaveStarted,
@@ -382,10 +391,10 @@ class _$RoomEventStatesOnInitStartedImpl
     TResult? Function()? initial,
     TResult? Function()? onMeetingInitStarted,
     TResult? Function()? onMeetingInitCompleted,
-    TResult? Function(Exception exception)? onMeetingInitFailed,
+    TResult? Function(MeetingError error)? onMeetingInitFailed,
     TResult? Function()? onMeetingRoomJoinCompleted,
     TResult? Function()? onMeetingRoomDisconnected,
-    TResult? Function(Exception exception)? joinFailed,
+    TResult? Function(MeetingError error)? joinFailed,
     TResult? Function()? onMeetingRoomJoinStarted,
     TResult? Function()? onMeetingRoomLeaveCompleted,
     TResult? Function()? onMeetingRoomLeaveStarted,
@@ -399,10 +408,10 @@ class _$RoomEventStatesOnInitStartedImpl
     TResult Function()? initial,
     TResult Function()? onMeetingInitStarted,
     TResult Function()? onMeetingInitCompleted,
-    TResult Function(Exception exception)? onMeetingInitFailed,
+    TResult Function(MeetingError error)? onMeetingInitFailed,
     TResult Function()? onMeetingRoomJoinCompleted,
     TResult Function()? onMeetingRoomDisconnected,
-    TResult Function(Exception exception)? joinFailed,
+    TResult Function(MeetingError error)? joinFailed,
     TResult Function()? onMeetingRoomJoinStarted,
     TResult Function()? onMeetingRoomLeaveCompleted,
     TResult Function()? onMeetingRoomLeaveStarted,
@@ -514,6 +523,9 @@ class __$$RoomEventStatesOnInitCompletedImplCopyWithImpl<$Res>
       _$RoomEventStatesOnInitCompletedImpl _value,
       $Res Function(_$RoomEventStatesOnInitCompletedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -543,10 +555,10 @@ class _$RoomEventStatesOnInitCompletedImpl
     required TResult Function() initial,
     required TResult Function() onMeetingInitStarted,
     required TResult Function() onMeetingInitCompleted,
-    required TResult Function(Exception exception) onMeetingInitFailed,
+    required TResult Function(MeetingError error) onMeetingInitFailed,
     required TResult Function() onMeetingRoomJoinCompleted,
     required TResult Function() onMeetingRoomDisconnected,
-    required TResult Function(Exception exception) joinFailed,
+    required TResult Function(MeetingError error) joinFailed,
     required TResult Function() onMeetingRoomJoinStarted,
     required TResult Function() onMeetingRoomLeaveCompleted,
     required TResult Function() onMeetingRoomLeaveStarted,
@@ -560,10 +572,10 @@ class _$RoomEventStatesOnInitCompletedImpl
     TResult? Function()? initial,
     TResult? Function()? onMeetingInitStarted,
     TResult? Function()? onMeetingInitCompleted,
-    TResult? Function(Exception exception)? onMeetingInitFailed,
+    TResult? Function(MeetingError error)? onMeetingInitFailed,
     TResult? Function()? onMeetingRoomJoinCompleted,
     TResult? Function()? onMeetingRoomDisconnected,
-    TResult? Function(Exception exception)? joinFailed,
+    TResult? Function(MeetingError error)? joinFailed,
     TResult? Function()? onMeetingRoomJoinStarted,
     TResult? Function()? onMeetingRoomLeaveCompleted,
     TResult? Function()? onMeetingRoomLeaveStarted,
@@ -577,10 +589,10 @@ class _$RoomEventStatesOnInitCompletedImpl
     TResult Function()? initial,
     TResult Function()? onMeetingInitStarted,
     TResult Function()? onMeetingInitCompleted,
-    TResult Function(Exception exception)? onMeetingInitFailed,
+    TResult Function(MeetingError error)? onMeetingInitFailed,
     TResult Function()? onMeetingRoomJoinCompleted,
     TResult Function()? onMeetingRoomDisconnected,
-    TResult Function(Exception exception)? joinFailed,
+    TResult Function(MeetingError error)? joinFailed,
     TResult Function()? onMeetingRoomJoinStarted,
     TResult Function()? onMeetingRoomLeaveCompleted,
     TResult Function()? onMeetingRoomLeaveStarted,
@@ -682,7 +694,7 @@ abstract class _$$RoomEventStatesOnInitFailedImplCopyWith<$Res> {
           $Res Function(_$RoomEventStatesOnInitFailedImpl) then) =
       __$$RoomEventStatesOnInitFailedImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({Exception exception});
+  $Res call({MeetingError error});
 }
 
 /// @nodoc
@@ -695,16 +707,18 @@ class __$$RoomEventStatesOnInitFailedImplCopyWithImpl<$Res>
       $Res Function(_$RoomEventStatesOnInitFailedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? exception = null,
+    Object? error = null,
   }) {
     return _then(_$RoomEventStatesOnInitFailedImpl(
-      null == exception
-          ? _value.exception
-          : exception // ignore: cast_nullable_to_non_nullable
-              as Exception,
+      null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as MeetingError,
     ));
   }
 }
@@ -713,14 +727,14 @@ class __$$RoomEventStatesOnInitFailedImplCopyWithImpl<$Res>
 
 class _$RoomEventStatesOnInitFailedImpl
     implements _RoomEventStatesOnInitFailed {
-  const _$RoomEventStatesOnInitFailedImpl(this.exception);
+  const _$RoomEventStatesOnInitFailedImpl(this.error);
 
   @override
-  final Exception exception;
+  final MeetingError error;
 
   @override
   String toString() {
-    return 'RoomEventStates.onMeetingInitFailed(exception: $exception)';
+    return 'RoomEventStates.onMeetingInitFailed(error: $error)';
   }
 
   @override
@@ -728,14 +742,15 @@ class _$RoomEventStatesOnInitFailedImpl
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RoomEventStatesOnInitFailedImpl &&
-            (identical(other.exception, exception) ||
-                other.exception == exception));
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, exception);
+  int get hashCode => Object.hash(runtimeType, error);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RoomEventStatesOnInitFailedImplCopyWith<_$RoomEventStatesOnInitFailedImpl>
@@ -748,15 +763,15 @@ class _$RoomEventStatesOnInitFailedImpl
     required TResult Function() initial,
     required TResult Function() onMeetingInitStarted,
     required TResult Function() onMeetingInitCompleted,
-    required TResult Function(Exception exception) onMeetingInitFailed,
+    required TResult Function(MeetingError error) onMeetingInitFailed,
     required TResult Function() onMeetingRoomJoinCompleted,
     required TResult Function() onMeetingRoomDisconnected,
-    required TResult Function(Exception exception) joinFailed,
+    required TResult Function(MeetingError error) joinFailed,
     required TResult Function() onMeetingRoomJoinStarted,
     required TResult Function() onMeetingRoomLeaveCompleted,
     required TResult Function() onMeetingRoomLeaveStarted,
   }) {
-    return onMeetingInitFailed(exception);
+    return onMeetingInitFailed(error);
   }
 
   @override
@@ -765,15 +780,15 @@ class _$RoomEventStatesOnInitFailedImpl
     TResult? Function()? initial,
     TResult? Function()? onMeetingInitStarted,
     TResult? Function()? onMeetingInitCompleted,
-    TResult? Function(Exception exception)? onMeetingInitFailed,
+    TResult? Function(MeetingError error)? onMeetingInitFailed,
     TResult? Function()? onMeetingRoomJoinCompleted,
     TResult? Function()? onMeetingRoomDisconnected,
-    TResult? Function(Exception exception)? joinFailed,
+    TResult? Function(MeetingError error)? joinFailed,
     TResult? Function()? onMeetingRoomJoinStarted,
     TResult? Function()? onMeetingRoomLeaveCompleted,
     TResult? Function()? onMeetingRoomLeaveStarted,
   }) {
-    return onMeetingInitFailed?.call(exception);
+    return onMeetingInitFailed?.call(error);
   }
 
   @override
@@ -782,17 +797,17 @@ class _$RoomEventStatesOnInitFailedImpl
     TResult Function()? initial,
     TResult Function()? onMeetingInitStarted,
     TResult Function()? onMeetingInitCompleted,
-    TResult Function(Exception exception)? onMeetingInitFailed,
+    TResult Function(MeetingError error)? onMeetingInitFailed,
     TResult Function()? onMeetingRoomJoinCompleted,
     TResult Function()? onMeetingRoomDisconnected,
-    TResult Function(Exception exception)? joinFailed,
+    TResult Function(MeetingError error)? joinFailed,
     TResult Function()? onMeetingRoomJoinStarted,
     TResult Function()? onMeetingRoomLeaveCompleted,
     TResult Function()? onMeetingRoomLeaveStarted,
     required TResult orElse(),
   }) {
     if (onMeetingInitFailed != null) {
-      return onMeetingInitFailed(exception);
+      return onMeetingInitFailed(error);
     }
     return orElse();
   }
@@ -876,11 +891,14 @@ class _$RoomEventStatesOnInitFailedImpl
 }
 
 abstract class _RoomEventStatesOnInitFailed implements RoomEventStates {
-  const factory _RoomEventStatesOnInitFailed(final Exception exception) =
+  const factory _RoomEventStatesOnInitFailed(final MeetingError error) =
       _$RoomEventStatesOnInitFailedImpl;
 
-  Exception get exception;
-  @JsonKey(ignore: true)
+  MeetingError get error;
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RoomEventStatesOnInitFailedImplCopyWith<_$RoomEventStatesOnInitFailedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -902,6 +920,9 @@ class __$$RoomEventStatesOnMeetingRoomJoinCompletedImplCopyWithImpl<$Res>
       _$RoomEventStatesOnMeetingRoomJoinCompletedImpl _value,
       $Res Function(_$RoomEventStatesOnMeetingRoomJoinCompletedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -931,10 +952,10 @@ class _$RoomEventStatesOnMeetingRoomJoinCompletedImpl
     required TResult Function() initial,
     required TResult Function() onMeetingInitStarted,
     required TResult Function() onMeetingInitCompleted,
-    required TResult Function(Exception exception) onMeetingInitFailed,
+    required TResult Function(MeetingError error) onMeetingInitFailed,
     required TResult Function() onMeetingRoomJoinCompleted,
     required TResult Function() onMeetingRoomDisconnected,
-    required TResult Function(Exception exception) joinFailed,
+    required TResult Function(MeetingError error) joinFailed,
     required TResult Function() onMeetingRoomJoinStarted,
     required TResult Function() onMeetingRoomLeaveCompleted,
     required TResult Function() onMeetingRoomLeaveStarted,
@@ -948,10 +969,10 @@ class _$RoomEventStatesOnMeetingRoomJoinCompletedImpl
     TResult? Function()? initial,
     TResult? Function()? onMeetingInitStarted,
     TResult? Function()? onMeetingInitCompleted,
-    TResult? Function(Exception exception)? onMeetingInitFailed,
+    TResult? Function(MeetingError error)? onMeetingInitFailed,
     TResult? Function()? onMeetingRoomJoinCompleted,
     TResult? Function()? onMeetingRoomDisconnected,
-    TResult? Function(Exception exception)? joinFailed,
+    TResult? Function(MeetingError error)? joinFailed,
     TResult? Function()? onMeetingRoomJoinStarted,
     TResult? Function()? onMeetingRoomLeaveCompleted,
     TResult? Function()? onMeetingRoomLeaveStarted,
@@ -965,10 +986,10 @@ class _$RoomEventStatesOnMeetingRoomJoinCompletedImpl
     TResult Function()? initial,
     TResult Function()? onMeetingInitStarted,
     TResult Function()? onMeetingInitCompleted,
-    TResult Function(Exception exception)? onMeetingInitFailed,
+    TResult Function(MeetingError error)? onMeetingInitFailed,
     TResult Function()? onMeetingRoomJoinCompleted,
     TResult Function()? onMeetingRoomDisconnected,
-    TResult Function(Exception exception)? joinFailed,
+    TResult Function(MeetingError error)? joinFailed,
     TResult Function()? onMeetingRoomJoinStarted,
     TResult Function()? onMeetingRoomLeaveCompleted,
     TResult Function()? onMeetingRoomLeaveStarted,
@@ -1081,6 +1102,9 @@ class __$$RoomEventStatesonMeetingRoomDisconnectedImplCopyWithImpl<$Res>
       _$RoomEventStatesonMeetingRoomDisconnectedImpl _value,
       $Res Function(_$RoomEventStatesonMeetingRoomDisconnectedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1110,10 +1134,10 @@ class _$RoomEventStatesonMeetingRoomDisconnectedImpl
     required TResult Function() initial,
     required TResult Function() onMeetingInitStarted,
     required TResult Function() onMeetingInitCompleted,
-    required TResult Function(Exception exception) onMeetingInitFailed,
+    required TResult Function(MeetingError error) onMeetingInitFailed,
     required TResult Function() onMeetingRoomJoinCompleted,
     required TResult Function() onMeetingRoomDisconnected,
-    required TResult Function(Exception exception) joinFailed,
+    required TResult Function(MeetingError error) joinFailed,
     required TResult Function() onMeetingRoomJoinStarted,
     required TResult Function() onMeetingRoomLeaveCompleted,
     required TResult Function() onMeetingRoomLeaveStarted,
@@ -1127,10 +1151,10 @@ class _$RoomEventStatesonMeetingRoomDisconnectedImpl
     TResult? Function()? initial,
     TResult? Function()? onMeetingInitStarted,
     TResult? Function()? onMeetingInitCompleted,
-    TResult? Function(Exception exception)? onMeetingInitFailed,
+    TResult? Function(MeetingError error)? onMeetingInitFailed,
     TResult? Function()? onMeetingRoomJoinCompleted,
     TResult? Function()? onMeetingRoomDisconnected,
-    TResult? Function(Exception exception)? joinFailed,
+    TResult? Function(MeetingError error)? joinFailed,
     TResult? Function()? onMeetingRoomJoinStarted,
     TResult? Function()? onMeetingRoomLeaveCompleted,
     TResult? Function()? onMeetingRoomLeaveStarted,
@@ -1144,10 +1168,10 @@ class _$RoomEventStatesonMeetingRoomDisconnectedImpl
     TResult Function()? initial,
     TResult Function()? onMeetingInitStarted,
     TResult Function()? onMeetingInitCompleted,
-    TResult Function(Exception exception)? onMeetingInitFailed,
+    TResult Function(MeetingError error)? onMeetingInitFailed,
     TResult Function()? onMeetingRoomJoinCompleted,
     TResult Function()? onMeetingRoomDisconnected,
-    TResult Function(Exception exception)? joinFailed,
+    TResult Function(MeetingError error)? joinFailed,
     TResult Function()? onMeetingRoomJoinStarted,
     TResult Function()? onMeetingRoomLeaveCompleted,
     TResult Function()? onMeetingRoomLeaveStarted,
@@ -1250,7 +1274,7 @@ abstract class _$$RoomEventStatesonMeetingjoinFailedImplCopyWith<$Res> {
           $Res Function(_$RoomEventStatesonMeetingjoinFailedImpl) then) =
       __$$RoomEventStatesonMeetingjoinFailedImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({Exception exception});
+  $Res call({MeetingError error});
 }
 
 /// @nodoc
@@ -1263,16 +1287,18 @@ class __$$RoomEventStatesonMeetingjoinFailedImplCopyWithImpl<$Res>
       $Res Function(_$RoomEventStatesonMeetingjoinFailedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? exception = null,
+    Object? error = null,
   }) {
     return _then(_$RoomEventStatesonMeetingjoinFailedImpl(
-      null == exception
-          ? _value.exception
-          : exception // ignore: cast_nullable_to_non_nullable
-              as Exception,
+      null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as MeetingError,
     ));
   }
 }
@@ -1281,14 +1307,14 @@ class __$$RoomEventStatesonMeetingjoinFailedImplCopyWithImpl<$Res>
 
 class _$RoomEventStatesonMeetingjoinFailedImpl
     implements _RoomEventStatesonMeetingjoinFailed {
-  const _$RoomEventStatesonMeetingjoinFailedImpl(this.exception);
+  const _$RoomEventStatesonMeetingjoinFailedImpl(this.error);
 
   @override
-  final Exception exception;
+  final MeetingError error;
 
   @override
   String toString() {
-    return 'RoomEventStates.joinFailed(exception: $exception)';
+    return 'RoomEventStates.joinFailed(error: $error)';
   }
 
   @override
@@ -1296,14 +1322,15 @@ class _$RoomEventStatesonMeetingjoinFailedImpl
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RoomEventStatesonMeetingjoinFailedImpl &&
-            (identical(other.exception, exception) ||
-                other.exception == exception));
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, exception);
+  int get hashCode => Object.hash(runtimeType, error);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RoomEventStatesonMeetingjoinFailedImplCopyWith<
@@ -1317,15 +1344,15 @@ class _$RoomEventStatesonMeetingjoinFailedImpl
     required TResult Function() initial,
     required TResult Function() onMeetingInitStarted,
     required TResult Function() onMeetingInitCompleted,
-    required TResult Function(Exception exception) onMeetingInitFailed,
+    required TResult Function(MeetingError error) onMeetingInitFailed,
     required TResult Function() onMeetingRoomJoinCompleted,
     required TResult Function() onMeetingRoomDisconnected,
-    required TResult Function(Exception exception) joinFailed,
+    required TResult Function(MeetingError error) joinFailed,
     required TResult Function() onMeetingRoomJoinStarted,
     required TResult Function() onMeetingRoomLeaveCompleted,
     required TResult Function() onMeetingRoomLeaveStarted,
   }) {
-    return joinFailed(exception);
+    return joinFailed(error);
   }
 
   @override
@@ -1334,15 +1361,15 @@ class _$RoomEventStatesonMeetingjoinFailedImpl
     TResult? Function()? initial,
     TResult? Function()? onMeetingInitStarted,
     TResult? Function()? onMeetingInitCompleted,
-    TResult? Function(Exception exception)? onMeetingInitFailed,
+    TResult? Function(MeetingError error)? onMeetingInitFailed,
     TResult? Function()? onMeetingRoomJoinCompleted,
     TResult? Function()? onMeetingRoomDisconnected,
-    TResult? Function(Exception exception)? joinFailed,
+    TResult? Function(MeetingError error)? joinFailed,
     TResult? Function()? onMeetingRoomJoinStarted,
     TResult? Function()? onMeetingRoomLeaveCompleted,
     TResult? Function()? onMeetingRoomLeaveStarted,
   }) {
-    return joinFailed?.call(exception);
+    return joinFailed?.call(error);
   }
 
   @override
@@ -1351,17 +1378,17 @@ class _$RoomEventStatesonMeetingjoinFailedImpl
     TResult Function()? initial,
     TResult Function()? onMeetingInitStarted,
     TResult Function()? onMeetingInitCompleted,
-    TResult Function(Exception exception)? onMeetingInitFailed,
+    TResult Function(MeetingError error)? onMeetingInitFailed,
     TResult Function()? onMeetingRoomJoinCompleted,
     TResult Function()? onMeetingRoomDisconnected,
-    TResult Function(Exception exception)? joinFailed,
+    TResult Function(MeetingError error)? joinFailed,
     TResult Function()? onMeetingRoomJoinStarted,
     TResult Function()? onMeetingRoomLeaveCompleted,
     TResult Function()? onMeetingRoomLeaveStarted,
     required TResult orElse(),
   }) {
     if (joinFailed != null) {
-      return joinFailed(exception);
+      return joinFailed(error);
     }
     return orElse();
   }
@@ -1445,11 +1472,14 @@ class _$RoomEventStatesonMeetingjoinFailedImpl
 }
 
 abstract class _RoomEventStatesonMeetingjoinFailed implements RoomEventStates {
-  const factory _RoomEventStatesonMeetingjoinFailed(final Exception exception) =
+  const factory _RoomEventStatesonMeetingjoinFailed(final MeetingError error) =
       _$RoomEventStatesonMeetingjoinFailedImpl;
 
-  Exception get exception;
-  @JsonKey(ignore: true)
+  MeetingError get error;
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RoomEventStatesonMeetingjoinFailedImplCopyWith<
           _$RoomEventStatesonMeetingjoinFailedImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1472,6 +1502,9 @@ class __$$RoomEventStatesonMeetingRoomJoinStartedImplCopyWithImpl<$Res>
       _$RoomEventStatesonMeetingRoomJoinStartedImpl _value,
       $Res Function(_$RoomEventStatesonMeetingRoomJoinStartedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1501,10 +1534,10 @@ class _$RoomEventStatesonMeetingRoomJoinStartedImpl
     required TResult Function() initial,
     required TResult Function() onMeetingInitStarted,
     required TResult Function() onMeetingInitCompleted,
-    required TResult Function(Exception exception) onMeetingInitFailed,
+    required TResult Function(MeetingError error) onMeetingInitFailed,
     required TResult Function() onMeetingRoomJoinCompleted,
     required TResult Function() onMeetingRoomDisconnected,
-    required TResult Function(Exception exception) joinFailed,
+    required TResult Function(MeetingError error) joinFailed,
     required TResult Function() onMeetingRoomJoinStarted,
     required TResult Function() onMeetingRoomLeaveCompleted,
     required TResult Function() onMeetingRoomLeaveStarted,
@@ -1518,10 +1551,10 @@ class _$RoomEventStatesonMeetingRoomJoinStartedImpl
     TResult? Function()? initial,
     TResult? Function()? onMeetingInitStarted,
     TResult? Function()? onMeetingInitCompleted,
-    TResult? Function(Exception exception)? onMeetingInitFailed,
+    TResult? Function(MeetingError error)? onMeetingInitFailed,
     TResult? Function()? onMeetingRoomJoinCompleted,
     TResult? Function()? onMeetingRoomDisconnected,
-    TResult? Function(Exception exception)? joinFailed,
+    TResult? Function(MeetingError error)? joinFailed,
     TResult? Function()? onMeetingRoomJoinStarted,
     TResult? Function()? onMeetingRoomLeaveCompleted,
     TResult? Function()? onMeetingRoomLeaveStarted,
@@ -1535,10 +1568,10 @@ class _$RoomEventStatesonMeetingRoomJoinStartedImpl
     TResult Function()? initial,
     TResult Function()? onMeetingInitStarted,
     TResult Function()? onMeetingInitCompleted,
-    TResult Function(Exception exception)? onMeetingInitFailed,
+    TResult Function(MeetingError error)? onMeetingInitFailed,
     TResult Function()? onMeetingRoomJoinCompleted,
     TResult Function()? onMeetingRoomDisconnected,
-    TResult Function(Exception exception)? joinFailed,
+    TResult Function(MeetingError error)? joinFailed,
     TResult Function()? onMeetingRoomJoinStarted,
     TResult Function()? onMeetingRoomLeaveCompleted,
     TResult Function()? onMeetingRoomLeaveStarted,
@@ -1652,6 +1685,9 @@ class __$$RoomEventStatesonMeetingRoomLeaveCompletedImplCopyWithImpl<$Res>
       _$RoomEventStatesonMeetingRoomLeaveCompletedImpl _value,
       $Res Function(_$RoomEventStatesonMeetingRoomLeaveCompletedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1681,10 +1717,10 @@ class _$RoomEventStatesonMeetingRoomLeaveCompletedImpl
     required TResult Function() initial,
     required TResult Function() onMeetingInitStarted,
     required TResult Function() onMeetingInitCompleted,
-    required TResult Function(Exception exception) onMeetingInitFailed,
+    required TResult Function(MeetingError error) onMeetingInitFailed,
     required TResult Function() onMeetingRoomJoinCompleted,
     required TResult Function() onMeetingRoomDisconnected,
-    required TResult Function(Exception exception) joinFailed,
+    required TResult Function(MeetingError error) joinFailed,
     required TResult Function() onMeetingRoomJoinStarted,
     required TResult Function() onMeetingRoomLeaveCompleted,
     required TResult Function() onMeetingRoomLeaveStarted,
@@ -1698,10 +1734,10 @@ class _$RoomEventStatesonMeetingRoomLeaveCompletedImpl
     TResult? Function()? initial,
     TResult? Function()? onMeetingInitStarted,
     TResult? Function()? onMeetingInitCompleted,
-    TResult? Function(Exception exception)? onMeetingInitFailed,
+    TResult? Function(MeetingError error)? onMeetingInitFailed,
     TResult? Function()? onMeetingRoomJoinCompleted,
     TResult? Function()? onMeetingRoomDisconnected,
-    TResult? Function(Exception exception)? joinFailed,
+    TResult? Function(MeetingError error)? joinFailed,
     TResult? Function()? onMeetingRoomJoinStarted,
     TResult? Function()? onMeetingRoomLeaveCompleted,
     TResult? Function()? onMeetingRoomLeaveStarted,
@@ -1715,10 +1751,10 @@ class _$RoomEventStatesonMeetingRoomLeaveCompletedImpl
     TResult Function()? initial,
     TResult Function()? onMeetingInitStarted,
     TResult Function()? onMeetingInitCompleted,
-    TResult Function(Exception exception)? onMeetingInitFailed,
+    TResult Function(MeetingError error)? onMeetingInitFailed,
     TResult Function()? onMeetingRoomJoinCompleted,
     TResult Function()? onMeetingRoomDisconnected,
-    TResult Function(Exception exception)? joinFailed,
+    TResult Function(MeetingError error)? joinFailed,
     TResult Function()? onMeetingRoomJoinStarted,
     TResult Function()? onMeetingRoomLeaveCompleted,
     TResult Function()? onMeetingRoomLeaveStarted,
@@ -1831,6 +1867,9 @@ class __$$RoomEventStatesonMeetingRoomLeaveStartedImplCopyWithImpl<$Res>
       _$RoomEventStatesonMeetingRoomLeaveStartedImpl _value,
       $Res Function(_$RoomEventStatesonMeetingRoomLeaveStartedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1860,10 +1899,10 @@ class _$RoomEventStatesonMeetingRoomLeaveStartedImpl
     required TResult Function() initial,
     required TResult Function() onMeetingInitStarted,
     required TResult Function() onMeetingInitCompleted,
-    required TResult Function(Exception exception) onMeetingInitFailed,
+    required TResult Function(MeetingError error) onMeetingInitFailed,
     required TResult Function() onMeetingRoomJoinCompleted,
     required TResult Function() onMeetingRoomDisconnected,
-    required TResult Function(Exception exception) joinFailed,
+    required TResult Function(MeetingError error) joinFailed,
     required TResult Function() onMeetingRoomJoinStarted,
     required TResult Function() onMeetingRoomLeaveCompleted,
     required TResult Function() onMeetingRoomLeaveStarted,
@@ -1877,10 +1916,10 @@ class _$RoomEventStatesonMeetingRoomLeaveStartedImpl
     TResult? Function()? initial,
     TResult? Function()? onMeetingInitStarted,
     TResult? Function()? onMeetingInitCompleted,
-    TResult? Function(Exception exception)? onMeetingInitFailed,
+    TResult? Function(MeetingError error)? onMeetingInitFailed,
     TResult? Function()? onMeetingRoomJoinCompleted,
     TResult? Function()? onMeetingRoomDisconnected,
-    TResult? Function(Exception exception)? joinFailed,
+    TResult? Function(MeetingError error)? joinFailed,
     TResult? Function()? onMeetingRoomJoinStarted,
     TResult? Function()? onMeetingRoomLeaveCompleted,
     TResult? Function()? onMeetingRoomLeaveStarted,
@@ -1894,10 +1933,10 @@ class _$RoomEventStatesonMeetingRoomLeaveStartedImpl
     TResult Function()? initial,
     TResult Function()? onMeetingInitStarted,
     TResult Function()? onMeetingInitCompleted,
-    TResult Function(Exception exception)? onMeetingInitFailed,
+    TResult Function(MeetingError error)? onMeetingInitFailed,
     TResult Function()? onMeetingRoomJoinCompleted,
     TResult Function()? onMeetingRoomDisconnected,
-    TResult Function(Exception exception)? joinFailed,
+    TResult Function(MeetingError error)? joinFailed,
     TResult Function()? onMeetingRoomJoinStarted,
     TResult Function()? onMeetingRoomLeaveCompleted,
     TResult Function()? onMeetingRoomLeaveStarted,

@@ -144,6 +144,9 @@ class _$RoomEventStatesCopyWithImpl<$Res, $Val extends RoomEventStates>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -162,6 +165,9 @@ class __$$RoomEventStatesInitialImplCopyWithImpl<$Res>
       _$RoomEventStatesInitialImpl _value,
       $Res Function(_$RoomEventStatesInitialImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -340,6 +346,9 @@ class __$$RoomEventStatesOnInitStartedImplCopyWithImpl<$Res>
       _$RoomEventStatesOnInitStartedImpl _value,
       $Res Function(_$RoomEventStatesOnInitStartedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -520,6 +529,9 @@ class __$$RoomEventStatesOnInitCompletedImplCopyWithImpl<$Res>
       _$RoomEventStatesOnInitCompletedImpl _value,
       $Res Function(_$RoomEventStatesOnInitCompletedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -703,6 +715,8 @@ class __$$RoomEventStatesOnInitFailedImplCopyWithImpl<$Res>
       $Res Function(_$RoomEventStatesOnInitFailedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -743,7 +757,9 @@ class _$RoomEventStatesOnInitFailedImpl
   @override
   int get hashCode => Object.hash(runtimeType, exception);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RoomEventStatesOnInitFailedImplCopyWith<_$RoomEventStatesOnInitFailedImpl>
@@ -890,7 +906,10 @@ abstract class _RoomEventStatesOnInitFailed implements RoomEventStates {
       _$RoomEventStatesOnInitFailedImpl;
 
   Exception get exception;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RoomEventStatesOnInitFailedImplCopyWith<_$RoomEventStatesOnInitFailedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -912,6 +931,9 @@ class __$$RoomEventStatesOnJoinStartedImplCopyWithImpl<$Res>
       _$RoomEventStatesOnJoinStartedImpl _value,
       $Res Function(_$RoomEventStatesOnJoinStartedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1092,6 +1114,9 @@ class __$$RoomEventStatesOnJoinCompletedImplCopyWithImpl<$Res>
       _$RoomEventStatesOnJoinCompletedImpl _value,
       $Res Function(_$RoomEventStatesOnJoinCompletedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1275,6 +1300,8 @@ class __$$RoomEventStatesOnJoinFailedImplCopyWithImpl<$Res>
       $Res Function(_$RoomEventStatesOnJoinFailedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1315,7 +1342,9 @@ class _$RoomEventStatesOnJoinFailedImpl
   @override
   int get hashCode => Object.hash(runtimeType, exception);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RoomEventStatesOnJoinFailedImplCopyWith<_$RoomEventStatesOnJoinFailedImpl>
@@ -1462,7 +1491,10 @@ abstract class _RoomEventStatesOnJoinFailed implements RoomEventStates {
       _$RoomEventStatesOnJoinFailedImpl;
 
   Exception get exception;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RoomEventStatesOnJoinFailedImplCopyWith<_$RoomEventStatesOnJoinFailedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -1484,6 +1516,9 @@ class __$$RoomEventStatesOnLeaveStartedImplCopyWithImpl<$Res>
       _$RoomEventStatesOnLeaveStartedImpl _value,
       $Res Function(_$RoomEventStatesOnLeaveStartedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1664,6 +1699,9 @@ class __$$RoomEventStatesOnLeaveCompletedImplCopyWithImpl<$Res>
       _$RoomEventStatesOnLeaveCompletedImpl _value,
       $Res Function(_$RoomEventStatesOnLeaveCompletedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1844,6 +1882,9 @@ class __$$RoomEventStatesOnDisconnectedImplCopyWithImpl<$Res>
       _$RoomEventStatesOnDisconnectedImpl _value,
       $Res Function(_$RoomEventStatesOnDisconnectedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of RoomEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc

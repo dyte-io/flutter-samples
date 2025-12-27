@@ -1,23 +1,23 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 
 abstract class RecordingStates {}
 
 class InitialRecordingState extends RecordingStates {}
 
 class OnRecordingStarted extends RecordingStates {
-  final DyteRecordingState state;
+  final RecordingState state;
 
   OnRecordingStarted(this.state);
 }
 
 class OnRecordingEnded extends RecordingStates {
-  final DyteRecordingState state;
+  final RecordingState state;
 
   OnRecordingEnded(this.state);
 }
 
 class OnRecordingStateUpdated extends RecordingStates {
-  final DyteRecordingState state;
+  final RecordingState state;
 
   OnRecordingStateUpdated(this.state);
 }
