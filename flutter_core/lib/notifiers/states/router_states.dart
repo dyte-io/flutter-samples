@@ -1,4 +1,4 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 
 abstract class RouterStates {}
 
@@ -29,6 +29,6 @@ class OnRouterMeetingRoomLeaveCompleted extends RouterStates {}
 class OnRouterMeetingRoomDisconnected extends RouterStates {}
 
 class OnRouterSelfWaitingRoomStatusUpdate extends RouterStates {
-  final DyteWaitListStatus waitListStatus;
+  final WaitlistStatus waitListStatus;
   OnRouterSelfWaitingRoomStatusUpdate(this.waitListStatus);
 }

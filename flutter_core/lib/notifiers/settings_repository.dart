@@ -1,8 +1,8 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 
 class LocalUserSettingsRepository {
-  final DyteMobileClient dyteMobileClient;
-  LocalUserSettingsRepository(this.dyteMobileClient);
+  final RealtimekitClient realtimekitClient;
+  LocalUserSettingsRepository(this.realtimekitClient);
 
   bool isAudioEnabled = false;
 
@@ -10,18 +10,18 @@ class LocalUserSettingsRepository {
 
   bool toggleAudio() {
     if (isAudioEnabled) {
-      dyteMobileClient.localUser.disableAudio();
+      realtimekitClient.localUser.disableAudio();
     } else {
-      dyteMobileClient.localUser.enableAudio();
+      realtimekitClient.localUser.enableAudio();
     }
     return isAudioEnabled = !isAudioEnabled;
   }
 
   bool toggleVideo() {
     if (isVideoEnabled) {
-      dyteMobileClient.localUser.disableVideo();
+      realtimekitClient.localUser.disableVideo();
     } else {
-      dyteMobileClient.localUser.enableVideo();
+      realtimekitClient.localUser.enableVideo();
     }
     return isVideoEnabled = !isVideoEnabled;
   }

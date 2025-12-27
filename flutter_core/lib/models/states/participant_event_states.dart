@@ -1,4 +1,4 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'participant_event_states.freezed.dart';
@@ -8,68 +8,68 @@ class ParticipantEventStates with _$ParticipantEventStates {
   const factory ParticipantEventStates.initial() = _ParticipantEventStates;
 
   const factory ParticipantEventStates.onParticipantJoin(
-          DyteMeetingParticipant participant) =
+          RtkRemoteParticipant participant) =
       _ParticipantEventStatesOnParticipantJoin;
 
   const factory ParticipantEventStates.onParticipantLeave(
-          DyteMeetingParticipant participant) =
+          RtkRemoteParticipant participant) =
       _ParticipantEventStatesOnParticipantLeave;
 
   const factory ParticipantEventStates.onScreenSharesUpdated() =
       _ParticipantEventStatesOnScreenSharesUpdated;
 
   const factory ParticipantEventStates.onScreenShareStarted(
-          DyteMeetingParticipant participant) =
+          RtkRemoteParticipant participant) =
       _ParticipantEventStatesOnScreenShareStarted;
 
   const factory ParticipantEventStates.onScreenShareEnded(
-          DyteMeetingParticipant participant) =
+          RtkRemoteParticipant participant) =
       _ParticipantEventStatesOnScreenShareEnded;
 
   const factory ParticipantEventStates.onAudioUpdate({
     required bool audioEnabled,
-    required DyteMeetingParticipant participant,
+    required RtkRemoteParticipant participant,
   }) = _ParticipantEventStatesAudioUpdate;
 
   const factory ParticipantEventStates.onVideoUpdate(
           {required bool videoEnabled,
-          required DyteMeetingParticipant participant}) =
+          required RtkRemoteParticipant participant}) =
       _ParticipantEventStatesVideoUpdate;
 
   const factory ParticipantEventStates.onActiveSpeakerChanged(
-          DyteMeetingParticipant participant) =
+          RtkRemoteParticipant participant) =
       _ParticipantEventStateOnActiveSpeakerChanged;
 
   const factory ParticipantEventStates.onNoActiveSpeaker() =
       _ParticipantEventStatesOnNoActiveSpeaker;
 
   const factory ParticipantEventStates.onParticipantPinned(
-          DyteMeetingParticipant participant) =
+          RtkRemoteParticipant participant) =
       _ParticipantEventStatesOnParticipantPinned;
 
   const factory ParticipantEventStates.onParticipantUnpinned() =
       _ParticipantEventStatesOnParticipantUnpinned;
 
-  const factory ParticipantEventStates.onUpdate(DyteParticipants participants) =
+  const factory ParticipantEventStates.onUpdate(RtkParticipants participants) =
       _ParticipantEventStatesOnUpdate;
 
   const factory ParticipantEventStates.onActiveParticipantsChanged(
-          {required List<DyteMeetingParticipant> activeParticipants}) =
+          {required List<RtkRemoteParticipant> activeParticipants}) =
       _OnActiveParticipantsChanged;
 
   const factory ParticipantEventStates.onWaitListParticipantAccepted(
-          DyteMeetingParticipant participant) =
+          RtkRemoteParticipant participant) =
       _ParticipantEventStatesOnWaitListParticipantAccepted;
 
   const factory ParticipantEventStates.onWaitListParticipantClosed(
-          DyteMeetingParticipant participant) =
+          RtkRemoteParticipant participant) =
       _ParticipantEventStateOnWaitListParticipantClosed;
 
   const factory ParticipantEventStates.onWaitListParticipantJoined(
-          DyteMeetingParticipant participant) =
+          RtkRemoteParticipant participant) =
       _ParticipantEventStatesOnWaitListParticipantJoined;
 
   const factory ParticipantEventStates.onWaitListParticipantRejected(
-          DyteMeetingParticipant participant) =
+          RtkRemoteParticipant participant) =
       _ParticipantEventStatesOnWaitListParticipantRejected;
 }

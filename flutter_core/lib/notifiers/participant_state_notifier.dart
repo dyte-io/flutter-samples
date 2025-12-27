@@ -1,9 +1,9 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:flutter_core/models/states/participant_event_states.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ParticipantNotifier extends Notifier<ParticipantEventStates>
-    implements DyteParticipantEventsListener {
+    implements RtkParticipantsEventListener {
   @override
   ParticipantEventStates build() {
     return const ParticipantEventStates.initial();
@@ -11,8 +11,8 @@ class ParticipantNotifier extends Notifier<ParticipantEventStates>
 
   @override
   void onAudioUpdate(
+    RtkRemoteParticipant participant,
     bool audioEnabled,
-    DyteMeetingParticipant participant,
   ) {
     state = ParticipantEventStates.onAudioUpdate(
         audioEnabled: audioEnabled, participant: participant);
@@ -20,58 +20,52 @@ class ParticipantNotifier extends Notifier<ParticipantEventStates>
 
   @override
   void onVideoUpdate(
+    RtkRemoteParticipant participant,
     bool videoEnabled,
-    DyteMeetingParticipant participant,
   ) {
     state = ParticipantEventStates.onVideoUpdate(
         videoEnabled: videoEnabled, participant: participant);
   }
 
   @override
-  void onActiveSpeakerChanged(DyteMeetingParticipant participant) {
-    state = ParticipantEventStates.onActiveSpeakerChanged(participant);
+  void onActiveSpeakerChanged(RtkRemoteParticipant? participant) {
+    if (participant != null) {
+      state = ParticipantEventStates.onActiveSpeakerChanged(participant);
+    } else {
+      state = const ParticipantEventStates.onNoActiveSpeaker();
+    }
   }
 
   @override
-  void onNoActiveSpeaker() {
-    state = const ParticipantEventStates.onNoActiveSpeaker();
-  }
-
-  @override
-  void onParticipantPinned(DyteMeetingParticipant participant) {
+  void onParticipantPinned(RtkRemoteParticipant participant) {
     state = ParticipantEventStates.onParticipantPinned(participant);
   }
 
   @override
-  void onActiveParticipantsChanged(List<DyteMeetingParticipant> active) {
+  void onActiveParticipantsChanged(List<RtkRemoteParticipant> active) {
     state = ParticipantEventStates.onActiveParticipantsChanged(
         activeParticipants: active);
   }
 
   @override
-  void onParticipantUnpinned(DyteMeetingParticipant participant) {
+  void onParticipantUnpinned(RtkRemoteParticipant participant) {
     state = const ParticipantEventStates.onParticipantUnpinned();
   }
 
   @override
-  void onScreenSharesUpdated() {
-    state = const ParticipantEventStates.onScreenSharesUpdated();
-  }
-
-  @override
-  void onUpdate(DyteParticipants participants) {
+  void onUpdate(RtkParticipants participants) {
     state = ParticipantEventStates.onUpdate(participants);
   }
 
   @override
-  void onParticipantJoin(DyteJoinedMeetingParticipant participant) {}
+  void onParticipantJoin(RtkRemoteParticipant participant) {}
 
   @override
-  void onParticipantLeave(DyteJoinedMeetingParticipant participant) {}
+  void onParticipantLeave(RtkRemoteParticipant participant) {}
 
   @override
-  void onScreenShareEnded(DyteJoinedMeetingParticipant participant) {}
+  void onScreenShareUpdate(RtkRemoteParticipant participant, bool isEnabled) {}
 
   @override
-  void onScreenShareStarted(DyteJoinedMeetingParticipant participant) {}
+  void onNewBroadcastMessage(String type, Map<String, dynamic> payload) {}
 }

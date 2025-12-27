@@ -1,10 +1,10 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:flutter_core/notifiers/settings_repository.dart';
 import 'package:flutter_core/notifiers/states/local_user_states.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class LocalUserNotifer extends Notifier<LocalUserState>
-    implements DyteSelfEventsListener {
+    implements RtkSelfEventListener {
   LocalUserNotifer(this._settingsRepository) : super();
 
   @override
@@ -33,15 +33,11 @@ class LocalUserNotifer extends Notifier<LocalUserState>
   }
 
   @override
-  void onAudioDevicesUpdated() =>
+  void onAudioDevicesUpdated(List<AudioDevice> devices) =>
       state = const LocalUserState.onAudioDevicesUpdated();
 
   @override
-  void onProximityChanged(bool isNear) =>
-      state = LocalUserState.onProximityChanged(isNear);
-
-  @override
-  void onUpdate(DyteSelfUser participant) =>
+  void onUpdate(RtkSelfParticipant participant) =>
       state = LocalUserState.onUpdate(participant);
 
   @override
@@ -68,28 +64,28 @@ class LocalUserNotifer extends Notifier<LocalUserState>
   }
 
   @override
-  void onWaitListStatusUpdate(DyteWaitListStatus waitListStatus) {
+  void onWaitListStatusUpdate(WaitlistStatus waitListStatus) {
     state = LocalUserState.onWaitListStatusUpdate(waitListStatus);
   }
 
   @override
-  void onPermissionsUpdated(DytePermissions permissions) {}
-
-  @override
-  void onRoomMessage(String type, Map<String, dynamic> payload) {}
+  void onPermissionsUpdated(SelfPermissions permissions) {}
 
   @override
   void onScreenShareStartFailed(String reason) {}
 
   @override
-  void onScreenShareStarted() {}
+  void onScreenShareUpdate(bool isEnabled) {}
 
   @override
-  void onScreenShareStopped() {}
+  void onVideoDeviceChanged(VideoDevice videoDevice) {}
 
   @override
-  void onStageStatusUpdated(DyteStageStatus stageStatus) {}
+  void onAudioDeviceChanged(AudioDevice audioDevice) {}
 
   @override
-  void onVideoDeviceChanged(DyteVideoDevice videoDevice) {}
+  void onPinned() {}
+
+  @override
+  void onUnpinned() {}
 }

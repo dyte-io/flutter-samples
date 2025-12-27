@@ -1,4 +1,4 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'chat_states.freezed.dart';
@@ -7,9 +7,9 @@ part 'chat_states.freezed.dart';
 class ChatStates with _$ChatStates {
   const factory ChatStates.initial() = _ChatStates;
 
-  const factory ChatStates.onChatUpdates(List<DyteChatMessage> messages) =
+  const factory ChatStates.onChatUpdates(List<ChatMessage> messages) =
       _ChatStatesOnChatUpdates;
 
-  const factory ChatStates.onNewChatMessage(DyteChatMessage message) =
+  const factory ChatStates.onNewChatMessage(ChatMessage message) =
       _ChatStatesOnNewChatMessage;
 }

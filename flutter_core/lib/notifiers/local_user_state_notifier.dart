@@ -1,9 +1,9 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:flutter_core/models/states/local_user_event_states.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class LocalUserNotifier extends StateNotifier<LocalUserEventStates>
-    implements DyteSelfEventsListener {
+    implements RtkSelfEventListener {
   LocalUserNotifier() : super(const LocalUserEventStates.initial());
 
   @override
@@ -23,42 +23,41 @@ class LocalUserNotifier extends StateNotifier<LocalUserEventStates>
       state = LocalUserEventStates.onVideoUpdate(videoEnabled);
 
   @override
-  void onAudioDevicesUpdated() =>
+  void onAudioDevicesUpdated(List<AudioDevice> devices) =>
       state = const LocalUserEventStates.onAudioDevicesUpdated();
 
-  @override
   void onProximityChanged(bool isNear) =>
       state = LocalUserEventStates.onProximityChanged(isNear);
 
   @override
-  void onWaitListStatusUpdate(DyteWaitListStatus waitListStatus) =>
+  void onWaitListStatusUpdate(WaitlistStatus waitListStatus) =>
       state = LocalUserEventStates.onWaitListStatusUpdate(waitListStatus);
 
   @override
-  void onUpdate(DyteSelfUser participant) =>
+  void onUpdate(RtkSelfParticipant participant) =>
       state = LocalUserEventStates.onUpdate(participant);
 
   @override
-  void onPermissionsUpdated(DytePermissions permissions) {}
+  void onPermissionsUpdated(SelfPermissions permissions) {}
 
   @override
   void onRemovedFromMeeting() {}
 
   @override
-  void onRoomMessage(String type, Map<String, dynamic> payload) {}
-
-  @override
   void onScreenShareStartFailed(String reason) {}
 
   @override
-  void onScreenShareStarted() {}
+  void onScreenShareUpdate(bool isEnabled) {}
 
   @override
-  void onScreenShareStopped() {}
+  void onVideoDeviceChanged(VideoDevice videoDevice) {}
 
   @override
-  void onStageStatusUpdated(DyteStageStatus stageStatus) {}
+  void onAudioDeviceChanged(AudioDevice audioDevice) {}
 
   @override
-  void onVideoDeviceChanged(DyteVideoDevice videoDevice) {}
+  void onPinned() {}
+
+  @override
+  void onUnpinned() {}
 }

@@ -19,28 +19,28 @@ mixin _$PluginEventStates {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(DytePlugin plugin) onPluginActivated,
-    required TResult Function(DytePlugin plugin) onPluginFileRequest,
+    required TResult Function(RtkPlugin plugin) onPluginActivated,
+    required TResult Function(RtkPlugin plugin) onPluginFileRequest,
     required TResult Function(String message) onPluginMessage,
-    required TResult Function(DytePlugin plugin) onPluginDeactivated,
+    required TResult Function(RtkPlugin plugin) onPluginDeactivated,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(DytePlugin plugin)? onPluginActivated,
-    TResult? Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult? Function(RtkPlugin plugin)? onPluginActivated,
+    TResult? Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult? Function(String message)? onPluginMessage,
-    TResult? Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult? Function(RtkPlugin plugin)? onPluginDeactivated,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(DytePlugin plugin)? onPluginActivated,
-    TResult Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult Function(RtkPlugin plugin)? onPluginActivated,
+    TResult Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult Function(String message)? onPluginMessage,
-    TResult Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult Function(RtkPlugin plugin)? onPluginDeactivated,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -100,6 +100,9 @@ class _$PluginEventStatesCopyWithImpl<$Res, $Val extends PluginEventStates>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -119,6 +122,9 @@ class __$$PluginEventStatesInitialImplCopyWithImpl<$Res>
       _$PluginEventStatesInitialImpl _value,
       $Res Function(_$PluginEventStatesInitialImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -145,10 +151,10 @@ class _$PluginEventStatesInitialImpl implements _PluginEventStatesInitial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(DytePlugin plugin) onPluginActivated,
-    required TResult Function(DytePlugin plugin) onPluginFileRequest,
+    required TResult Function(RtkPlugin plugin) onPluginActivated,
+    required TResult Function(RtkPlugin plugin) onPluginFileRequest,
     required TResult Function(String message) onPluginMessage,
-    required TResult Function(DytePlugin plugin) onPluginDeactivated,
+    required TResult Function(RtkPlugin plugin) onPluginDeactivated,
   }) {
     return initial();
   }
@@ -157,10 +163,10 @@ class _$PluginEventStatesInitialImpl implements _PluginEventStatesInitial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(DytePlugin plugin)? onPluginActivated,
-    TResult? Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult? Function(RtkPlugin plugin)? onPluginActivated,
+    TResult? Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult? Function(String message)? onPluginMessage,
-    TResult? Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult? Function(RtkPlugin plugin)? onPluginDeactivated,
   }) {
     return initial?.call();
   }
@@ -169,10 +175,10 @@ class _$PluginEventStatesInitialImpl implements _PluginEventStatesInitial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(DytePlugin plugin)? onPluginActivated,
-    TResult Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult Function(RtkPlugin plugin)? onPluginActivated,
+    TResult Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult Function(String message)? onPluginMessage,
-    TResult Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult Function(RtkPlugin plugin)? onPluginDeactivated,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -243,7 +249,7 @@ abstract class _$$PluginEventStatesOnPluginActivatedImplCopyWith<$Res> {
           $Res Function(_$PluginEventStatesOnPluginActivatedImpl) then) =
       __$$PluginEventStatesOnPluginActivatedImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DytePlugin plugin});
+  $Res call({RtkPlugin plugin});
 }
 
 /// @nodoc
@@ -256,6 +262,8 @@ class __$$PluginEventStatesOnPluginActivatedImplCopyWithImpl<$Res>
       $Res Function(_$PluginEventStatesOnPluginActivatedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -265,7 +273,7 @@ class __$$PluginEventStatesOnPluginActivatedImplCopyWithImpl<$Res>
       null == plugin
           ? _value.plugin
           : plugin // ignore: cast_nullable_to_non_nullable
-              as DytePlugin,
+              as RtkPlugin,
     ));
   }
 }
@@ -277,7 +285,7 @@ class _$PluginEventStatesOnPluginActivatedImpl
   const _$PluginEventStatesOnPluginActivatedImpl(this.plugin);
 
   @override
-  final DytePlugin plugin;
+  final RtkPlugin plugin;
 
   @override
   String toString() {
@@ -295,7 +303,9 @@ class _$PluginEventStatesOnPluginActivatedImpl
   @override
   int get hashCode => Object.hash(runtimeType, plugin);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PluginEventStatesOnPluginActivatedImplCopyWith<
@@ -307,10 +317,10 @@ class _$PluginEventStatesOnPluginActivatedImpl
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(DytePlugin plugin) onPluginActivated,
-    required TResult Function(DytePlugin plugin) onPluginFileRequest,
+    required TResult Function(RtkPlugin plugin) onPluginActivated,
+    required TResult Function(RtkPlugin plugin) onPluginFileRequest,
     required TResult Function(String message) onPluginMessage,
-    required TResult Function(DytePlugin plugin) onPluginDeactivated,
+    required TResult Function(RtkPlugin plugin) onPluginDeactivated,
   }) {
     return onPluginActivated(plugin);
   }
@@ -319,10 +329,10 @@ class _$PluginEventStatesOnPluginActivatedImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(DytePlugin plugin)? onPluginActivated,
-    TResult? Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult? Function(RtkPlugin plugin)? onPluginActivated,
+    TResult? Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult? Function(String message)? onPluginMessage,
-    TResult? Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult? Function(RtkPlugin plugin)? onPluginDeactivated,
   }) {
     return onPluginActivated?.call(plugin);
   }
@@ -331,10 +341,10 @@ class _$PluginEventStatesOnPluginActivatedImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(DytePlugin plugin)? onPluginActivated,
-    TResult Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult Function(RtkPlugin plugin)? onPluginActivated,
+    TResult Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult Function(String message)? onPluginMessage,
-    TResult Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult Function(RtkPlugin plugin)? onPluginDeactivated,
     required TResult orElse(),
   }) {
     if (onPluginActivated != null) {
@@ -396,11 +406,14 @@ class _$PluginEventStatesOnPluginActivatedImpl
 
 abstract class _PluginEventStatesOnPluginActivated
     implements PluginEventStates {
-  const factory _PluginEventStatesOnPluginActivated(final DytePlugin plugin) =
+  const factory _PluginEventStatesOnPluginActivated(final RtkPlugin plugin) =
       _$PluginEventStatesOnPluginActivatedImpl;
 
-  DytePlugin get plugin;
-  @JsonKey(ignore: true)
+  RtkPlugin get plugin;
+
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PluginEventStatesOnPluginActivatedImplCopyWith<
           _$PluginEventStatesOnPluginActivatedImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -413,7 +426,7 @@ abstract class _$$PluginEventStatesOnPluginFileRequestImplCopyWith<$Res> {
           $Res Function(_$PluginEventStatesOnPluginFileRequestImpl) then) =
       __$$PluginEventStatesOnPluginFileRequestImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DytePlugin plugin});
+  $Res call({RtkPlugin plugin});
 }
 
 /// @nodoc
@@ -426,6 +439,8 @@ class __$$PluginEventStatesOnPluginFileRequestImplCopyWithImpl<$Res>
       $Res Function(_$PluginEventStatesOnPluginFileRequestImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -435,7 +450,7 @@ class __$$PluginEventStatesOnPluginFileRequestImplCopyWithImpl<$Res>
       null == plugin
           ? _value.plugin
           : plugin // ignore: cast_nullable_to_non_nullable
-              as DytePlugin,
+              as RtkPlugin,
     ));
   }
 }
@@ -447,7 +462,7 @@ class _$PluginEventStatesOnPluginFileRequestImpl
   const _$PluginEventStatesOnPluginFileRequestImpl(this.plugin);
 
   @override
-  final DytePlugin plugin;
+  final RtkPlugin plugin;
 
   @override
   String toString() {
@@ -465,7 +480,9 @@ class _$PluginEventStatesOnPluginFileRequestImpl
   @override
   int get hashCode => Object.hash(runtimeType, plugin);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PluginEventStatesOnPluginFileRequestImplCopyWith<
@@ -477,10 +494,10 @@ class _$PluginEventStatesOnPluginFileRequestImpl
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(DytePlugin plugin) onPluginActivated,
-    required TResult Function(DytePlugin plugin) onPluginFileRequest,
+    required TResult Function(RtkPlugin plugin) onPluginActivated,
+    required TResult Function(RtkPlugin plugin) onPluginFileRequest,
     required TResult Function(String message) onPluginMessage,
-    required TResult Function(DytePlugin plugin) onPluginDeactivated,
+    required TResult Function(RtkPlugin plugin) onPluginDeactivated,
   }) {
     return onPluginFileRequest(plugin);
   }
@@ -489,10 +506,10 @@ class _$PluginEventStatesOnPluginFileRequestImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(DytePlugin plugin)? onPluginActivated,
-    TResult? Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult? Function(RtkPlugin plugin)? onPluginActivated,
+    TResult? Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult? Function(String message)? onPluginMessage,
-    TResult? Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult? Function(RtkPlugin plugin)? onPluginDeactivated,
   }) {
     return onPluginFileRequest?.call(plugin);
   }
@@ -501,10 +518,10 @@ class _$PluginEventStatesOnPluginFileRequestImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(DytePlugin plugin)? onPluginActivated,
-    TResult Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult Function(RtkPlugin plugin)? onPluginActivated,
+    TResult Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult Function(String message)? onPluginMessage,
-    TResult Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult Function(RtkPlugin plugin)? onPluginDeactivated,
     required TResult orElse(),
   }) {
     if (onPluginFileRequest != null) {
@@ -566,11 +583,14 @@ class _$PluginEventStatesOnPluginFileRequestImpl
 
 abstract class _PluginEventStatesOnPluginFileRequest
     implements PluginEventStates {
-  const factory _PluginEventStatesOnPluginFileRequest(final DytePlugin plugin) =
+  const factory _PluginEventStatesOnPluginFileRequest(final RtkPlugin plugin) =
       _$PluginEventStatesOnPluginFileRequestImpl;
 
-  DytePlugin get plugin;
-  @JsonKey(ignore: true)
+  RtkPlugin get plugin;
+
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PluginEventStatesOnPluginFileRequestImplCopyWith<
           _$PluginEventStatesOnPluginFileRequestImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -596,6 +616,8 @@ class __$$PluginEventStatesOnPluginMessageImplCopyWithImpl<$Res>
       $Res Function(_$PluginEventStatesOnPluginMessageImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -635,7 +657,9 @@ class _$PluginEventStatesOnPluginMessageImpl
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PluginEventStatesOnPluginMessageImplCopyWith<
@@ -647,10 +671,10 @@ class _$PluginEventStatesOnPluginMessageImpl
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(DytePlugin plugin) onPluginActivated,
-    required TResult Function(DytePlugin plugin) onPluginFileRequest,
+    required TResult Function(RtkPlugin plugin) onPluginActivated,
+    required TResult Function(RtkPlugin plugin) onPluginFileRequest,
     required TResult Function(String message) onPluginMessage,
-    required TResult Function(DytePlugin plugin) onPluginDeactivated,
+    required TResult Function(RtkPlugin plugin) onPluginDeactivated,
   }) {
     return onPluginMessage(message);
   }
@@ -659,10 +683,10 @@ class _$PluginEventStatesOnPluginMessageImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(DytePlugin plugin)? onPluginActivated,
-    TResult? Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult? Function(RtkPlugin plugin)? onPluginActivated,
+    TResult? Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult? Function(String message)? onPluginMessage,
-    TResult? Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult? Function(RtkPlugin plugin)? onPluginDeactivated,
   }) {
     return onPluginMessage?.call(message);
   }
@@ -671,10 +695,10 @@ class _$PluginEventStatesOnPluginMessageImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(DytePlugin plugin)? onPluginActivated,
-    TResult Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult Function(RtkPlugin plugin)? onPluginActivated,
+    TResult Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult Function(String message)? onPluginMessage,
-    TResult Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult Function(RtkPlugin plugin)? onPluginDeactivated,
     required TResult orElse(),
   }) {
     if (onPluginMessage != null) {
@@ -739,7 +763,10 @@ abstract class _PluginEventStatesOnPluginMessage implements PluginEventStates {
       _$PluginEventStatesOnPluginMessageImpl;
 
   String get message;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PluginEventStatesOnPluginMessageImplCopyWith<
           _$PluginEventStatesOnPluginMessageImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -752,7 +779,7 @@ abstract class _$$PluginEventStatesOnPluginDeactivatedImplCopyWith<$Res> {
           $Res Function(_$PluginEventStatesOnPluginDeactivatedImpl) then) =
       __$$PluginEventStatesOnPluginDeactivatedImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DytePlugin plugin});
+  $Res call({RtkPlugin plugin});
 }
 
 /// @nodoc
@@ -765,6 +792,8 @@ class __$$PluginEventStatesOnPluginDeactivatedImplCopyWithImpl<$Res>
       $Res Function(_$PluginEventStatesOnPluginDeactivatedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -774,7 +803,7 @@ class __$$PluginEventStatesOnPluginDeactivatedImplCopyWithImpl<$Res>
       null == plugin
           ? _value.plugin
           : plugin // ignore: cast_nullable_to_non_nullable
-              as DytePlugin,
+              as RtkPlugin,
     ));
   }
 }
@@ -786,7 +815,7 @@ class _$PluginEventStatesOnPluginDeactivatedImpl
   const _$PluginEventStatesOnPluginDeactivatedImpl(this.plugin);
 
   @override
-  final DytePlugin plugin;
+  final RtkPlugin plugin;
 
   @override
   String toString() {
@@ -804,7 +833,9 @@ class _$PluginEventStatesOnPluginDeactivatedImpl
   @override
   int get hashCode => Object.hash(runtimeType, plugin);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PluginEventStatesOnPluginDeactivatedImplCopyWith<
@@ -816,10 +847,10 @@ class _$PluginEventStatesOnPluginDeactivatedImpl
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(DytePlugin plugin) onPluginActivated,
-    required TResult Function(DytePlugin plugin) onPluginFileRequest,
+    required TResult Function(RtkPlugin plugin) onPluginActivated,
+    required TResult Function(RtkPlugin plugin) onPluginFileRequest,
     required TResult Function(String message) onPluginMessage,
-    required TResult Function(DytePlugin plugin) onPluginDeactivated,
+    required TResult Function(RtkPlugin plugin) onPluginDeactivated,
   }) {
     return onPluginDeactivated(plugin);
   }
@@ -828,10 +859,10 @@ class _$PluginEventStatesOnPluginDeactivatedImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(DytePlugin plugin)? onPluginActivated,
-    TResult? Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult? Function(RtkPlugin plugin)? onPluginActivated,
+    TResult? Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult? Function(String message)? onPluginMessage,
-    TResult? Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult? Function(RtkPlugin plugin)? onPluginDeactivated,
   }) {
     return onPluginDeactivated?.call(plugin);
   }
@@ -840,10 +871,10 @@ class _$PluginEventStatesOnPluginDeactivatedImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(DytePlugin plugin)? onPluginActivated,
-    TResult Function(DytePlugin plugin)? onPluginFileRequest,
+    TResult Function(RtkPlugin plugin)? onPluginActivated,
+    TResult Function(RtkPlugin plugin)? onPluginFileRequest,
     TResult Function(String message)? onPluginMessage,
-    TResult Function(DytePlugin plugin)? onPluginDeactivated,
+    TResult Function(RtkPlugin plugin)? onPluginDeactivated,
     required TResult orElse(),
   }) {
     if (onPluginDeactivated != null) {
@@ -905,11 +936,14 @@ class _$PluginEventStatesOnPluginDeactivatedImpl
 
 abstract class _PluginEventStatesOnPluginDeactivated
     implements PluginEventStates {
-  const factory _PluginEventStatesOnPluginDeactivated(final DytePlugin plugin) =
+  const factory _PluginEventStatesOnPluginDeactivated(final RtkPlugin plugin) =
       _$PluginEventStatesOnPluginDeactivatedImpl;
 
-  DytePlugin get plugin;
-  @JsonKey(ignore: true)
+  RtkPlugin get plugin;
+
+  /// Create a copy of PluginEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PluginEventStatesOnPluginDeactivatedImplCopyWith<
           _$PluginEventStatesOnPluginDeactivatedImpl>
       get copyWith => throw _privateConstructorUsedError;

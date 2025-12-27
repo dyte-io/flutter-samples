@@ -1,4 +1,4 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:flutter_core/models/states/participant_event_states.dart';
 import 'package:flutter_core/models/states/room_event_states.dart';
 import 'package:flutter_core/notifiers/chat_notifier.dart';
@@ -41,20 +41,19 @@ final participantEventNotifier =
 );
 
 final pinUnpinProvider =
-    NotifierProvider<PinNotifier, DyteMeetingParticipant?>(PinNotifier.new);
+    NotifierProvider<PinNotifier, RtkMeetingParticipant?>(PinNotifier.new);
 
 final screenshareProvider =
-    NotifierProvider<ScreenshareNotifier, List<DyteMeetingParticipant>>(
+    NotifierProvider<ScreenshareNotifier, List<RtkMeetingParticipant>>(
         ScreenshareNotifier.new);
 
 final pluginProvider =
-    NotifierProvider<PluginNotifer, List<DytePlugin>>(PluginNotifer.new);
+    NotifierProvider<PluginNotifer, List<RtkPlugin>>(PluginNotifer.new);
 final chatNotifier =
     StateNotifierProvider<ChatNotifier, ChatStates>((ref) => ChatNotifier());
 
 final recordingNotifier =
-    NotifierProvider<RecordingNotifer, DyteRecordingState>(
-        RecordingNotifer.new);
+    NotifierProvider<RecordingNotifer, RecordingState>(RecordingNotifer.new);
 
 final waitingRoomNotifier =
     NotifierProvider<WaitingRoomNotifer, WaitlistedParticipantStates>(
@@ -69,5 +68,4 @@ final newPollEventNotifier = NotifierProvider<NewPollNotifer, PollStates>(
 );
 
 final pollsListNotifier =
-    NotifierProvider<PollListNotifier, List<DytePollMessage>>(
-        PollListNotifier.new);
+    NotifierProvider<PollListNotifier, List<Poll>>(PollListNotifier.new);

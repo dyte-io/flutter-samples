@@ -1,4 +1,4 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:flutter_core/di/di.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +21,7 @@ class SetupPage extends StatelessWidget {
               color: Colors.green,
               child: const Text("Join Room"),
               onPressed: () {
-                dyteMobileClient.joinRoom();
+                realtimekitClient.joinRoom();
               },
             )
           ],

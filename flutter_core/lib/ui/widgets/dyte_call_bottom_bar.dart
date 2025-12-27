@@ -24,7 +24,7 @@ class _DyteCallBottomBarState extends ConsumerState<DyteCallBottomBar> {
         orElse: () {},
       );
     });
-    final localUser = dyteMobileClient.localUser;
+    final localUser = realtimekitClient.localUser;
     return DecoratedBox(
       decoration: BoxDecoration(color: Colors.grey.shade800.withOpacity(.9)),
       child: Row(
@@ -55,7 +55,7 @@ class _DyteCallBottomBarState extends ConsumerState<DyteCallBottomBar> {
             ),
           ),
           IconButton(
-            onPressed: dyteMobileClient.leaveRoom,
+            onPressed: realtimekitClient.leaveRoom,
             icon: const Icon(
               Icons.call_end,
               color: Colors.white,

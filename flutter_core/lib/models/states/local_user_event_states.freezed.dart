@@ -25,8 +25,8 @@ mixin _$LocalUserEventStates {
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -42,8 +42,8 @@ mixin _$LocalUserEventStates {
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -59,8 +59,8 @@ mixin _$LocalUserEventStates {
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -180,6 +180,9 @@ class _$LocalUserEventStatesCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -199,6 +202,9 @@ class __$$LocalUserEventStateInitialImplCopyWithImpl<$Res>
       _$LocalUserEventStateInitialImpl _value,
       $Res Function(_$LocalUserEventStateInitialImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -231,8 +237,8 @@ class _$LocalUserEventStateInitialImpl implements _LocalUserEventStateInitial {
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -251,8 +257,8 @@ class _$LocalUserEventStateInitialImpl implements _LocalUserEventStateInitial {
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -271,8 +277,8 @@ class _$LocalUserEventStateInitialImpl implements _LocalUserEventStateInitial {
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -423,6 +429,9 @@ class __$$LocalUserEventStateonMeetingRoomJoinedWithoutCameraPermissionImplCopyW
               _$LocalUserEventStateonMeetingRoomJoinedWithoutCameraPermissionImpl)
           _then)
       : super(_value, _then);
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -457,8 +466,8 @@ class _$LocalUserEventStateonMeetingRoomJoinedWithoutCameraPermissionImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -477,8 +486,8 @@ class _$LocalUserEventStateonMeetingRoomJoinedWithoutCameraPermissionImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -497,8 +506,8 @@ class _$LocalUserEventStateonMeetingRoomJoinedWithoutCameraPermissionImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -649,6 +658,9 @@ class __$$LocalUserEventStateonMeetingRoomJoinedWithoutMicPermissionImplCopyWith
               _$LocalUserEventStateonMeetingRoomJoinedWithoutMicPermissionImpl)
           _then)
       : super(_value, _then);
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -683,8 +695,8 @@ class _$LocalUserEventStateonMeetingRoomJoinedWithoutMicPermissionImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -703,8 +715,8 @@ class _$LocalUserEventStateonMeetingRoomJoinedWithoutMicPermissionImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -723,8 +735,8 @@ class _$LocalUserEventStateonMeetingRoomJoinedWithoutMicPermissionImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -869,6 +881,8 @@ class __$$LocalUserEventStateonAudioUpdateImplCopyWithImpl<$Res>
       $Res Function(_$LocalUserEventStateonAudioUpdateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -909,7 +923,9 @@ class _$LocalUserEventStateonAudioUpdateImpl
   @override
   int get hashCode => Object.hash(runtimeType, audioEnabled);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LocalUserEventStateonAudioUpdateImplCopyWith<
@@ -927,8 +943,8 @@ class _$LocalUserEventStateonAudioUpdateImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -947,8 +963,8 @@ class _$LocalUserEventStateonAudioUpdateImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -967,8 +983,8 @@ class _$LocalUserEventStateonAudioUpdateImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -1093,7 +1109,10 @@ abstract class _LocalUserEventStateonAudioUpdate
       _$LocalUserEventStateonAudioUpdateImpl;
 
   bool get audioEnabled;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LocalUserEventStateonAudioUpdateImplCopyWith<
           _$LocalUserEventStateonAudioUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1119,6 +1138,8 @@ class __$$LocalUserEventStateonVideoUpdateImplCopyWithImpl<$Res>
       $Res Function(_$LocalUserEventStateonVideoUpdateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1159,7 +1180,9 @@ class _$LocalUserEventStateonVideoUpdateImpl
   @override
   int get hashCode => Object.hash(runtimeType, videoEnabled);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LocalUserEventStateonVideoUpdateImplCopyWith<
@@ -1177,8 +1200,8 @@ class _$LocalUserEventStateonVideoUpdateImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -1197,8 +1220,8 @@ class _$LocalUserEventStateonVideoUpdateImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -1217,8 +1240,8 @@ class _$LocalUserEventStateonVideoUpdateImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -1343,7 +1366,10 @@ abstract class _LocalUserEventStateonVideoUpdate
       _$LocalUserEventStateonVideoUpdateImpl;
 
   bool get videoEnabled;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LocalUserEventStateonVideoUpdateImplCopyWith<
           _$LocalUserEventStateonVideoUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1366,6 +1392,9 @@ class __$$LocalUserEventStateOnAudioDevicesUpdatedImplCopyWithImpl<$Res>
       _$LocalUserEventStateOnAudioDevicesUpdatedImpl _value,
       $Res Function(_$LocalUserEventStateOnAudioDevicesUpdatedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1399,8 +1428,8 @@ class _$LocalUserEventStateOnAudioDevicesUpdatedImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -1419,8 +1448,8 @@ class _$LocalUserEventStateOnAudioDevicesUpdatedImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -1439,8 +1468,8 @@ class _$LocalUserEventStateOnAudioDevicesUpdatedImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -1585,6 +1614,8 @@ class __$$LocalUserEventStateonProximityChangedImplCopyWithImpl<$Res>
       $Res Function(_$LocalUserEventStateonProximityChangedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1624,7 +1655,9 @@ class _$LocalUserEventStateonProximityChangedImpl
   @override
   int get hashCode => Object.hash(runtimeType, isNear);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LocalUserEventStateonProximityChangedImplCopyWith<
@@ -1642,8 +1675,8 @@ class _$LocalUserEventStateonProximityChangedImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -1662,8 +1695,8 @@ class _$LocalUserEventStateonProximityChangedImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -1682,8 +1715,8 @@ class _$LocalUserEventStateonProximityChangedImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -1808,7 +1841,10 @@ abstract class _LocalUserEventStateonProximityChanged
       _$LocalUserEventStateonProximityChangedImpl;
 
   bool get isNear;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LocalUserEventStateonProximityChangedImplCopyWith<
           _$LocalUserEventStateonProximityChangedImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1821,7 +1857,7 @@ abstract class _$$LocalUserEventStateonWaitListStatusUpdateImplCopyWith<$Res> {
           $Res Function(_$LocalUserEventStateonWaitListStatusUpdateImpl) then) =
       __$$LocalUserEventStateonWaitListStatusUpdateImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DyteWaitListStatus status});
+  $Res call({WaitlistStatus status});
 }
 
 /// @nodoc
@@ -1834,6 +1870,8 @@ class __$$LocalUserEventStateonWaitListStatusUpdateImplCopyWithImpl<$Res>
       $Res Function(_$LocalUserEventStateonWaitListStatusUpdateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1843,7 +1881,7 @@ class __$$LocalUserEventStateonWaitListStatusUpdateImplCopyWithImpl<$Res>
       null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
-              as DyteWaitListStatus,
+              as WaitlistStatus,
     ));
   }
 }
@@ -1855,7 +1893,7 @@ class _$LocalUserEventStateonWaitListStatusUpdateImpl
   const _$LocalUserEventStateonWaitListStatusUpdateImpl(this.status);
 
   @override
-  final DyteWaitListStatus status;
+  final WaitlistStatus status;
 
   @override
   String toString() {
@@ -1873,7 +1911,9 @@ class _$LocalUserEventStateonWaitListStatusUpdateImpl
   @override
   int get hashCode => Object.hash(runtimeType, status);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LocalUserEventStateonWaitListStatusUpdateImplCopyWith<
@@ -1893,8 +1933,8 @@ class _$LocalUserEventStateonWaitListStatusUpdateImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -1913,8 +1953,8 @@ class _$LocalUserEventStateonWaitListStatusUpdateImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -1933,8 +1973,8 @@ class _$LocalUserEventStateonWaitListStatusUpdateImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -2056,11 +2096,14 @@ class _$LocalUserEventStateonWaitListStatusUpdateImpl
 abstract class _LocalUserEventStateonWaitListStatusUpdate
     implements LocalUserEventStates {
   const factory _LocalUserEventStateonWaitListStatusUpdate(
-          final DyteWaitListStatus status) =
+          final WaitlistStatus status) =
       _$LocalUserEventStateonWaitListStatusUpdateImpl;
 
-  DyteWaitListStatus get status;
-  @JsonKey(ignore: true)
+  WaitlistStatus get status;
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LocalUserEventStateonWaitListStatusUpdateImplCopyWith<
           _$LocalUserEventStateonWaitListStatusUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2073,7 +2116,7 @@ abstract class _$$LocalUserEventStateonUpdateImplCopyWith<$Res> {
           $Res Function(_$LocalUserEventStateonUpdateImpl) then) =
       __$$LocalUserEventStateonUpdateImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DyteSelfUser participant});
+  $Res call({RtkSelfParticipant participant});
 }
 
 /// @nodoc
@@ -2086,6 +2129,8 @@ class __$$LocalUserEventStateonUpdateImplCopyWithImpl<$Res>
       $Res Function(_$LocalUserEventStateonUpdateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2095,7 +2140,7 @@ class __$$LocalUserEventStateonUpdateImplCopyWithImpl<$Res>
       null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
-              as DyteSelfUser,
+              as RtkSelfParticipant,
     ));
   }
 }
@@ -2107,7 +2152,7 @@ class _$LocalUserEventStateonUpdateImpl
   const _$LocalUserEventStateonUpdateImpl(this.participant);
 
   @override
-  final DyteSelfUser participant;
+  final RtkSelfParticipant participant;
 
   @override
   String toString() {
@@ -2126,7 +2171,9 @@ class _$LocalUserEventStateonUpdateImpl
   @override
   int get hashCode => Object.hash(runtimeType, participant);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LocalUserEventStateonUpdateImplCopyWith<_$LocalUserEventStateonUpdateImpl>
@@ -2143,8 +2190,8 @@ class _$LocalUserEventStateonUpdateImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -2163,8 +2210,8 @@ class _$LocalUserEventStateonUpdateImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -2183,8 +2230,8 @@ class _$LocalUserEventStateonUpdateImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -2304,11 +2351,14 @@ class _$LocalUserEventStateonUpdateImpl
 }
 
 abstract class _LocalUserEventStateonUpdate implements LocalUserEventStates {
-  const factory _LocalUserEventStateonUpdate(final DyteSelfUser participant) =
-      _$LocalUserEventStateonUpdateImpl;
+  const factory _LocalUserEventStateonUpdate(
+      final RtkSelfParticipant participant) = _$LocalUserEventStateonUpdateImpl;
 
-  DyteSelfUser get participant;
-  @JsonKey(ignore: true)
+  RtkSelfParticipant get participant;
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LocalUserEventStateonUpdateImplCopyWith<_$LocalUserEventStateonUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -2338,6 +2388,9 @@ class __$$LocalUserEventStateonWebinarPresentRequestReceivedImplCopyWithImpl<
       $Res Function(_$LocalUserEventStateonWebinarPresentRequestReceivedImpl)
           _then)
       : super(_value, _then);
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2371,8 +2424,8 @@ class _$LocalUserEventStateonWebinarPresentRequestReceivedImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -2391,8 +2444,8 @@ class _$LocalUserEventStateonWebinarPresentRequestReceivedImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -2411,8 +2464,8 @@ class _$LocalUserEventStateonWebinarPresentRequestReceivedImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -2554,6 +2607,9 @@ class __$$LocalUserEventStateonStoppedPresentingImplCopyWithImpl<$Res>
       _$LocalUserEventStateonStoppedPresentingImpl _value,
       $Res Function(_$LocalUserEventStateonStoppedPresentingImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2587,8 +2643,8 @@ class _$LocalUserEventStateonStoppedPresentingImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -2607,8 +2663,8 @@ class _$LocalUserEventStateonStoppedPresentingImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -2627,8 +2683,8 @@ class _$LocalUserEventStateonStoppedPresentingImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -2771,6 +2827,9 @@ class __$$LocalUserEventStatesOnMeetingRoomLeaveLeftImplCopyWithImpl<$Res>
       _$LocalUserEventStatesOnMeetingRoomLeaveLeftImpl _value,
       $Res Function(_$LocalUserEventStatesOnMeetingRoomLeaveLeftImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2804,8 +2863,8 @@ class _$LocalUserEventStatesOnMeetingRoomLeaveLeftImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -2824,8 +2883,8 @@ class _$LocalUserEventStatesOnMeetingRoomLeaveLeftImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -2844,8 +2903,8 @@ class _$LocalUserEventStatesOnMeetingRoomLeaveLeftImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,
@@ -2990,6 +3049,9 @@ class __$$LocalUserEventStateonMeetingRoomDisconnectedImplCopyWithImpl<$Res>
       _$LocalUserEventStateonMeetingRoomDisconnectedImpl _value,
       $Res Function(_$LocalUserEventStateonMeetingRoomDisconnectedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of LocalUserEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -3023,8 +3085,8 @@ class _$LocalUserEventStateonMeetingRoomDisconnectedImpl
     required TResult Function(bool videoEnabled) onVideoUpdate,
     required TResult Function() onAudioDevicesUpdated,
     required TResult Function(bool isNear) onProximityChanged,
-    required TResult Function(DyteWaitListStatus status) onWaitListStatusUpdate,
-    required TResult Function(DyteSelfUser participant) onUpdate,
+    required TResult Function(WaitlistStatus status) onWaitListStatusUpdate,
+    required TResult Function(RtkSelfParticipant participant) onUpdate,
     required TResult Function() onWebinarPresentRequestReceived,
     required TResult Function() onStoppedPresenting,
     required TResult Function() onMeetingRoomLeft,
@@ -3043,8 +3105,8 @@ class _$LocalUserEventStateonMeetingRoomDisconnectedImpl
     TResult? Function(bool videoEnabled)? onVideoUpdate,
     TResult? Function()? onAudioDevicesUpdated,
     TResult? Function(bool isNear)? onProximityChanged,
-    TResult? Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult? Function(DyteSelfUser participant)? onUpdate,
+    TResult? Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult? Function(RtkSelfParticipant participant)? onUpdate,
     TResult? Function()? onWebinarPresentRequestReceived,
     TResult? Function()? onStoppedPresenting,
     TResult? Function()? onMeetingRoomLeft,
@@ -3063,8 +3125,8 @@ class _$LocalUserEventStateonMeetingRoomDisconnectedImpl
     TResult Function(bool videoEnabled)? onVideoUpdate,
     TResult Function()? onAudioDevicesUpdated,
     TResult Function(bool isNear)? onProximityChanged,
-    TResult Function(DyteWaitListStatus status)? onWaitListStatusUpdate,
-    TResult Function(DyteSelfUser participant)? onUpdate,
+    TResult Function(WaitlistStatus status)? onWaitListStatusUpdate,
+    TResult Function(RtkSelfParticipant participant)? onUpdate,
     TResult Function()? onWebinarPresentRequestReceived,
     TResult Function()? onStoppedPresenting,
     TResult Function()? onMeetingRoomLeft,

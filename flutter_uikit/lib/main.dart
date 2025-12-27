@@ -1,6 +1,6 @@
-import 'package:dyte_uikit/dyte_uikit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_uikit/meeting_config.dart';
+import 'package:realtimekit_ui/realtimekit_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,12 +30,12 @@ class HomePage extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) {
-                final DyteUIKitInfo uiKitInfo = DyteUIKitInfo(
-                  DyteMeetingInfoV2(
+                final RealtimeKitUIInfo uiKitInfo = RealtimeKitUIInfo(
+                  RealtimeKitUIInfo(
                     authToken: MeetingConfig.authToken,
                   ),
                 );
-                final uiKit = DyteUIKitBuilder.build(uiKitInfo: uiKitInfo);
+                final uiKit = RealtimeKitUIBuilder.build(uiKitInfo: uiKitInfo);
                 return DyteMeetingPage(uiKit);
               }),
             );

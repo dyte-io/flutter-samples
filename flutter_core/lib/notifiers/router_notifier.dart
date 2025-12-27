@@ -1,9 +1,9 @@
-import 'package:dyte_core/dyte_core.dart';
+import 'package:realtimekit_core/realtimekit_core.dart';
 import 'package:flutter_core/notifiers/states/router_states.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class RouterNotifier extends Notifier<RouterStates>
-    implements DyteMeetingRoomEventsListener, DyteSelfEventsListener {
+    implements RtkMeetingRoomEventListener, RtkSelfEventListener {
   @override
   RouterStates build() {
     return RouterInitial();
@@ -20,8 +20,8 @@ class RouterNotifier extends Notifier<RouterStates>
   }
 
   @override
-  void onMeetingInitFailed(Exception exception) {
-    state = OnRouterMeetingInitFailed(exception);
+  void onMeetingInitFailed(MeetingError error) {
+    state = OnRouterMeetingInitFailed(Exception(error.message));
   }
 
   @override
@@ -35,8 +35,8 @@ class RouterNotifier extends Notifier<RouterStates>
   }
 
   @override
-  void onMeetingRoomJoinFailed(Exception exception) {
-    state = OnRouterMeetingRoomJoinFailed(exception);
+  void onMeetingRoomJoinFailed(MeetingError error) {
+    state = OnRouterMeetingRoomJoinFailed(Exception(error.message));
   }
 
   @override
@@ -49,38 +49,30 @@ class RouterNotifier extends Notifier<RouterStates>
     state = OnRouterMeetingRoomLeaveCompleted();
   }
 
-  @override
   void onMeetingRoomDisconnected() {
     state = OnRouterMeetingRoomDisconnected();
   }
 
   @override
-  void onWaitListStatusUpdate(DyteWaitListStatus waitListStatus) {
+  void onWaitListStatusUpdate(WaitlistStatus waitListStatus) {
     state = OnRouterSelfWaitingRoomStatusUpdate(waitListStatus);
   }
 
   @override
-  void onActiveTabUpdate(DyteActiveTab? activeTab) {}
-
-  @override
-  void onAudioDevicesUpdated() {}
+  void onAudioDevicesUpdated(List<AudioDevice> devices) {}
 
   @override
   void onAudioUpdate(bool audioEnabled) {}
 
-  @override
   void onConnectedToMeetingRoom() {}
 
-  @override
   void onConnectingToMeetingRoom() {}
 
-  @override
   void onDisconnectedFromMeetingRoom(String reason) {}
 
   @override
   void onMeetingEnded() {}
 
-  @override
   void onMeetingRoomConnectionFailed() {}
 
   @override
@@ -89,45 +81,47 @@ class RouterNotifier extends Notifier<RouterStates>
   @override
   void onMeetingRoomJoinedWithoutMicPermission() {}
 
-  @override
   void onMeetingRoomReconnectionFailed() {}
 
   @override
-  void onPermissionsUpdated(DytePermissions permissions) {}
+  void onPermissionsUpdated(SelfPermissions permissions) {}
 
-  @override
   void onProximityChanged(bool isNear) {}
 
-  @override
   void onReconnectedToMeetingRoom() {}
 
-  @override
   void onReconnectingToMeetingRoom() {}
 
   @override
   void onRemovedFromMeeting() {}
 
   @override
-  void onRoomMessage(String type, Map<String, dynamic> payload) {}
-
-  @override
   void onScreenShareStartFailed(String reason) {}
 
   @override
-  void onScreenShareStarted() {}
+  void onScreenShareUpdate(bool isEnabled) {}
 
   @override
-  void onScreenShareStopped() {}
+  void onUpdate(RtkSelfParticipant participant) {}
 
   @override
-  void onStageStatusUpdated(DyteStageStatus stageStatus) {}
-
-  @override
-  void onUpdate(DyteSelfUser participant) {}
-
-  @override
-  void onVideoDeviceChanged(DyteVideoDevice videoDevice) {}
+  void onVideoDeviceChanged(VideoDevice videoDevice) {}
 
   @override
   void onVideoUpdate(bool videoEnabled) {}
+
+  @override
+  void onAudioDeviceChanged(AudioDevice audioDevice) {}
+
+  @override
+  void onPinned() {}
+
+  @override
+  void onUnpinned() {}
+
+  @override
+  void onSocketConnectionUpdate(SocketConnectionState connectionState) {}
+
+  @override
+  void onActiveTabUpdate(ActiveTab? activeTab) {}
 }

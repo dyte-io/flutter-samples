@@ -20,64 +20,62 @@ mixin _$ParticipantEventStates {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) =>
@@ -179,6 +177,9 @@ class _$ParticipantEventStatesCopyWithImpl<$Res,
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -198,6 +199,9 @@ class __$$ParticipantEventStatesImplCopyWithImpl<$Res>
       _$ParticipantEventStatesImpl _value,
       $Res Function(_$ParticipantEventStatesImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -225,24 +229,24 @@ class _$ParticipantEventStatesImpl implements _ParticipantEventStates {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return initial();
@@ -252,20 +256,19 @@ class _$ParticipantEventStatesImpl implements _ParticipantEventStates {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return initial?.call();
@@ -275,20 +278,19 @@ class _$ParticipantEventStatesImpl implements _ParticipantEventStates {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -400,7 +402,7 @@ abstract class _$$ParticipantEventStatesAudioUpdateImplCopyWith<$Res> {
           $Res Function(_$ParticipantEventStatesAudioUpdateImpl) then) =
       __$$ParticipantEventStatesAudioUpdateImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({bool audioEnabled, DyteMeetingParticipant participant});
+  $Res call({bool audioEnabled, RtkRemoteParticipant participant});
 }
 
 /// @nodoc
@@ -413,6 +415,8 @@ class __$$ParticipantEventStatesAudioUpdateImplCopyWithImpl<$Res>
       $Res Function(_$ParticipantEventStatesAudioUpdateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -427,7 +431,7 @@ class __$$ParticipantEventStatesAudioUpdateImplCopyWithImpl<$Res>
       participant: null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
-              as DyteMeetingParticipant,
+              as RtkRemoteParticipant,
     ));
   }
 }
@@ -442,7 +446,7 @@ class _$ParticipantEventStatesAudioUpdateImpl
   @override
   final bool audioEnabled;
   @override
-  final DyteMeetingParticipant participant;
+  final RtkRemoteParticipant participant;
 
   @override
   String toString() {
@@ -463,7 +467,9 @@ class _$ParticipantEventStatesAudioUpdateImpl
   @override
   int get hashCode => Object.hash(runtimeType, audioEnabled, participant);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParticipantEventStatesAudioUpdateImplCopyWith<
@@ -476,24 +482,24 @@ class _$ParticipantEventStatesAudioUpdateImpl
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return onAudioUpdate(audioEnabled, participant);
@@ -503,20 +509,19 @@ class _$ParticipantEventStatesAudioUpdateImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return onAudioUpdate?.call(audioEnabled, participant);
@@ -526,20 +531,19 @@ class _$ParticipantEventStatesAudioUpdateImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -644,12 +648,15 @@ abstract class _ParticipantEventStatesAudioUpdate
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesAudioUpdate(
           {required final bool audioEnabled,
-          required final DyteMeetingParticipant participant}) =
+          required final RtkRemoteParticipant participant}) =
       _$ParticipantEventStatesAudioUpdateImpl;
 
   bool get audioEnabled;
-  DyteMeetingParticipant get participant;
-  @JsonKey(ignore: true)
+  RtkRemoteParticipant get participant;
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParticipantEventStatesAudioUpdateImplCopyWith<
           _$ParticipantEventStatesAudioUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -664,7 +671,7 @@ abstract class _$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWith<
               then) =
       __$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DyteMeetingParticipant participant});
+  $Res call({RtkRemoteParticipant participant});
 }
 
 /// @nodoc
@@ -678,6 +685,8 @@ class __$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWithImpl<$Res>
       $Res Function(_$ParticipantEventStateOnActiveSpeakerChangedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -687,7 +696,7 @@ class __$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWithImpl<$Res>
       null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
-              as DyteMeetingParticipant,
+              as RtkRemoteParticipant,
     ));
   }
 }
@@ -699,7 +708,7 @@ class _$ParticipantEventStateOnActiveSpeakerChangedImpl
   const _$ParticipantEventStateOnActiveSpeakerChangedImpl(this.participant);
 
   @override
-  final DyteMeetingParticipant participant;
+  final RtkRemoteParticipant participant;
 
   @override
   String toString() {
@@ -718,7 +727,9 @@ class _$ParticipantEventStateOnActiveSpeakerChangedImpl
   @override
   int get hashCode => Object.hash(runtimeType, participant);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWith<
@@ -733,24 +744,24 @@ class _$ParticipantEventStateOnActiveSpeakerChangedImpl
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return onActiveSpeakerChanged(participant);
@@ -760,20 +771,19 @@ class _$ParticipantEventStateOnActiveSpeakerChangedImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return onActiveSpeakerChanged?.call(participant);
@@ -783,20 +793,19 @@ class _$ParticipantEventStateOnActiveSpeakerChangedImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -900,11 +909,14 @@ class _$ParticipantEventStateOnActiveSpeakerChangedImpl
 abstract class _ParticipantEventStateOnActiveSpeakerChanged
     implements ParticipantEventStates {
   const factory _ParticipantEventStateOnActiveSpeakerChanged(
-          final DyteMeetingParticipant participant) =
+          final RtkRemoteParticipant participant) =
       _$ParticipantEventStateOnActiveSpeakerChangedImpl;
 
-  DyteMeetingParticipant get participant;
-  @JsonKey(ignore: true)
+  RtkRemoteParticipant get participant;
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParticipantEventStateOnActiveSpeakerChangedImplCopyWith<
           _$ParticipantEventStateOnActiveSpeakerChangedImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -927,6 +939,9 @@ class __$$ParticipantEventStatesOnNoActiveSpeakerImplCopyWithImpl<$Res>
       _$ParticipantEventStatesOnNoActiveSpeakerImpl _value,
       $Res Function(_$ParticipantEventStatesOnNoActiveSpeakerImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -955,24 +970,24 @@ class _$ParticipantEventStatesOnNoActiveSpeakerImpl
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return onNoActiveSpeaker();
@@ -982,20 +997,19 @@ class _$ParticipantEventStatesOnNoActiveSpeakerImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return onNoActiveSpeaker?.call();
@@ -1005,20 +1019,19 @@ class _$ParticipantEventStatesOnNoActiveSpeakerImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -1132,7 +1145,7 @@ abstract class _$$ParticipantEventStatesOnParticipantJoinImplCopyWith<$Res> {
           $Res Function(_$ParticipantEventStatesOnParticipantJoinImpl) then) =
       __$$ParticipantEventStatesOnParticipantJoinImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DyteMeetingParticipant participant});
+  $Res call({RtkRemoteParticipant participant});
 }
 
 /// @nodoc
@@ -1145,6 +1158,8 @@ class __$$ParticipantEventStatesOnParticipantJoinImplCopyWithImpl<$Res>
       $Res Function(_$ParticipantEventStatesOnParticipantJoinImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1154,7 +1169,7 @@ class __$$ParticipantEventStatesOnParticipantJoinImplCopyWithImpl<$Res>
       null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
-              as DyteMeetingParticipant,
+              as RtkRemoteParticipant,
     ));
   }
 }
@@ -1166,7 +1181,7 @@ class _$ParticipantEventStatesOnParticipantJoinImpl
   const _$ParticipantEventStatesOnParticipantJoinImpl(this.participant);
 
   @override
-  final DyteMeetingParticipant participant;
+  final RtkRemoteParticipant participant;
 
   @override
   String toString() {
@@ -1185,7 +1200,9 @@ class _$ParticipantEventStatesOnParticipantJoinImpl
   @override
   int get hashCode => Object.hash(runtimeType, participant);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParticipantEventStatesOnParticipantJoinImplCopyWith<
@@ -1199,24 +1216,24 @@ class _$ParticipantEventStatesOnParticipantJoinImpl
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return onParticipantJoin(participant);
@@ -1226,20 +1243,19 @@ class _$ParticipantEventStatesOnParticipantJoinImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return onParticipantJoin?.call(participant);
@@ -1249,20 +1265,19 @@ class _$ParticipantEventStatesOnParticipantJoinImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -1366,11 +1381,14 @@ class _$ParticipantEventStatesOnParticipantJoinImpl
 abstract class _ParticipantEventStatesOnParticipantJoin
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnParticipantJoin(
-          final DyteMeetingParticipant participant) =
+          final RtkRemoteParticipant participant) =
       _$ParticipantEventStatesOnParticipantJoinImpl;
 
-  DyteMeetingParticipant get participant;
-  @JsonKey(ignore: true)
+  RtkRemoteParticipant get participant;
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParticipantEventStatesOnParticipantJoinImplCopyWith<
           _$ParticipantEventStatesOnParticipantJoinImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1383,7 +1401,7 @@ abstract class _$$ParticipantEventStatesOnParticipantLeaveImplCopyWith<$Res> {
           $Res Function(_$ParticipantEventStatesOnParticipantLeaveImpl) then) =
       __$$ParticipantEventStatesOnParticipantLeaveImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DyteMeetingParticipant participant});
+  $Res call({RtkRemoteParticipant participant});
 }
 
 /// @nodoc
@@ -1396,6 +1414,8 @@ class __$$ParticipantEventStatesOnParticipantLeaveImplCopyWithImpl<$Res>
       $Res Function(_$ParticipantEventStatesOnParticipantLeaveImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1405,7 +1425,7 @@ class __$$ParticipantEventStatesOnParticipantLeaveImplCopyWithImpl<$Res>
       null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
-              as DyteMeetingParticipant,
+              as RtkRemoteParticipant,
     ));
   }
 }
@@ -1417,7 +1437,7 @@ class _$ParticipantEventStatesOnParticipantLeaveImpl
   const _$ParticipantEventStatesOnParticipantLeaveImpl(this.participant);
 
   @override
-  final DyteMeetingParticipant participant;
+  final RtkRemoteParticipant participant;
 
   @override
   String toString() {
@@ -1436,7 +1456,9 @@ class _$ParticipantEventStatesOnParticipantLeaveImpl
   @override
   int get hashCode => Object.hash(runtimeType, participant);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParticipantEventStatesOnParticipantLeaveImplCopyWith<
@@ -1450,24 +1472,24 @@ class _$ParticipantEventStatesOnParticipantLeaveImpl
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return onParticipantLeave(participant);
@@ -1477,20 +1499,19 @@ class _$ParticipantEventStatesOnParticipantLeaveImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return onParticipantLeave?.call(participant);
@@ -1500,20 +1521,19 @@ class _$ParticipantEventStatesOnParticipantLeaveImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -1617,11 +1637,14 @@ class _$ParticipantEventStatesOnParticipantLeaveImpl
 abstract class _ParticipantEventStatesOnParticipantLeave
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnParticipantLeave(
-          final DyteMeetingParticipant participant) =
+          final RtkRemoteParticipant participant) =
       _$ParticipantEventStatesOnParticipantLeaveImpl;
 
-  DyteMeetingParticipant get participant;
-  @JsonKey(ignore: true)
+  RtkRemoteParticipant get participant;
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParticipantEventStatesOnParticipantLeaveImplCopyWith<
           _$ParticipantEventStatesOnParticipantLeaveImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1634,7 +1657,7 @@ abstract class _$$ParticipantEventStatesOnParticipantPinnedImplCopyWith<$Res> {
           $Res Function(_$ParticipantEventStatesOnParticipantPinnedImpl) then) =
       __$$ParticipantEventStatesOnParticipantPinnedImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DyteMeetingParticipant participant});
+  $Res call({RtkRemoteParticipant participant});
 }
 
 /// @nodoc
@@ -1647,6 +1670,8 @@ class __$$ParticipantEventStatesOnParticipantPinnedImplCopyWithImpl<$Res>
       $Res Function(_$ParticipantEventStatesOnParticipantPinnedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1656,7 +1681,7 @@ class __$$ParticipantEventStatesOnParticipantPinnedImplCopyWithImpl<$Res>
       null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
-              as DyteMeetingParticipant,
+              as RtkRemoteParticipant,
     ));
   }
 }
@@ -1668,7 +1693,7 @@ class _$ParticipantEventStatesOnParticipantPinnedImpl
   const _$ParticipantEventStatesOnParticipantPinnedImpl(this.participant);
 
   @override
-  final DyteMeetingParticipant participant;
+  final RtkRemoteParticipant participant;
 
   @override
   String toString() {
@@ -1687,7 +1712,9 @@ class _$ParticipantEventStatesOnParticipantPinnedImpl
   @override
   int get hashCode => Object.hash(runtimeType, participant);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParticipantEventStatesOnParticipantPinnedImplCopyWith<
@@ -1702,24 +1729,24 @@ class _$ParticipantEventStatesOnParticipantPinnedImpl
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return onParticipantPinned(participant);
@@ -1729,20 +1756,19 @@ class _$ParticipantEventStatesOnParticipantPinnedImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return onParticipantPinned?.call(participant);
@@ -1752,20 +1778,19 @@ class _$ParticipantEventStatesOnParticipantPinnedImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -1869,11 +1894,14 @@ class _$ParticipantEventStatesOnParticipantPinnedImpl
 abstract class _ParticipantEventStatesOnParticipantPinned
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnParticipantPinned(
-          final DyteMeetingParticipant participant) =
+          final RtkRemoteParticipant participant) =
       _$ParticipantEventStatesOnParticipantPinnedImpl;
 
-  DyteMeetingParticipant get participant;
-  @JsonKey(ignore: true)
+  RtkRemoteParticipant get participant;
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParticipantEventStatesOnParticipantPinnedImplCopyWith<
           _$ParticipantEventStatesOnParticipantPinnedImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -1899,6 +1927,9 @@ class __$$ParticipantEventStatesOnParticipantUnpinnedImplCopyWithImpl<$Res>
       _$ParticipantEventStatesOnParticipantUnpinnedImpl _value,
       $Res Function(_$ParticipantEventStatesOnParticipantUnpinnedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -1927,24 +1958,24 @@ class _$ParticipantEventStatesOnParticipantUnpinnedImpl
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return onParticipantUnpinned();
@@ -1954,20 +1985,19 @@ class _$ParticipantEventStatesOnParticipantUnpinnedImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return onParticipantUnpinned?.call();
@@ -1977,20 +2007,19 @@ class _$ParticipantEventStatesOnParticipantUnpinnedImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -2117,6 +2146,9 @@ class __$$ParticipantEventStatesOnScreenSharesUpdatedImplCopyWithImpl<$Res>
       _$ParticipantEventStatesOnScreenSharesUpdatedImpl _value,
       $Res Function(_$ParticipantEventStatesOnScreenSharesUpdatedImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -2145,24 +2177,24 @@ class _$ParticipantEventStatesOnScreenSharesUpdatedImpl
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return onScreenSharesUpdated();
@@ -2172,20 +2204,19 @@ class _$ParticipantEventStatesOnScreenSharesUpdatedImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return onScreenSharesUpdated?.call();
@@ -2195,20 +2226,19 @@ class _$ParticipantEventStatesOnScreenSharesUpdatedImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -2322,7 +2352,7 @@ abstract class _$$ParticipantEventStatesOnUpdateImplCopyWith<$Res> {
           $Res Function(_$ParticipantEventStatesOnUpdateImpl) then) =
       __$$ParticipantEventStatesOnUpdateImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DyteParticipants participants});
+  $Res call({RtkParticipants participants});
 }
 
 /// @nodoc
@@ -2335,6 +2365,8 @@ class __$$ParticipantEventStatesOnUpdateImplCopyWithImpl<$Res>
       $Res Function(_$ParticipantEventStatesOnUpdateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2344,7 +2376,7 @@ class __$$ParticipantEventStatesOnUpdateImplCopyWithImpl<$Res>
       null == participants
           ? _value.participants
           : participants // ignore: cast_nullable_to_non_nullable
-              as DyteParticipants,
+              as RtkParticipants,
     ));
   }
 }
@@ -2356,7 +2388,7 @@ class _$ParticipantEventStatesOnUpdateImpl
   const _$ParticipantEventStatesOnUpdateImpl(this.participants);
 
   @override
-  final DyteParticipants participants;
+  final RtkParticipants participants;
 
   @override
   String toString() {
@@ -2375,7 +2407,9 @@ class _$ParticipantEventStatesOnUpdateImpl
   @override
   int get hashCode => Object.hash(runtimeType, participants);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParticipantEventStatesOnUpdateImplCopyWith<
@@ -2388,24 +2422,24 @@ class _$ParticipantEventStatesOnUpdateImpl
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return onUpdate(participants);
@@ -2415,20 +2449,19 @@ class _$ParticipantEventStatesOnUpdateImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return onUpdate?.call(participants);
@@ -2438,20 +2471,19 @@ class _$ParticipantEventStatesOnUpdateImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -2555,11 +2587,14 @@ class _$ParticipantEventStatesOnUpdateImpl
 abstract class _ParticipantEventStatesOnUpdate
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesOnUpdate(
-          final DyteParticipants participants) =
+          final RtkParticipants participants) =
       _$ParticipantEventStatesOnUpdateImpl;
 
-  DyteParticipants get participants;
-  @JsonKey(ignore: true)
+  RtkParticipants get participants;
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParticipantEventStatesOnUpdateImplCopyWith<
           _$ParticipantEventStatesOnUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2572,7 +2607,7 @@ abstract class _$$ParticipantEventStatesVideoUpdateImplCopyWith<$Res> {
           $Res Function(_$ParticipantEventStatesVideoUpdateImpl) then) =
       __$$ParticipantEventStatesVideoUpdateImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({bool videoEnabled, DyteMeetingParticipant participant});
+  $Res call({bool videoEnabled, RtkRemoteParticipant participant});
 }
 
 /// @nodoc
@@ -2585,6 +2620,8 @@ class __$$ParticipantEventStatesVideoUpdateImplCopyWithImpl<$Res>
       $Res Function(_$ParticipantEventStatesVideoUpdateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2599,7 +2636,7 @@ class __$$ParticipantEventStatesVideoUpdateImplCopyWithImpl<$Res>
       participant: null == participant
           ? _value.participant
           : participant // ignore: cast_nullable_to_non_nullable
-              as DyteMeetingParticipant,
+              as RtkRemoteParticipant,
     ));
   }
 }
@@ -2614,7 +2651,7 @@ class _$ParticipantEventStatesVideoUpdateImpl
   @override
   final bool videoEnabled;
   @override
-  final DyteMeetingParticipant participant;
+  final RtkRemoteParticipant participant;
 
   @override
   String toString() {
@@ -2635,7 +2672,9 @@ class _$ParticipantEventStatesVideoUpdateImpl
   @override
   int get hashCode => Object.hash(runtimeType, videoEnabled, participant);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ParticipantEventStatesVideoUpdateImplCopyWith<
@@ -2648,24 +2687,24 @@ class _$ParticipantEventStatesVideoUpdateImpl
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return onVideoUpdate(videoEnabled, participant);
@@ -2675,20 +2714,19 @@ class _$ParticipantEventStatesVideoUpdateImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return onVideoUpdate?.call(videoEnabled, participant);
@@ -2698,20 +2736,19 @@ class _$ParticipantEventStatesVideoUpdateImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -2816,12 +2853,15 @@ abstract class _ParticipantEventStatesVideoUpdate
     implements ParticipantEventStates {
   const factory _ParticipantEventStatesVideoUpdate(
           {required final bool videoEnabled,
-          required final DyteMeetingParticipant participant}) =
+          required final RtkRemoteParticipant participant}) =
       _$ParticipantEventStatesVideoUpdateImpl;
 
   bool get videoEnabled;
-  DyteMeetingParticipant get participant;
-  @JsonKey(ignore: true)
+  RtkRemoteParticipant get participant;
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ParticipantEventStatesVideoUpdateImplCopyWith<
           _$ParticipantEventStatesVideoUpdateImpl>
       get copyWith => throw _privateConstructorUsedError;
@@ -2834,7 +2874,7 @@ abstract class _$$OnActiveParticipantsChangedImplCopyWith<$Res> {
           $Res Function(_$OnActiveParticipantsChangedImpl) then) =
       __$$OnActiveParticipantsChangedImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({List<DyteMeetingParticipant> activeParticipants});
+  $Res call({List<RtkRemoteParticipant> activeParticipants});
 }
 
 /// @nodoc
@@ -2847,6 +2887,8 @@ class __$$OnActiveParticipantsChangedImplCopyWithImpl<$Res>
       $Res Function(_$OnActiveParticipantsChangedImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -2856,7 +2898,7 @@ class __$$OnActiveParticipantsChangedImplCopyWithImpl<$Res>
       activeParticipants: null == activeParticipants
           ? _value._activeParticipants
           : activeParticipants // ignore: cast_nullable_to_non_nullable
-              as List<DyteMeetingParticipant>,
+              as List<RtkRemoteParticipant>,
     ));
   }
 }
@@ -2866,12 +2908,12 @@ class __$$OnActiveParticipantsChangedImplCopyWithImpl<$Res>
 class _$OnActiveParticipantsChangedImpl
     implements _OnActiveParticipantsChanged {
   const _$OnActiveParticipantsChangedImpl(
-      {required final List<DyteMeetingParticipant> activeParticipants})
+      {required final List<RtkRemoteParticipant> activeParticipants})
       : _activeParticipants = activeParticipants;
 
-  final List<DyteMeetingParticipant> _activeParticipants;
+  final List<RtkRemoteParticipant> _activeParticipants;
   @override
-  List<DyteMeetingParticipant> get activeParticipants {
+  List<RtkRemoteParticipant> get activeParticipants {
     if (_activeParticipants is EqualUnmodifiableListView)
       return _activeParticipants;
     // ignore: implicit_dynamic_type
@@ -2896,7 +2938,9 @@ class _$OnActiveParticipantsChangedImpl
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_activeParticipants));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$OnActiveParticipantsChangedImplCopyWith<_$OnActiveParticipantsChangedImpl>
@@ -2908,24 +2952,24 @@ class _$OnActiveParticipantsChangedImpl
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function(
-            bool audioEnabled, DyteMeetingParticipant participant)
+            bool audioEnabled, RtkRemoteParticipant participant)
         onAudioUpdate,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onActiveSpeakerChanged,
     required TResult Function() onNoActiveSpeaker,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantJoin,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantLeave,
-    required TResult Function(DyteMeetingParticipant participant)
+    required TResult Function(RtkRemoteParticipant participant)
         onParticipantPinned,
     required TResult Function() onParticipantUnpinned,
     required TResult Function() onScreenSharesUpdated,
-    required TResult Function(DyteParticipants participants) onUpdate,
+    required TResult Function(RtkParticipants participants) onUpdate,
     required TResult Function(
-            bool videoEnabled, DyteMeetingParticipant participant)
+            bool videoEnabled, RtkRemoteParticipant participant)
         onVideoUpdate,
-    required TResult Function(List<DyteMeetingParticipant> activeParticipants)
+    required TResult Function(List<RtkRemoteParticipant> activeParticipants)
         onActiveParticipantsChanged,
   }) {
     return onActiveParticipantsChanged(activeParticipants);
@@ -2935,20 +2979,19 @@ class _$OnActiveParticipantsChangedImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult? Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult? Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult? Function()? onNoActiveSpeaker,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult? Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult? Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult? Function()? onParticipantUnpinned,
     TResult? Function()? onScreenSharesUpdated,
-    TResult? Function(DyteParticipants participants)? onUpdate,
-    TResult? Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult? Function(RtkParticipants participants)? onUpdate,
+    TResult? Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult? Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult? Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
   }) {
     return onActiveParticipantsChanged?.call(activeParticipants);
@@ -2958,20 +3001,19 @@ class _$OnActiveParticipantsChangedImpl
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(bool audioEnabled, DyteMeetingParticipant participant)?
+    TResult Function(bool audioEnabled, RtkRemoteParticipant participant)?
         onAudioUpdate,
-    TResult Function(DyteMeetingParticipant participant)?
-        onActiveSpeakerChanged,
+    TResult Function(RtkRemoteParticipant participant)? onActiveSpeakerChanged,
     TResult Function()? onNoActiveSpeaker,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantJoin,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantLeave,
-    TResult Function(DyteMeetingParticipant participant)? onParticipantPinned,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantJoin,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantLeave,
+    TResult Function(RtkRemoteParticipant participant)? onParticipantPinned,
     TResult Function()? onParticipantUnpinned,
     TResult Function()? onScreenSharesUpdated,
-    TResult Function(DyteParticipants participants)? onUpdate,
-    TResult Function(bool videoEnabled, DyteMeetingParticipant participant)?
+    TResult Function(RtkParticipants participants)? onUpdate,
+    TResult Function(bool videoEnabled, RtkRemoteParticipant participant)?
         onVideoUpdate,
-    TResult Function(List<DyteMeetingParticipant> activeParticipants)?
+    TResult Function(List<RtkRemoteParticipant> activeParticipants)?
         onActiveParticipantsChanged,
     required TResult orElse(),
   }) {
@@ -3074,11 +3116,14 @@ class _$OnActiveParticipantsChangedImpl
 
 abstract class _OnActiveParticipantsChanged implements ParticipantEventStates {
   const factory _OnActiveParticipantsChanged(
-          {required final List<DyteMeetingParticipant> activeParticipants}) =
+          {required final List<RtkRemoteParticipant> activeParticipants}) =
       _$OnActiveParticipantsChangedImpl;
 
-  List<DyteMeetingParticipant> get activeParticipants;
-  @JsonKey(ignore: true)
+  List<RtkRemoteParticipant> get activeParticipants;
+
+  /// Create a copy of ParticipantEventStates
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$OnActiveParticipantsChangedImplCopyWith<_$OnActiveParticipantsChangedImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
